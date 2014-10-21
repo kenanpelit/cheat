@@ -1,0 +1,36 @@
+#/dev/shm is a device file, it's called tmpfs file system. ( In Centos and Redhat, /dev/shm is a link which points to directory /run/shm, in Ubuntu tmpfs is in /run/shm, you can check it with df command), because /dev/shm is not on harddisk but in memory, it's tmpfs, usualy in Redhat and Centos, it's size is half of the pyhsical memory.
+
+#if you use tmpfs in WEB environments, it will provides very good performance
+
+#check /dev/shm
+    df -h
+
+# change the size of /dev/shm tmpfs to 512M, modify /etc/fstab
+	FROM:
+	tmpfs       /dev/shm    tmpfs  defaults   0 0
+	
+	TO:
+	tmpfs       /dev/shm    tmpfs  defaultsstaticize=512m    0 0
+	
+	mount -o remount /dev/shm
+
+# create tmp in /dev/shm and bind it with /tmp
+	[root@AY1212111202285f63122 ~]# mkdir  /dev/shm/tmp 
+	[root@AY1212111202285f63122 ~]# chmod  1777  /dev/shm/tmp    # pay attention to the permissions
+	[root@AY1212111202285f63122 ~]# mount --bind  /dev/shm/tmp  /tmp 
+	[root@AY1212111202285f63122 ~]# ls -ld /tmp 
+	drwxrwxrwt 2 root root 40 May 29 21:46 /tmp
+
+
+#The following are some examples for using tmpfs, usually tmpfs memory file systems has very good permissions for web cache, temp filesystem. it can improve WEB access speed.
+#(1) put cache_dir of squid in /tmp
+	vi /etc/squid/squid.conf
+    change above configuration file for squid to use 256M memory tmpfs, then restart squid service
+	cache_dir ufs /tmp 256 16 256
+	
+#(2)put php session files in /tmp
+    for a high throughput WEB site, it will put more temporary files in /tmp, for example session or cache files, so if you put them in tmpfs, then it improves the performance greatly. you just need to modify php.ini and use phpinfo to check the location of session files, if they are not in /tmp, change below setting:
+    session.save_path = “/tmp”
+
+#(3)put socket files of services under /tmp
+    ie. nginx.socket & mysql.sock
