@@ -10,7 +10,7 @@
 	tmpfs       /dev/shm    tmpfs  defaults   0 0
 	
 	TO:
-	tmpfs       /dev/shm    tmpfs  defaultsstaticize=512m    0 0
+	tmpfs       /dev/shm    tmpfs  defaults,size=512m    0 0
 	
 	mount -o remount /dev/shm
 
