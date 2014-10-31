@@ -29,5 +29,5 @@ ncat --proxy <proxyhost>[:<proxyport>] --proxy-type {http | socks4} <host>[<port
 # Chat server | can use brokering for multi-user chat
 ncat -l --chat [<host>] [<port>]
 
-# tail log file and send the new lines to socket
+# tail log file and send the new lines to socket, so you can telnet IP port to get the log lines
 ncat --exec "/usr/bin/tail -F /var/log/syslog" --max-conns 3 -l 1501 --keep-open
