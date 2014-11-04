@@ -1,3 +1,4 @@
 #If you plan to use Redis just as a cache where every key will have an expire set, you may consider using the following configuration instead
+#More policy check out this: http://redis.io/topics/lru-cache
 maxmemory 2mb
 maxmemory-policy allkeys-lru
