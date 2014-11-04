@@ -76,6 +76,7 @@ cheat/cheatsheets/php
 cheat/cheatsheets/ps
 cheat/cheatsheets/python
 cheat/cheatsheets/readline
+cheat/cheatsheets/redis
 cheat/cheatsheets/rm
 cheat/cheatsheets/route
 cheat/cheatsheets/rpm
