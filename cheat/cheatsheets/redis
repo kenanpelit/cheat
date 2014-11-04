@@ -2,3 +2,12 @@
 #More policy check out this: http://redis.io/topics/lru-cache
 maxmemory 2mb
 maxmemory-policy allkeys-lru
+
+#Set configuration online with out restart redis
+redis 127.0.0.1:6379> CONFIG SET maxmemory 4096
+OK
+
+#Get configuration
+redis 127.0.0.1:6379> CONFIG GET maxmemory
+1) "maxmemory"
+2) "4096"
