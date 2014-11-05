@@ -1,0 +1,2 @@
+# Append a line after a line
+s/Oneline /Oneline\r Anotherline/
