@@ -1,5 +1,5 @@
 # Use ldapvi to edit something in LDAP server
-ldapvi -h ldapserver -D "user=jzhu,ou=users,dc=sample,dc=net" -b "ou=something,dc=battle,dc=net" -x "(location=abc-http*)" 
+ldapvi -h ldapserver -D "user=jzhu,ou=users,dc=sample,dc=net" -b "ou=something,dc=battle,dc=net" -x "(location=abc-http.*)" 
 
 # If the ldap server require TLS/SSL, you have to add -ZZ option
-ldapvi -h ldapserver -D "user=jzhu,ou=users,dc=sample,dc=net" -b "ou=something,dc=battle,dc=net" -x "(location=abc-http*)" -ZZ
+ldapvi -h ldapserver -D "user=jzhu,ou=users,dc=sample,dc=net" -b "ou=something,dc=battle,dc=net" -x "(location=abc-http.*)" -ZZ
