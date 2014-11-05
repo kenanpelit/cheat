@@ -1,0 +1,2 @@
+# Use ldapvi to edit something in LDAP server
+ldapvi -h ldapserver -D "user=jzhu,ou=users,dc=sample,dc=net" -b "ou=something,dc=battle,dc=net" -x "(location=abc-http*)" 
