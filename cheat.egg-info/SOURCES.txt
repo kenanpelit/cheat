@@ -53,6 +53,7 @@ cheat/cheatsheets/iptables
 cheat/cheatsheets/irssi
 cheat/cheatsheets/iwconfig
 cheat/cheatsheets/journalctl
+cheat/cheatsheets/ldapvi
 cheat/cheatsheets/less
 cheat/cheatsheets/ln
 cheat/cheatsheets/ls
