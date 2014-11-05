@@ -1,2 +1,5 @@
 # Append a line after a line
 s/Oneline /Oneline\r Anotherline/
+
+#do substitution in 4 lines from the current line
+:s/helo/hello/g 4
