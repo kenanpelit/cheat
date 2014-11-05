@@ -107,6 +107,7 @@ cheat/cheatsheets/tmux
 cheat/cheatsheets/top
 cheat/cheatsheets/truncate
 cheat/cheatsheets/uname
+cheat/cheatsheets/vi
 cheat/cheatsheets/vim
 cheat/cheatsheets/wget
 cheat/cheatsheets/xargs
