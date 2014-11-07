@@ -73,6 +73,7 @@ cheat/cheatsheets/od
 cheat/cheatsheets/openssl
 cheat/cheatsheets/pacman
 cheat/cheatsheets/pdftk
+cheat/cheatsheets/perl
 cheat/cheatsheets/php
 cheat/cheatsheets/ps
 cheat/cheatsheets/python
