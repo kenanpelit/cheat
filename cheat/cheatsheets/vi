@@ -1,5 +1,8 @@
 # Append a line after a line
-s/Oneline /Oneline\r Anotherline/
+:s/Oneline /Oneline\r Anotherline/
 
-#do substitution in 4 lines from the current line
+# Do substitution in 4 lines from the current line
 :s/helo/hello/g 4
+
+# Use Back reference in substitution
+:s/^root\(.*\)/ROOT\1/
