@@ -1,0 +1,2 @@
+# Find all installed perl modules
+perldoc -Tt perllocal | awk '/Module/ {print $7}' | sort -u
