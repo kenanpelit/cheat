@@ -93,6 +93,7 @@ cheat/cheatsheets/sockstat
 cheat/cheatsheets/sort
 cheat/cheatsheets/split
 cheat/cheatsheets/sqlmap
+cheat/cheatsheets/ss
 cheat/cheatsheets/ssh
 cheat/cheatsheets/ssh-copy-id
 cheat/cheatsheets/ssh-keygen
