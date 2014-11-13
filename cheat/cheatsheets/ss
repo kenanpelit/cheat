@@ -59,33 +59,16 @@ ss -nt dst 74.125.236.178:80
 ss -nt dport = :80
 
 # source address is 127.0.0.1 and source port is greater than 5000
-$ ss -nt src 127.0.0.1 sport gt :5000
+ss -nt src 127.0.0.1 sport gt :5000
 
 # local smtp (port 25) sockets
-$ sudo ss -ntlp sport eq switchmtp
+sudo ss -ntlp sport eq switchmtp
 
 # port numbers greater than 25
-$ sudo ss -nt sport gt :1024
+sudo ss -nt sport gt :1024
 
 # sockets with remote ports less than 100
-$ sudo ss -nt dport \< :100
+sudo ss -nt dport \< :100
 
 # connections to remote port 80
-$ sudo ss -nt state connected dport = :80
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+sudo ss -nt state connected dport = :80
