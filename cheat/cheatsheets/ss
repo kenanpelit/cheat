@@ -1,0 +1,91 @@
+# List all connections
+ss |less
+
+# Filter out tcp,udp or unix connections, to view only tcp or udp or unix connections use the t, u or x option.
+ss -t
+ss -A tcp
+
+# List all udp connections
+ss -ua
+ss -a -A udp
+
+# Do not resolve hostname
+ss -nt
+
+# Show only listening sockets
+ss -ltn
+
+# To list out all listening udp connections replace t by u
+ss -lun
+
+# To print out the process name/pid which owns the connection use the p option
+ss -ltp
+
+# The s option prints out the statistics.
+ss -s
+
+# With the '-o' option, the time information of each connection would be displayed. The timer information tells how long with 
+ss -tn -o 
+
+# To display only IPv4 socket connections use the '-f inet' or '-4' option.
+ss -tl -f inet
+
+# To display only IPv6 connections use the '-f inet6' or '-6' option.
+ss -tl6
+
+# Filtering connections by tcp state
+ss [ OPTIONS ] [ STATE-FILTER ] [ ADDRESS-FILTER ]
+ss -t4 state established
+ss -t4 state time-wait
+
+# Filter connections by address and port number, Display all socket connections with source or destination port of ssh.
+ss -at '( dport = :ssh or sport = :ssh )'
+
+# Sockets with destination port 443 or 80
+ss -nt '( dst :443 or dst :80 )'
+OR
+ss -nt dst :443 or dst :80
+
+# Filter by address
+ss -nt dst 74.125.236.178
+
+# CIDR notation is also supported
+ss -nt dst 74.125.236.178/16
+
+# Address and Port combined
+ss -nt dst 74.125.236.178:80
+
+# Ports can also be filtered with dport/sport options. Port numbers must be prefixed with a ":".
+ss -nt dport = :80
+
+# source address is 127.0.0.1 and source port is greater than 5000
+$ ss -nt src 127.0.0.1 sport gt :5000
+
+# local smtp (port 25) sockets
+$ sudo ss -ntlp sport eq switchmtp
+
+# port numbers greater than 25
+$ sudo ss -nt sport gt :1024
+
+# sockets with remote ports less than 100
+$ sudo ss -nt dport \< :100
+
+# connections to remote port 80
+$ sudo ss -nt state connected dport = :80
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
