@@ -1,0 +1,2 @@
+# Search LDAP directory
+ldapsearch -Z -x -LLL -W -h ldapmaster -D user=jzhu,ou=users,dc=sample,dc=net -b ou=locations,dc=sample,dc=net "location=hostname"
