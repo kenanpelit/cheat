@@ -2,7 +2,7 @@
 ldapsearch -Z -x -LLL -W -h ldapmaster -D user=jzhu,ou=users,dc=sample,dc=net -b ou=locations,dc=sample,dc=net "location=hostname"
 
 # Search LDAP directory in LDAP server by specifying it with -h option
-ldapsearch -h ldapmaster -x -Z -LLL -W -D user=jzhu,ou=users,dc=battle,dc=net -b ou=locations,dc=battle,dc=net "(location=hostname)"
+ldapsearch -h ldapmaster -x -Z -LLL -W -D user=jzhu,ou=users,dc=sample,dc=net -b ou=locations,dc=sample,dc=net "(location=hostname)"
 
 
 #perform a subtree search for entries with a surname (sn) of smith.
