@@ -80,6 +80,7 @@ cheat/cheatsheets/ps
 cheat/cheatsheets/python
 cheat/cheatsheets/readline
 cheat/cheatsheets/redis
+cheat/cheatsheets/rhcs
 cheat/cheatsheets/rm
 cheat/cheatsheets/route
 cheat/cheatsheets/rpm
