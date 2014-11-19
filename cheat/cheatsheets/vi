@@ -7,29 +7,42 @@
 # Use Back reference in substitution
 :s/^root\(.*\)/ROOT\1/
 
-#Delete DOS returns ^M
+# Delete DOS returns ^M
 :%s/\r//g 
 
-#delete all blank lines
+# delete all blank lines
 :g/^\s*$/d
 
-#delete lines not containing string
+# delete lines not containing string
 :g!/^dd/d
 :v/^dd/d
 
-#delete lines which containing string
+# delete lines which containing string
 :g/^dd/d
 
-#delete end of line blanks
+# delete end of line blanks
 :%s=  *$==
 
-#delete duplicate lines
+# delete duplicate lines
 :%s/^\(.*\)\n\1$/\1/
 
-#delete multiple duplicate lines [N]
+# delete multiple duplicate lines [N]
 :%s/^\(.*\)\(\n\1\)\+$/\1/
 
-#delete all lines containing at least 80 tabs
+# delete all lines containing at least 80 tabs
 :g/\(^I[^^I]*\)\{80}/d
 
-#
+# If the 'ignorecase' option is on, the case of normal letters is ignored.
+:set ignorecase
+
+# When "\c" appears anywhere in the pattern, the whole pattern is handled like 'ignorecase' is on.
+:\cabc
+:abc\c
+
+# Case sensitive
+:set smartcase
+
+# Force matching case for the whole pattern
+:foo\C
+OR
+:\Cfoo
