@@ -1,0 +1,5 @@
+# Try to start service, if it's failed in between, it dosen't backout
+rg_test test /etc/cluster/cluster.conf start service servicename
+
+# Stop services started by above command
+rg_test test /etc/cluster/cluster.conf stop service servicename
