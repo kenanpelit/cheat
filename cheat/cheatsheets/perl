@@ -1,2 +1,8 @@
 # Find all installed perl modules
 perldoc -Tt perllocal | awk '/Module/ {print $7}' | sort -u
+
+# Find perl docments in command line in 2 steps
+  # Check the things under --> For ease of access, the Perl manual has been split up into several sections. 
+1> man perl  # Check the things under --> For ease of access, the Perl manual has been split up into several sections. 
+  # Pick up one like below to read manual
+2> perldoc perllol
