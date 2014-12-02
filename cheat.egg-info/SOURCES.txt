@@ -89,6 +89,7 @@ cheat/cheatsheets/sam2p
 cheat/cheatsheets/scp
 cheat/cheatsheets/screen
 cheat/cheatsheets/sed
+cheat/cheatsheets/selinux
 cheat/cheatsheets/shred
 cheat/cheatsheets/snmpwalk
 cheat/cheatsheets/sockstat
