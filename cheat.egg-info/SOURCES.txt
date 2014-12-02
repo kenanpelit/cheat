@@ -39,6 +39,7 @@ cheat/cheatsheets/emacs
 cheat/cheatsheets/find
 cheat/cheatsheets/gcc
 cheat/cheatsheets/gdb
+cheat/cheatsheets/getent
 cheat/cheatsheets/git
 cheat/cheatsheets/gpg
 cheat/cheatsheets/grep
