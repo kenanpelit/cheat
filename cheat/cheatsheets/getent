@@ -1,0 +1,11 @@
+# Get entries from Name Service Switch libraries
+getent database [key ...]
+
+# Get passwd entries
+getent passwd 
+
+# Get entries from Name Service Switch libraries matching the key
+getent passwd root
+
+# Trace where it gets the entries
+strace getent netgroup <key>
