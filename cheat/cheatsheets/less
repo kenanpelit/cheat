@@ -1,2 +1,6 @@
 # To disable the terminal refresh when exiting
 less -X
+
+# Causes "raw" control characters to be displayed. The default is to display control characters using the caret notation; for example, a control-A (octal 001) is displayed as "^A".
+less -R
+less -r
