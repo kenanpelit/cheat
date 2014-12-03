@@ -2,6 +2,10 @@
 git config --global user.name "John Doe"
 git config --global user.email johndoe@example.com
 
+# git diff by words
+git diff --color-words
+git diff --word-diff=color
+
 # To set your editor:
 git config --global core.editor emacs
 

@@ -1,31 +1,31 @@
 # Exclusive Activation of a Volume Group in a Cluster 
 # Link --> https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/High_Availability_Add-On_Administration/s1-exclusiveactive-HAAA.html 
-    1> vgs --noheadings -o vg_name
-    2> volume_list = [ "rhel_root", "rhel_home" ]
-    3> dracut -H -f /boot/initramfs-$(uname -r).img $(uname -r)
-    4> Reboot the node
-    5> uname -r to verify the correct initrd image
+    1) vgs --noheadings -o vg_name
+    2) volume_list = [ "rhel_root", "rhel_home" ]
+    3) dracut -H -f /boot/initramfs-$(uname -r).img $(uname -r)
+    4) Reboot the node
+    5) uname -r to verify the correct initrd image
 
 # Steps for check/enable LV on RHCS which is using LVM:
-    1> Safely ignore clustered volume groups (VGs handled by CLVM), below command to check if it's using CLVM
+    1) Safely ignore clustered volume groups (VGs handled by CLVM), below command to check if it's using CLVM
         if [[ $(vgs -o attr --noheadings vg_name) =~ .....c ]];
     # Check if lvm is properly setup
-    2> The default for lvm.conf:activation/volume_list is empty, this must be changed for HA LVM, below command check if it's empty
+    2) The default for lvm.conf:activation/volume_list is empty, this must be changed for HA LVM, below command check if it's empty
         if ! lvm dumpconfig activation/volume_list >& /dev/null;
-    3> Machine's cluster node name must be present as a tag in lvm.conf:activation/volume_list 
+    3) Machine's cluster node name must be present as a tag in lvm.conf:activation/volume_list 
         if ! lvm dumpconfig activation/volume_list | grep $(local_node_name);
-    4> The volume group to be failed over must NOT be in lvm.conf:activation/volume_list; otherwise, machines will be able to activate the VG regardless of the tags 
+    4) The volume group to be failed over must NOT be in lvm.conf:activation/volume_list; otherwise, machines will be able to activate the VG regardless of the tags 
         if lvm dumpconfig activation/volume_list | grep $OCF_RESKEY_vg_name;
-    5> Next, we need to ensure that their initrd has been updated If not, the machine could boot and activate the VG outside the control of rgmanager
+    5) Next, we need to ensure that their initrd has been updated If not, the machine could boot and activate the VG outside the control of rgmanager
         if [ "$(find /boot -name *.img -newer /etc/lvm/lvm.conf)" == "" ];
     # Start the LV, We pass in the VG name to see of the logical volume is clustered
         if [[ "$(vgs -o attr --noheadings $OCF_RESKEY_vg_name)" =~ .....c ]]
     #################### if clustered, lv_start_clustered ###########################
     
     #################### if not clustered, lv_start_single ##########################
-    6> HA LVM requires Only one logical volume per volume group, so check it
+    6) HA LVM requires Only one logical volume per volume group, so check it
         lvs --noheadings -o name $OCF_RESKEY_vg_name | grep -v _mlog | grep -v _mimage | grep -v nconsistent | wc -l
-    7> # Basically, if we want to [de]activate an LVM volume,
+    7) # Basically, if we want to [de]activate an LVM volume,
 	# we must own it.  That means that our tag must be on it.
 	# This requires a change to /etc/lvm/lvm.conf:
 	#       volume_list = [ "root_volume", "@my_hostname" ]
@@ -43,9 +43,9 @@
             lvchange --deltag $owner $lv_path
         c> # verify again
             if [ ! -z `lvs -o tags --noheadings $lv_path | tr -d ' '` ];
-    8> Now, we are really activating and tagging it
+    8) Now, we are really activating and tagging it
         lvchange --addtag $tag $lv_path 
-    9> Sometimes, devices can come back. Their metadata will conflict with the good devices that remain. We must filter out those failed devices when trying to reactivate
+    9) Sometimes, devices can come back. Their metadata will conflict with the good devices that remain. We must filter out those failed devices when trying to reactivate
         #op=="-an"
         #OR We can activate partial RAID LVs and run just fine
         #op=="-ay" when [[ "$(lvs -o attr --noheadings $lv_path)" =~ r.......p ]] || [[ "$(lvs -o attr --noheadings $lv_path)" =~ R.......p ]];
