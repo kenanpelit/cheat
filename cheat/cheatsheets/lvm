@@ -20,6 +20,11 @@
         if [ "$(find /boot -name *.img -newer /etc/lvm/lvm.conf)" == "" ];
     # Start the LV, We pass in the VG name to see of the logical volume is clustered
         if [[ "$(vgs -o attr --noheadings $OCF_RESKEY_vg_name)" =~ .....c ]]
+
+    ############ MAKE Sure lv_path is using below format#############################
+    ##### lv_path="$OCF_RESKEY_vg_name/$OCF_RESKEY_lv_name"
+    #################################################################################
+    
     #################### if clustered, lv_start_clustered ###########################
     
     #################### if not clustered, lv_start_single ##########################
