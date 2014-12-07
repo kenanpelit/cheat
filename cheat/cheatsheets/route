@@ -13,6 +13,9 @@ route add -net 192.56.76.0 netmask 255.255.255.0 dev eth0
 # To delete the current default route, which is labeled "default" or 0.0.0.0 in the destination field of the current routing table.
 route del default
 
+# To delete a default gateway
+route del default gw <gateway IP>
+
 # To add a default  route (which will be used if no other route matches).  All packets using this route will be gatewayed through "mango-gw". The device which will actually be used for that route depends on how we can reach "mango-gw" - the static route to "mango-gw" will have to be set up before.
 route add default gw mango-gw
 
