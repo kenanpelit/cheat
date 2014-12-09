@@ -32,6 +32,7 @@ cheat/cheatsheets/date
 cheat/cheatsheets/dd
 cheat/cheatsheets/df
 cheat/cheatsheets/dhclient
+cheat/cheatsheets/dhcpd
 cheat/cheatsheets/diff
 cheat/cheatsheets/distcc
 cheat/cheatsheets/du
