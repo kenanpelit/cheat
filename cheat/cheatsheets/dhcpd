@@ -1,4 +1,8 @@
 # Issue 1
 # If there are multiple subnets in dhcpd.conf file and all the subnets have option routers set,
-# then the most recently renewed interface will overwrite the default Gateway
+# So on the client side, if one of the interface renew it's IP address, its default router
+# will overwrite the current default gateway
 option routers <GATEWAY>
+
+# Check the location of the lease files, all the lease files are located here
+ls /var/lib/dhclient/
