@@ -35,6 +35,7 @@ cheat/cheatsheets/dhclient
 cheat/cheatsheets/dhcpd
 cheat/cheatsheets/diff
 cheat/cheatsheets/distcc
+cheat/cheatsheets/docker
 cheat/cheatsheets/du
 cheat/cheatsheets/emacs
 cheat/cheatsheets/find
