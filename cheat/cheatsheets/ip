@@ -30,3 +30,6 @@ ip link set dev eth0 address aa:bb:cc:dd:ee:ff
 
 # View neighbors (using ARP and NDP) 
 ip neighbor show
+
+# Get a single route, this command gets a single route to a destination and prints its contents exactly as the kernel sees it.
+ip route get 8.8.8.8
