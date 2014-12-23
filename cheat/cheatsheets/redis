@@ -1,13 +1,19 @@
-#If you plan to use Redis just as a cache where every key will have an expire set, you may consider using the following configuration instead
-#More policy check out this: http://redis.io/topics/lru-cache
+# Delete all the keys of the currently selected DB. This command never fails.The time-complexity for this operation is O(N), N being the number of keys in the database.
+redis localhost:6379> FLUSHDB
+
+# Login the specific redis instance
+redis-cli -h localhost -p 6379
+
+# If you plan to use Redis just as a cache where every key will have an expire set, you may consider using the following configuration instead
+# More policy check out this: http://redis.io/topics/lru-cache
 maxmemory 2mb
 maxmemory-policy allkeys-lru
 
-#Set configuration online with out restart redis
+# Set configuration online with out restart redis
 redis 127.0.0.1:6379> CONFIG SET maxmemory 4096
 OK
 
-#Get configuration
+# Get configuration
 redis 127.0.0.1:6379> CONFIG GET maxmemory
 1) "maxmemory"
 2) "4096"
