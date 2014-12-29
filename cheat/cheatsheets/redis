@@ -1,9 +1,6 @@
 # Delete all the keys of the currently selected DB. This command never fails.The time-complexity for this operation is O(N), N being the number of keys in the database.
 redis localhost:6379> FLUSHDB
 
-# Login the specific redis instance
-redis-cli -h localhost -p 6379
-
 # If you plan to use Redis just as a cache where every key will have an expire set, you may consider using the following configuration instead
 # More policy check out this: http://redis.io/topics/lru-cache
 maxmemory 2mb
@@ -17,3 +14,27 @@ OK
 redis 127.0.0.1:6379> CONFIG GET maxmemory
 1) "maxmemory"
 2) "4096"
+
+# Login the specific redis instance
+redis-cli -h localhost -p 6379
+
+# The INFO KEYSPACE command can be used to check whether some keys are defined in several databases.
+redis 127.0.0.1:6379[1]> info keyspace
+# Keyspace
+db0:keys=1,expires=0
+db1:keys=1,expires=0
+
+# Here I have two databases, let's check the keys defined in the db0 database:
+redis 127.0.0.1:6379> keys *
+1) "foo"
+
+# And now in the db1 database:
+redis 127.0.0.1:6379> select 1
+OK
+redis 127.0.0.1:6379[1]> keys *
+1) "bar"
+
+
+
+
+
