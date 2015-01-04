@@ -1,0 +1,2 @@
+# Setup navicli security
+/opt/Navisphere/bin/naviseccli -addusersecurity -scope 0 -user admin -password password 
