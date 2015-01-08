@@ -1,0 +1,2 @@
+# Show shared directories on a windows machine
+smbclient -L file-host-name -U "domain\\jzhu"
