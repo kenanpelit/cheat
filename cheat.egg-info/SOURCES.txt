@@ -68,6 +68,7 @@ cheat/cheatsheets/mkdir
 cheat/cheatsheets/mount
 cheat/cheatsheets/mysql
 cheat/cheatsheets/mysqldump
+cheat/cheatsheets/naviseccli
 cheat/cheatsheets/nc
 cheat/cheatsheets/ncat
 cheat/cheatsheets/netstat
@@ -79,6 +80,7 @@ cheat/cheatsheets/pacman
 cheat/cheatsheets/pdftk
 cheat/cheatsheets/perl
 cheat/cheatsheets/php
+cheat/cheatsheets/ping6
 cheat/cheatsheets/ps
 cheat/cheatsheets/python
 cheat/cheatsheets/readline
@@ -89,11 +91,13 @@ cheat/cheatsheets/route
 cheat/cheatsheets/rpm
 cheat/cheatsheets/rsync
 cheat/cheatsheets/sam2p
+cheat/cheatsheets/samba
 cheat/cheatsheets/scp
 cheat/cheatsheets/screen
 cheat/cheatsheets/sed
 cheat/cheatsheets/selinux
 cheat/cheatsheets/shred
+cheat/cheatsheets/smbclient
 cheat/cheatsheets/snmpwalk
 cheat/cheatsheets/sockstat
 cheat/cheatsheets/sort
