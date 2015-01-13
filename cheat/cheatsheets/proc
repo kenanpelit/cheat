@@ -1,0 +1,2 @@
+# Find what process is using a particular FD
+for x in $(echo /proc/*/fd/14); do echo $x $(readlink $x); done
