@@ -1,0 +1,8 @@
+# Connect to a blade from OA
+connect server 01
+
+# show UID light status
+UID
+
+# Turn on UID lights
+UID on
