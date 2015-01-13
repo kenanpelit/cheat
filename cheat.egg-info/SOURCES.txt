@@ -48,6 +48,7 @@ cheat/cheatsheets/grep
 cheat/cheatsheets/gs
 cheat/cheatsheets/head
 cheat/cheatsheets/history
+cheat/cheatsheets/hpbladecenter
 cheat/cheatsheets/hub
 cheat/cheatsheets/ifconfig
 cheat/cheatsheets/indent
@@ -81,6 +82,7 @@ cheat/cheatsheets/pdftk
 cheat/cheatsheets/perl
 cheat/cheatsheets/php
 cheat/cheatsheets/ping6
+cheat/cheatsheets/proc
 cheat/cheatsheets/ps
 cheat/cheatsheets/python
 cheat/cheatsheets/readline
