@@ -6,3 +6,6 @@ UID
 
 # Turn on UID lights
 UID on
+
+# Show MAC addresses for NICs
+show /system1/network1/Integrated_NICs
