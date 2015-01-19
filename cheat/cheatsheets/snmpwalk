@@ -3,3 +3,8 @@ snmpwalk -Os -c public -v 1 zeus system
 
 # To retrieve the scalar values, but omit the sysORTable for host zeus
 snmpwalk -Os -c public -v 1 -CE sysORTable zeus system
+
+# Use the command snmpwalk to get the OID for avgBusy5
+snmpwalk -Os -c COMMUNITY_STRING -v 2c 10.18.0.1 1.3.6.1.4.1.9.2.1.58 
+---OUTPUT as below---
+   enterprises.9.2.1.58.0 = INTEGER: 5
