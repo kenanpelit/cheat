@@ -9,3 +9,15 @@ UID on
 
 # Show MAC addresses for NICs
 show /system1/network1/Integrated_NICs
+
+# Create a account 
+create /map1/accounts1 username=root password=changeme
+
+# Give permission
+set /map1/accounts1/root group=admin,config,oemhp_rc,oemhp_power,oemhp_vm
+
+# Show accounts
+show /map1/accounts1
+
+# Delete accounts
+delete /map1/accounts1/root
