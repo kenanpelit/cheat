@@ -45,3 +45,6 @@ find . ! -iwholename '*.git*' -type f
 
 # Find all files that have the same node (hard link) as MY_FILE_HERE
 find . -type f -samefile MY_FILE_HERE 2>/dev/null
+
+# Find the file has inode number
+find /etc/ -inum 8654127
