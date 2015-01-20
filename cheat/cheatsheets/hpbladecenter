@@ -21,3 +21,9 @@ show /map1/accounts1
 
 # Delete accounts
 delete /map1/accounts1/root
+
+# Enter the Text console
+TEXTCONS
+
+# Exit Text console, Press 3 keys together\
+Esc + Shift + 9
