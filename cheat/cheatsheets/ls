@@ -1,3 +1,7 @@
+# Historically, the first Unix filesystem created two entries in every directory: . pointing to the directory itself, and .. pointing to its parent. This provided an easy way to traverse the filesystem, both for applications and for the OS itself. each directory has a link count of 2+n where n is the number of subdirectories. The links are the entry for that directory in its parent, the directory's own . entry, and the .. entry in each subdirectory.
+
+ls -la
+
 # Displays everything in the target directory
 ls path/to/the/target/directory
 
@@ -9,3 +13,4 @@ ls -lh
 
 # Display files, sorted by size
 ls -S
+
