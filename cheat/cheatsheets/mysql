@@ -12,3 +12,6 @@ CREATE DATABASE owa CHARACTER SET utf8 COLLATE utf8_general_ci;
 
 # To add a user and give rights on the given database
 GRANT ALL PRIVILEGES ON database.* TO 'user'@'localhost'IDENTIFIED BY 'password' WITH GRANT OPTION;
+
+# Running the following command to repair the sample table:
+myisamchk -rf --tmpdir=/var/tmp sample.MYI
