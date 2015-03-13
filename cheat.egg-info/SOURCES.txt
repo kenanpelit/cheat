@@ -49,6 +49,7 @@ cheat/cheatsheets/gs
 cheat/cheatsheets/head
 cheat/cheatsheets/history
 cheat/cheatsheets/hpbladecenter
+cheat/cheatsheets/hpux
 cheat/cheatsheets/hub
 cheat/cheatsheets/ifconfig
 cheat/cheatsheets/indent
