@@ -3,3 +3,6 @@ ab -n 100 -c 50 http://www.example.com/
 
 # send requests during 30 seconds with a concurency of 50 requests to an URL
 ab -t 30 -c 50 URL http://www.example.com/
+
+# Test http requests for a site
+ab -n 100000 -g /tmp/test.txt -c 1000 http://14.13.18.10:8080/d3account/sadjflsjdflsj@sdfjsldfj.com
