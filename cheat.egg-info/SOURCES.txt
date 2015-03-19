@@ -22,6 +22,7 @@ cheat/cheatsheets/asterisk
 cheat/cheatsheets/at
 cheat/cheatsheets/awk
 cheat/cheatsheets/bash
+cheat/cheatsheets/bower
 cheat/cheatsheets/chmod
 cheat/cheatsheets/chown
 cheat/cheatsheets/convert
@@ -35,7 +36,9 @@ cheat/cheatsheets/dhclient
 cheat/cheatsheets/dhcpd
 cheat/cheatsheets/diff
 cheat/cheatsheets/distcc
+cheat/cheatsheets/dnf
 cheat/cheatsheets/docker
+cheat/cheatsheets/dpkg
 cheat/cheatsheets/du
 cheat/cheatsheets/emacs
 cheat/cheatsheets/find
@@ -46,6 +49,7 @@ cheat/cheatsheets/git
 cheat/cheatsheets/gpg
 cheat/cheatsheets/grep
 cheat/cheatsheets/gs
+cheat/cheatsheets/gzip
 cheat/cheatsheets/head
 cheat/cheatsheets/history
 cheat/cheatsheets/hpbladecenter
@@ -78,6 +82,7 @@ cheat/cheatsheets/nmap
 cheat/cheatsheets/notify-send
 cheat/cheatsheets/od
 cheat/cheatsheets/openssl
+cheat/cheatsheets/p4
 cheat/cheatsheets/pacman
 cheat/cheatsheets/pdftk
 cheat/cheatsheets/perl
@@ -121,7 +126,9 @@ cheat/cheatsheets/tmpfs
 cheat/cheatsheets/tmux
 cheat/cheatsheets/top
 cheat/cheatsheets/truncate
+cheat/cheatsheets/udisksctl
 cheat/cheatsheets/uname
+cheat/cheatsheets/uniq
 cheat/cheatsheets/vi
 cheat/cheatsheets/vim
 cheat/cheatsheets/wget
@@ -129,4 +136,5 @@ cheat/cheatsheets/xargs
 cheat/cheatsheets/yaourt
 cheat/cheatsheets/youtube-dl
 cheat/cheatsheets/yum
+cheat/cheatsheets/zoneadm
 cheat/test/__init__.py
