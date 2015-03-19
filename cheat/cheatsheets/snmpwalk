@@ -8,3 +8,6 @@ snmpwalk -Os -c public -v 1 -CE sysORTable zeus system
 snmpwalk -Os -c COMMUNITY_STRING -v 2c 10.18.0.1 1.3.6.1.4.1.9.2.1.58 
 ---OUTPUT as below---
    enterprises.9.2.1.58.0 = INTEGER: 5
+
+# work with SnmpV3
+snmpwalk -a SHA -A 'password' -l authNoPriv -u root -v3 -O n hostname oid
