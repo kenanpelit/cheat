@@ -1,0 +1,2 @@
+# Display the mapping of logical extents to physical volumes and physical extents
+lvdisplay -m nfs/data
