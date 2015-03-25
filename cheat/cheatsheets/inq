@@ -1,0 +1,4 @@
+# To show storage presented from VMAX
+/var/tmp/inq.LinuxAMD64 -sym_wwn -no_dots
+or
+/var/tmp/inq -sym_wwn -no_dots
