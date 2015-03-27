@@ -57,6 +57,7 @@ cheat/cheatsheets/hpux
 cheat/cheatsheets/hub
 cheat/cheatsheets/ifconfig
 cheat/cheatsheets/indent
+cheat/cheatsheets/inq
 cheat/cheatsheets/ip
 cheat/cheatsheets/iptables
 cheat/cheatsheets/irssi
@@ -68,6 +69,7 @@ cheat/cheatsheets/less
 cheat/cheatsheets/ln
 cheat/cheatsheets/ls
 cheat/cheatsheets/lsof
+cheat/cheatsheets/lvdisplay
 cheat/cheatsheets/lvm
 cheat/cheatsheets/markdown
 cheat/cheatsheets/mkdir
@@ -79,6 +81,7 @@ cheat/cheatsheets/nc
 cheat/cheatsheets/ncat
 cheat/cheatsheets/netstat
 cheat/cheatsheets/nmap
+cheat/cheatsheets/nohup
 cheat/cheatsheets/notify-send
 cheat/cheatsheets/od
 cheat/cheatsheets/openssl
@@ -106,6 +109,8 @@ cheat/cheatsheets/sed
 cheat/cheatsheets/selinux
 cheat/cheatsheets/shred
 cheat/cheatsheets/smbclient
+cheat/cheatsheets/snmpget
+cheat/cheatsheets/snmpset
 cheat/cheatsheets/snmpwalk
 cheat/cheatsheets/sockstat
 cheat/cheatsheets/sort
