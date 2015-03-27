@@ -21,4 +21,5 @@ set -o nounset                              # Treat unset variables as an error
 
 git checkout master
 git pull git@github.com:chrisallenlane/cheat.git
+git commit -m 'merging upstream'
 git push origin master
