@@ -1,0 +1,2 @@
+# Run process in background as daemon, means will not terminate even if you exit the terminal
+nohup sh /tmp/test.sh > /tmp/logfile 2>&1 <&- &
