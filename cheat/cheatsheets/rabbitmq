@@ -1,0 +1,2 @@
+# You can check that federation links for each exchange have come up
+rabbitmqctl eval 'rabbit_federation_status:status().'
