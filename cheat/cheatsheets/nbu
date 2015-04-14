@@ -1,0 +1,32 @@
+# This command is used to configure or display global configuration attributes for NetBackup. There are lots of option which can be used to list or change configuration attributes.
+/usr/openv/netbackup/bin/admincmd/bpconfig -U
+
+# This command is used to test connections to clients. This command is helpful because, unlike ping or nslookup, it tests for connection to a NetBackup Client using client connection options at the NetBackup communication level. The bptestbpcd command tries to establish a connection from a NetBackup server to the bpcd daemon on another NetBackup system. If successful, it reports information about the sockets that are established.
+/usr/openv/netbackup/bin/admincmd/bptestbpcd -host test1 -connect_options 0 0 2
+
+# This commands work on Unix/Linux and windows operating system and is very helpful commands as it list all processes statistics for the processes that run on your system.
+#-x Includes Media Manager processes and the extra shared processes such as pbx_exchange in the listing.
+/usr/openv/netbackup/bin/bpps -x 
+#-a Includes the Media Manager processes in the listing.
+/usr/openv/netbackup/bin/bpps -a 
+
+# This is very useful command if you want to display the information on the files and directories that were backed up or archived on netbackup server.
+/usr/openv/netbackup/bin/bplist -l -R /home/user
+
+# This is very useful command when it comes to troubleshooting and is most used by system administrator's to display NetBackup status and troubleshooting information or entries from NetBackup error catalog.
+/usr/openv/netbackup/bin/admincmd/bperror -U -problems
+
+# This is another useful Netbackup command which is used to restore a backed up or archived file or list of files from NetBackup Server. You can also use this command if you want to restore files depending upon the time period. Example: To restore the files that are listed in a file named backup_list by using the most recent backups below command is used.
+/usr/openv/netbackup/bin/bprestore -f backup_list
+
+# This Netbackup command is used to run tape configuration utility and configures robots,
+# drives, drive arrays, drive paths, and hosts for use with NetBackup and comes with large
+# number of option or switches.
+# Example: Below command is used to add the robot.
+/usr/openv/netbackup/bin/tpconfig -add -robot 9 -robtype tld -cntlhost perch
+
+#This is one of my favorite netbackup command and is to perform operator functions on
+#drives and we can use this command in many ways, like it used to check currently active
+#tapes in the netbackup server, use to set the drive up etc.
+#Example: Below command is used to displays the drive status of all drives.
+vmoprcmd -d ds
