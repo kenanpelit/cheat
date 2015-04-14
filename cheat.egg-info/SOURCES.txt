@@ -77,6 +77,7 @@ cheat/cheatsheets/mount
 cheat/cheatsheets/mysql
 cheat/cheatsheets/mysqldump
 cheat/cheatsheets/naviseccli
+cheat/cheatsheets/nbu
 cheat/cheatsheets/nc
 cheat/cheatsheets/ncat
 cheat/cheatsheets/netstat
@@ -93,7 +94,9 @@ cheat/cheatsheets/php
 cheat/cheatsheets/ping6
 cheat/cheatsheets/proc
 cheat/cheatsheets/ps
+cheat/cheatsheets/puppet
 cheat/cheatsheets/python
+cheat/cheatsheets/rabbitmq
 cheat/cheatsheets/readline
 cheat/cheatsheets/redis
 cheat/cheatsheets/rhcs
