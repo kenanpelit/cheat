@@ -40,7 +40,7 @@ vmoprcmd -d ds
 # Inject (load) Multiple Tapes
 /opt/netbackup1/openv/volmgr/bin/vmchange -res -multi_inject -w -verbose  -rn 0 -rt TLD -rh <HOST> -single_cycle
 # NOTE: Be sure to run vmupdate afterwards ***
-usr/openv/volmgr/binvmupdate -rt TLD -rn 0 -rh $MEDIA_HOST
+/usr/openv/volmgr/bin/vmupdate -rt TLD -rn 0 -rh $MEDIA_HOST
 
 # User Accounts, Authorized user are defined in /opt/openv/java/auth.conf.
 bash-3.00# more /usr/openv/java/auth.conf
