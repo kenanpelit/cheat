@@ -29,18 +29,18 @@
 #drives and we can use this command in many ways, like it used to check currently active
 #tapes in the netbackup server, use to set the drive up etc.
 #Example: Below command is used to displays the drive status of all drives.
-vmoprcmd -d ds
+/new_netbackup/openv/volmgr/bin/vmoprcmd -d ds
 
 # Show Job Activity
 /usr/openv/netbackup/bin/admincmd/bpdbjobs -report
 
 # Show Jukebox Info
-/opt/netbackup1/openv/volmgr/bin/vmchange -res -robot_info -verbose -rn 0 -rt TLD -rh nbu_master_server
+/new_netbackup/openv/volmgr/bin/vmchange -res -robot_info -verbose -rn 0 -rt TLD -rh nbu_master_server
 
 # Inject (load) Multiple Tapes
-/opt/netbackup1/openv/volmgr/bin/vmchange -res -multi_inject -w -verbose  -rn 0 -rt TLD -rh <HOST> -single_cycle
+/new_netbackup/openv/volmgr/bin/vmchange -res -multi_inject -w -verbose  -rn 0 -rt TLD -rh <HOST> -single_cycle
 # NOTE: Be sure to run vmupdate afterwards ***
-/usr/openv/volmgr/bin/vmupdate -rt TLD -rn 0 -rh $MEDIA_HOST
+/new_netbackup/openv/volmgr/bin/vmupdate -rt TLD -rn 0 -rh $MEDIA_HOST
 
 # User Accounts, Authorized user are defined in /opt/openv/java/auth.conf.
 bash-3.00# more /usr/openv/java/auth.conf
