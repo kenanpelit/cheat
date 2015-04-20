@@ -88,6 +88,7 @@ cheat/cheatsheets/od
 cheat/cheatsheets/openssl
 cheat/cheatsheets/p4
 cheat/cheatsheets/pacman
+cheat/cheatsheets/paste
 cheat/cheatsheets/pdftk
 cheat/cheatsheets/perl
 cheat/cheatsheets/php
