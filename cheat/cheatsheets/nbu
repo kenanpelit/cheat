@@ -42,6 +42,9 @@
 # NOTE: Be sure to run vmupdate afterwards ***
 /new_netbackup/openv/volmgr/bin/vmupdate -rt TLD -rn 0 -rh $MEDIA_HOST
 
+# Inventory robot and update the configuation
+/usr/openv/volmgr/bin/vmupdate -rt TLD -rn 0 -empty_map
+
 # User Accounts, Authorized user are defined in /opt/openv/java/auth.conf.
 bash-3.00# more /usr/openv/java/auth.conf
 root ADMIN=ALL JBP=ALL
