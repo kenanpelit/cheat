@@ -46,3 +46,10 @@
 bash-3.00# more /usr/openv/java/auth.conf
 root ADMIN=ALL JBP=ALL
 * ADMIN=JBP JBP=ENDUSER+BU+ARC
+
+# How to check the tapes in MAP, for more command reference at: http://www.datadisk.co.uk/html_docs/veritas/veritas_netbackup_cs.htm#tape
+1> use below command to find the robot
+/new_netbackup/openv/volmgr/bin/robtest
+2> use the following command to find the tapes in MAP
+echo "s i q" | /new_netbackup/openv/volmgr/bin/tldtest -r /dev/sg16
+
