@@ -1,0 +1,8 @@
+# Find the UUIDs with blkid
+blkid
+
+# Find the UUIDs by using the udevadm command
+udevadm info -q all -n /dev/sda2 | grep -i uuid | egrep "^S:"
+
+# Find the UUIDs by listing /dev/disk/by-uuid
+ls -l /dev/disk/by-uuid/
