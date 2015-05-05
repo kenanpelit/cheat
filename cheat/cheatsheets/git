@@ -48,6 +48,9 @@ git config --global core.pager 'less -r'
 # To retreive a historical version of file ****************
 git checkout [commit_id] -- <path_to_file>
 
+# Manageing submodules
+https://chrisjean.com/git-submodules-adding-using-removing-and-updating/
+
 # To sync a fork with the master repo:
 git remote add upstream git@github.com:name/repo.git    # Set a new repo
 git remote -v                                           # Confirm new remote repo
