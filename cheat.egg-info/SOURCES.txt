@@ -138,6 +138,7 @@ cheat/cheatsheets/truncate
 cheat/cheatsheets/udisksctl
 cheat/cheatsheets/uname
 cheat/cheatsheets/uniq
+cheat/cheatsheets/uuid
 cheat/cheatsheets/vi
 cheat/cheatsheets/vim
 cheat/cheatsheets/wget
