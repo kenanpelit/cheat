@@ -134,3 +134,9 @@ semanage login -m -S targeted -s "user_u" -r s0 __default__
 
 # To change back to the default behavior, run the following command as root to map the __default__ login to the SELinux unconfined_u user 
 semanage login -m -S targeted -s "unconfined_u" -r s0-s0:c0.c1023 __default__
+
+
+# Example 01: mysqld
+semanage port -a -t mysqld_port_t -p tcp 3306
+semanage fcontext -a -t mysqld_db_t "/datadir(/.*)?"
+restorecon -Rv /datadir
