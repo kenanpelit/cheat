@@ -3,3 +3,13 @@ rg_test test /etc/cluster/cluster.conf start service servicename
 
 # Stop services started by above command
 rg_test test /etc/cluster/cluster.conf stop service servicename
+
+# CentOS 6 RHCS uses Corosync as its communication engine. Corosync uses multicast packets
+#to communicate. Test multicast connectivity between cluster members
+Node 1 (iperf Server)
+yum install iperf
+iperf -s -u -B 224.1.1.1 -i 1
+
+Node 2 (iperf Client)
+yum install iperf
+iperf -c 224.1.1.1 -u -T 32 -t 3 -i 1
