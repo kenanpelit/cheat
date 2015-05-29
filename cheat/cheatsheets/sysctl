@@ -1,0 +1,2 @@
+# Set a kernel parameter 
+sysctl -w kernel.pid_max=4194303
