@@ -126,6 +126,7 @@ cheat/cheatsheets/ssh-copy-id
 cheat/cheatsheets/ssh-keygen
 cheat/cheatsheets/stdout
 cheat/cheatsheets/strace
+cheat/cheatsheets/sysctl
 cheat/cheatsheets/systemctl
 cheat/cheatsheets/tail
 cheat/cheatsheets/tar
