@@ -7,6 +7,9 @@
 # Use Back reference in substitution
 :s/^root\(.*\)/ROOT\1/
 
+#
+:g/^root/norm oput whatever you want here
+
 # Delete DOS returns ^M
 :%s/\r//g 
 
