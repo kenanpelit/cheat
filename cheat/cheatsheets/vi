@@ -7,7 +7,7 @@
 # Use Back reference in substitution
 :s/^root\(.*\)/ROOT\1/
 
-#
+# enter vi, help norm for manual
 :g/^root/norm oput whatever you want here
 
 # Delete DOS returns ^M
