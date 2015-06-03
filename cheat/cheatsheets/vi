@@ -1,3 +1,6 @@
+# Best of Vim Tips
+http://www.rayninfo.co.uk/vimtips.html
+
 # Append a line after a line
 :s/Oneline /Oneline\r Anotherline/
 
