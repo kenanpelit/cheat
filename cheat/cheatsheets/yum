@@ -28,4 +28,7 @@ yum list <package_name_or_word_to_search>
 # To download the source RPM for a package:
 yumdownloader --source <package name>
 
+# Show duplicates
+yum list --showduplicates BattleJournal
+
 # (You have to install yumdownloader first, which is installed by the yum-utils package)
