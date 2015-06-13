@@ -1,2 +1,12 @@
 # Show all facter facts, and those defined for use in puppet (run as root)
 facter -p
+
+# Using the hiera command for lookups
+hiera puppetmaster
+
+# Using the hiera command with debugging enabled
+hiera -d puppetmaster
+
+# Using Puppet to Perform a Hiera Lookup
+puppet apply -e '$foo = hiera("firewall:returnules") notify { $foo: }'
+
