@@ -8,7 +8,7 @@ hiera puppetmaster
 hiera -d puppetmaster
 
 # Using Puppet to Perform a Hiera Lookup
-puppet apply -e '$foo = hiera("firewall:returnules") notify { $foo: }'
+puppet apply -e '$foo = hiera("firewall::rules") notify { $foo: }'
 
 # Hiera Lookups Using Variables
 hiera -d servername environment=prod
