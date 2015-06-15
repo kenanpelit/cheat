@@ -114,6 +114,9 @@ seinfo -aunconfined_domain_type -x | wc -l
 # Permissive domains can be counted with the --permissive option
 seinfo --permissive -x | wc -l
 
+# Port contexts can be queried with seinfo
+seinfo --portcon=80
+
 # You can use the sesearch utility to search for a particular rule in the policy. It is possible to search either policy source files or the binary file
 sesearch --role_allow -t httpd_sys_content_t /etc/selinux/targeted/policy/policy.24
 
