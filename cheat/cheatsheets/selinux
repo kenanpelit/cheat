@@ -145,3 +145,32 @@ restorecon -Rv /datadir
 semanage port -l|grep http 
 semanage port -a -t http_port_t -p tcp 888
 /etc/init.d/httpd restart
+
+# change SELinux policy port for ssh, This is also apply for any policy port, like httpd and so
+----------------------------------------------------
+# semanage port -l | grep ssh
+ssh_port_t                     tcp      22
+# semanage port -a -t ssh_port_t -p tcp 12345
+# semanage port -l | grep ssh
+ssh_port_t                     tcp      12345,22
+#semanage port -d -t ssh_port_t -p tcp 12345
+#semanage port -l | grep ssh
+ssh_port_t                     tcp      22
+
+# Example - Add port 443 to sshd service :
+#semanage  port -l | grep http_port_t
+http_port_t                    tcp      80, 443, 488, 8008, 8009, 8443
+#semanage port -d  -t http_port_t -p tcp 443
+/usr/sbin/semanage: Port tcp/443 is defined in policy, cannot be deleted
+#semanage port -m -t ssh_port_t -p tcp 443
+#semanage port -l | grep 443
+http_port_t                    tcp      80, 443, 488, 8008, 8009, 8443
+ssh_port_t                     tcp      443, 22
+#vi /etc/ssh/sshd_config
+Port 443
+#/etc/init.d/sshd restart 
+#/etc/init.d/sshd status 
+#vi /etc/sysconfig/iptables
+-A INPUT -m state --state NEW -m tcp -p tcp --dport 443 -j ACCEPT
+#/etc/init.d/iptables restart 
+#ssh root@myhost -p 443 
