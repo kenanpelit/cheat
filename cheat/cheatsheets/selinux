@@ -102,6 +102,9 @@ avcstat
 # This utility is useful in describing the break-down of a policy, such as the number of classes, types, Booleans, allow rules, and others 
 seinfo
 
+# With the seinfo tool, you can list what domains are allowed for a particular role
+seinfo -ruser_r -x
+
 # The seinfo utility can also list the number of types with the domain attribute, giving an estimate of the number of different confined processes
 seinfo -adomain -x | wc -l
 
@@ -122,6 +125,12 @@ sesearch --dontaudit | wc -l
 
 # As root, create a new Linux user (useruuser) that is mapped to the SELinux user_u user
 useradd -Z user_u useruuser
+
+# Users can switch roles if they want. However, they can only do so if their SELinux user is allowed to "be" in the other role. With semanage user -l you can see if that is the case.
+semanage user -l
+
+# Switching roles is done using newrole -r <targetrole>. It is most commonly used to switch from the staff_r role to the sysadm_r role:
+newrole -r sysadm_r
 
 # To map the Linux newuser user to the SELinux user_u user, run the following command as root
 semanage login -a -s user_u newuser
