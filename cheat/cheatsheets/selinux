@@ -142,6 +142,6 @@ semanage fcontext -a -t mysqld_db_t "/datadir(/.*)?"
 restorecon -Rv /datadir
 
 # Example add port for httpd
-semanage port -l|grep http #查看SELinux下http相关端口
-semanage port -a -t http_port_t -p tcp 888 #增加这个非标准端口即可
-[root@localhost ~]# /etc/init.d/httpd restart 或者 service httpd start
+semanage port -l|grep http 
+semanage port -a -t http_port_t -p tcp 888
+/etc/init.d/httpd restart
