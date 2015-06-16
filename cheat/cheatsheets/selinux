@@ -169,7 +169,7 @@ ssh_port_t                     tcp      12345,22
 #semanage port -l | grep ssh
 ssh_port_t                     tcp      22
 
-# Example - Add port 443 to sshd service :
+# Example - Add port 443 to sshd service, even if the port is already used/defined in SE policy:
 #semanage  port -l | grep http_port_t
 http_port_t                    tcp      80, 443, 488, 8008, 8009, 8443
 #semanage port -d  -t http_port_t -p tcp 443
