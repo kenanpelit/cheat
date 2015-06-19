@@ -63,6 +63,8 @@ cheat/cheatsheets/iptables
 cheat/cheatsheets/irssi
 cheat/cheatsheets/iwconfig
 cheat/cheatsheets/journalctl
+cheat/cheatsheets/jq
+cheat/cheatsheets/jrnl
 cheat/cheatsheets/ldapsearch
 cheat/cheatsheets/ldapvi
 cheat/cheatsheets/less
@@ -73,6 +75,7 @@ cheat/cheatsheets/lvdisplay
 cheat/cheatsheets/lvm
 cheat/cheatsheets/markdown
 cheat/cheatsheets/mkdir
+cheat/cheatsheets/more
 cheat/cheatsheets/mount
 cheat/cheatsheets/mysql
 cheat/cheatsheets/mysqldump
@@ -84,6 +87,7 @@ cheat/cheatsheets/netstat
 cheat/cheatsheets/nmap
 cheat/cheatsheets/nohup
 cheat/cheatsheets/notify-send
+cheat/cheatsheets/nova
 cheat/cheatsheets/od
 cheat/cheatsheets/openssl
 cheat/cheatsheets/p4
@@ -93,6 +97,7 @@ cheat/cheatsheets/pdftk
 cheat/cheatsheets/perl
 cheat/cheatsheets/php
 cheat/cheatsheets/ping6
+cheat/cheatsheets/pip
 cheat/cheatsheets/proc
 cheat/cheatsheets/ps
 cheat/cheatsheets/puppet
@@ -139,13 +144,16 @@ cheat/cheatsheets/truncate
 cheat/cheatsheets/udisksctl
 cheat/cheatsheets/uname
 cheat/cheatsheets/uniq
+cheat/cheatsheets/unzip
 cheat/cheatsheets/uuid
 cheat/cheatsheets/vi
 cheat/cheatsheets/vim
+cheat/cheatsheets/weechat
 cheat/cheatsheets/wget
 cheat/cheatsheets/xargs
 cheat/cheatsheets/yaourt
 cheat/cheatsheets/youtube-dl
 cheat/cheatsheets/yum
+cheat/cheatsheets/zip
 cheat/cheatsheets/zoneadm
 cheat/test/__init__.py
