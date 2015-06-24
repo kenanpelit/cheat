@@ -3,3 +3,6 @@ ls | tee outfile.txt
 
 # To tee stdout and append to a file:
 ls | tee -a outfile.txt
+
+# To tee stdout and append to multiple file:
+echo "export OS_IMAGE_API_VERSION=2" | tee -a admin-openrc.sh demo-openrc.sh
