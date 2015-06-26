@@ -18,8 +18,9 @@ git add --all
 # To commit staged changes
 git commit -m "Your commit message"
 
-# To edit previous commit message
+# To edit previous commit message, ament the last comment
 git commit --amend
+git commit --amend -m "Fixes bug #42"
 
 # To removed staged and working directory changes
 git reset --hard
@@ -70,3 +71,19 @@ git log --pretty=email --patch-with-stat --reverse --full-index -- Admin\*.py > 
 
 # Import commits from another repo
 git --git-dir=../some_other_repo/.git format-patch -k -1 --stdout <commit SHA> | git am -3 -k
+
+# You have pushed, but you want to revert everything in last commit:
+git revert <The Last SHA>
+
+# Committed once or few times, but not pushed yet, you want to revert all those commits.
+git reset <last good SHA>
+|
+git reset --hard <last good SHA>
+
+# Committed few, then git reset --hard, but want theose commits back
+git reflog & git reset
+>>># revert to an explict version: git reset --hard <SHA>
+git checkout
+>>># revert some files to an explict version: git checkout <SHA> -- <filename>
+>>># you want to re-commit those "Commits" to repo: git cherry-pick <SHA>
+
