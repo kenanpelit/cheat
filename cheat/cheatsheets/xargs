@@ -10,3 +10,7 @@ find -name *.pdf | xargs -I{} rm -rf '{}'
 # -n1 => One file by one file. ( -n2 => 2 files by 2 files )
 
 find -name *.pdf | xargs -I{} -n1 echo '&{}='
+
+# Use at most max-lines nonblank input lines per command line
+# Below command will feed a and b to echo
+echo -e 'a\nb\nc'|xargs -L2 echo
