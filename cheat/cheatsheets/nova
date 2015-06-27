@@ -18,3 +18,12 @@ nova start <server>
 
 # To attach a network interface to a specific VM:
 nova interface-attach --net-id <net_id> <server>
+
+# Start a VM in tenant
+OS_TENANT_NAME=<VM TENANT> nova start <VM NAME>
+
+# Shut down a VM:
+OS_TENANT_NAME=<VM TENANT> nova stop <VM NAME>
+
+# Restart a VM:
+OS_TENANT_NAME=<VM TENANT> nova reboot <VM NAME>
