@@ -3,5 +3,6 @@ ldapvi -h ldapserver -D "user=jzhu,ou=users,dc=sample,dc=net" -b "ou=something,d
 
 # If the ldap server require TLS/SSL, you have to add -ZZ option
 ldapvi -h ldapserver -D "user=jzhu,ou=users,dc=sample,dc=net" -b "ou=something,dc=sample,dc=net" -x "(location=abc-http.*)" -ZZ
+
 # Search for the entire directory
 ldapvi -ZZ -s sub  -h ldapmaster.sample.net -D "user=jzhu,user=users,dc=sample,dc=net" -b "dc=sample,dc=net" "(attribute=value)"
