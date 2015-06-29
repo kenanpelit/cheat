@@ -90,6 +90,7 @@ cheat/cheatsheets/notify-send
 cheat/cheatsheets/nova
 cheat/cheatsheets/od
 cheat/cheatsheets/openssl
+cheat/cheatsheets/openstack
 cheat/cheatsheets/p4
 cheat/cheatsheets/pacman
 cheat/cheatsheets/paste
