@@ -1,2 +1,16 @@
 # List all domains
 designate domain-list
+
+# List the Servers Hosting a Domain
+designate domain-servers-list e27a134c-56dd-4ecb-b12f-61f2fd5c3ce4
+
+# Create a domain
+designate domain-create --name designate-example.com. --email designate@example.org
+
+# Create a record
+designate record-create ae59d62b-d655-49a0-ab4b-ea536d845a32 --name www.designate-example.com. --type A --data 192.0.2.1
+
+# List and Show Records
+designate record-list ae59d62b-d655-49a0-ab4b-ea536d845a32
+# Then get details for a record
+designate record-get ae59d62b-d655-49a0-ab4b-ea536d845a32 10b31f72-2358-466c-90d2-79aa015fbea4
