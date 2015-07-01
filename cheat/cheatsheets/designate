@@ -1,3 +1,5 @@
+# First of all, you need to source the file openstackrc to import environments variables
+#
 # List all domains
 designate domain-list
 
