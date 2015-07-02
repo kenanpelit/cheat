@@ -56,3 +56,5 @@ root ADMIN=ALL JBP=ALL
 2> use the following command to find the tapes in MAP
 echo "s i q" | /new_netbackup/openv/volmgr/bin/tldtest -r /dev/sg16
 
+# Issue: Image: XXXX_1435795973 Rejected - No fragment in Robot
+https://support.symantec.com/en_US/article.TECH35510.html
