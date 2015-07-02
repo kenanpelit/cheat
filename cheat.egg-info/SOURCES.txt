@@ -31,6 +31,7 @@ cheat/cheatsheets/curl
 cheat/cheatsheets/cut
 cheat/cheatsheets/date
 cheat/cheatsheets/dd
+cheat/cheatsheets/designate
 cheat/cheatsheets/df
 cheat/cheatsheets/dhclient
 cheat/cheatsheets/dhcpd
@@ -84,6 +85,7 @@ cheat/cheatsheets/nbu
 cheat/cheatsheets/nc
 cheat/cheatsheets/ncat
 cheat/cheatsheets/netstat
+cheat/cheatsheets/neutron
 cheat/cheatsheets/nmap
 cheat/cheatsheets/nohup
 cheat/cheatsheets/notify-send
