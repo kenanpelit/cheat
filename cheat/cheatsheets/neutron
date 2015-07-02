@@ -1,0 +1,5 @@
+# List subnets
+neutron subnet-list
+
+# Show details of subnet
+neutron subnet-show 3c5b7e4a-49f5-4a5e-86e9-f114be04a152
