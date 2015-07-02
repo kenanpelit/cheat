@@ -18,6 +18,9 @@ redis 127.0.0.1:6379> CONFIG GET maxmemory
 # Login the specific redis instance
 redis-cli -h localhost -p 6379
 
+# Login with AUTH to execute command
+redis localhost:6379> AUTH C8469C32386C58C03927467504A5313
+
 # The INFO KEYSPACE command can be used to check whether some keys are defined in several databases.
 redis 127.0.0.1:6379[1]> info keyspace
 # Keyspace
