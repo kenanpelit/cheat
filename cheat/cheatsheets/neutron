@@ -6,3 +6,6 @@ neutron subnet-show 3c5b7e4a-49f5-4a5e-86e9-f114be04a152
 
 # List networks that belong to a given tenant
 neutron net-list
+
+# List agents
+neutron agent-list
