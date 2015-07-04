@@ -1,2 +1,11 @@
+# Show Help
+keystone -h
+
 # List tenant
 keystone tenant-list
+
+# List all tenants
+keystone tenant-list
+
+# List users.
+keystone user-list
