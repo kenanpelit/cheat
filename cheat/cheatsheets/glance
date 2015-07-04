@@ -1,0 +1,5 @@
+# List images you can access
+glance image-list
+
+# Describe a specific image
+glance image-show 8cf9ad88-643c-4eff-88b9-355889069519
