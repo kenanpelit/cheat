@@ -1,0 +1,20 @@
+# Print help
+ovs-vsctl -h|less
+
+
+# Print the names of all the bridges
+ovs-vsctl list-br
+    br-eth1
+    br-int
+
+# Print the names of all the ports on BRIDGE
+ovs-vsctl list-ports br-eth1
+    eth1
+    phy-br-eth1
+
+# print the names of all interfaces on BRIDGE
+ovs-vsctl list-ifaces br-int|head
+    int-br-eth1
+    qvo013a4deb-1d
+    qvo07f5ffa8-a1
+    qvo0913cc95-8a
