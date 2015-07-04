@@ -27,3 +27,19 @@ OS_TENANT_NAME=<VM TENANT> nova stop <VM NAME>
 
 # Restart a VM:
 OS_TENANT_NAME=<VM TENANT> nova reboot <VM NAME>
+
+# List Flavor
+nova flavor-list
+
+# List image
+nova image-list
+
+# Boot a new instance
+OS_TENANT_NAME=staging nova boot --flavor bn1.small --image centos-5.10-201401301424 instance-name
+
+# List VMs running on the specified compute node
+nova list --all-tenants --host openstack-compute20
+
+# Finding VM Instances by Compute Node
+1. source the openrc file
+2. nova host-list | grep compute | awk '{print $2}' | xargs -L1 -I% sh -c 'echo %; nova list --all-tenants --host %;'
