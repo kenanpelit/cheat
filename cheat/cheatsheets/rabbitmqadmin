@@ -1,3 +1,6 @@
+# Show overview
+rabbitmqadmin show overview
+
 # List all Virtual host
 rabbitmqadmin list vhosts
 
