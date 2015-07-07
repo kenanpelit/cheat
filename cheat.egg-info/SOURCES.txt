@@ -47,6 +47,7 @@ cheat/cheatsheets/gcc
 cheat/cheatsheets/gdb
 cheat/cheatsheets/getent
 cheat/cheatsheets/git
+cheat/cheatsheets/glance
 cheat/cheatsheets/gpg
 cheat/cheatsheets/grep
 cheat/cheatsheets/gs
@@ -66,6 +67,7 @@ cheat/cheatsheets/iwconfig
 cheat/cheatsheets/journalctl
 cheat/cheatsheets/jq
 cheat/cheatsheets/jrnl
+cheat/cheatsheets/keystone
 cheat/cheatsheets/ldapsearch
 cheat/cheatsheets/ldapvi
 cheat/cheatsheets/less
@@ -92,7 +94,7 @@ cheat/cheatsheets/notify-send
 cheat/cheatsheets/nova
 cheat/cheatsheets/od
 cheat/cheatsheets/openssl
-cheat/cheatsheets/openstack
+cheat/cheatsheets/ovs-vsctl
 cheat/cheatsheets/p4
 cheat/cheatsheets/pacman
 cheat/cheatsheets/paste
@@ -106,6 +108,7 @@ cheat/cheatsheets/ps
 cheat/cheatsheets/puppet
 cheat/cheatsheets/python
 cheat/cheatsheets/rabbitmq
+cheat/cheatsheets/rabbitmqadmin
 cheat/cheatsheets/readline
 cheat/cheatsheets/redis
 cheat/cheatsheets/rhcs
