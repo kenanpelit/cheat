@@ -21,3 +21,10 @@ mysqldump --no-data -uusername -p the-database > dump_file
 
 # To export the database data only:
 mysqldump --no-create-info -uusername -p the-database > dump_file
+
+# backup mysql procedures
+mysqldump --routines --no-create-info --no-data guardian > guardian.sql
+
+# restore mysql procedures
+mysql> use guardian;
+mysql> source guardian.sql
