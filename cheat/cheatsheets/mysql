@@ -15,3 +15,8 @@ GRANT ALL PRIVILEGES ON database.* TO 'user'@'localhost'IDENTIFIED BY 'password'
 
 # Running the following command to repair the sample table:
 myisamchk -rf --tmpdir=/var/tmp sample.MYI
+
+# Let linux root account login mysql without password
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost' IDENTIFIED BY PASSWORD '*B8EB11AE7A549C42F7D7AA48F571871667D45185' WITH GRANT OPTION
+GRANT PROXY ON ''@'' TO 'root'@'localhost' WITH GRANT OPTION
+FLUSH PRIVILEGES
