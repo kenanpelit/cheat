@@ -1,0 +1,11 @@
+# How To Connect
+telnet 10.0.0.2 11211
+
+# Traffic Statistics
+stats
+
+# Memory Statistics
+stats slabs
+
+# Which Keys Are Used?
+stats items
