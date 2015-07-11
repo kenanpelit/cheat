@@ -115,3 +115,7 @@ git diff --no-index path/to/file/A path/to/file/B
 # To pull changes while overwriting any local commits
 git fetch --all
 git reset --hard origin/master
+
+# How to view conflicts? find the conflicts and fix it
+Between conflict marker "<<<<<<< HEAD" and "=======" is changed by Me
+Between conflict marker "=======" and ">>>>>>> 74dfd51601bd368e03b9651641e0cfe173c6d232" is changed by others
