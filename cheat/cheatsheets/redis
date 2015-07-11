@@ -37,7 +37,8 @@ OK
 redis 127.0.0.1:6379[1]> keys *
 1) "bar"
 
-
-
-
-
+# Disable redis persistence you can disable saving at all commenting all the "sava" lines,
+# for exampe, comment out the following lines
+#save 900 1
+#save 300 10
+#sava 60 10000
