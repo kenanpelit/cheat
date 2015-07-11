@@ -83,7 +83,6 @@ git log --pretty=email --patch-with-stat --reverse --full-index -- Admin\*.py > 
 # Import commits from another repo
 git --git-dir=../some_other_repo/.git format-patch -k -1 --stdout <commit SHA> | git am -3 -k
 
-<<<<<<< HEAD
 # You have pushed, but you want to revert everything in last commit:
 git revert <The Last SHA>
 
@@ -99,7 +98,6 @@ git checkout
 >>># revert some files to an explict version: git checkout <SHA> -- <filename>
 >>># you want to re-commit those "Commits" to repo: git cherry-pick <SHA>
 
-=======
 # View commits that will be pushed
 git log @{u}..
 
@@ -117,4 +115,3 @@ git diff --no-index path/to/file/A path/to/file/B
 # To pull changes while overwriting any local commits
 git fetch --all
 git reset --hard origin/master
->>>>>>> 74dfd51601bd368e03b9651641e0cfe173c6d232
