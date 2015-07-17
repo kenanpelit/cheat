@@ -1,0 +1,2 @@
+# Using below command to re-run the mail queue and force sendmail to reconnect to the hosts
+sendmail -OTimeout.hoststatus=0m -q -v
