@@ -123,6 +123,7 @@ cheat/cheatsheets/scp
 cheat/cheatsheets/screen
 cheat/cheatsheets/sed
 cheat/cheatsheets/selinux
+cheat/cheatsheets/sendmail
 cheat/cheatsheets/shred
 cheat/cheatsheets/smbclient
 cheat/cheatsheets/snmpget
