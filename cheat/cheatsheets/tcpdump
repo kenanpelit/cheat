@@ -2,6 +2,27 @@
 # and other packets being transmitted or received over a network. (cf Wikipedia).
 # Note: 173.194.40.120 => google.com
 
+# Dumps all packets to or from that MAC address
+tcpdump "ether host 11:22:33:44:55:66"
+
+# Dumps all packets to or from a network, specified using CIDR notation
+tcpdump "net 192.168.12.4/30"
+
+# Dumps all packets to or from a network, specified using a mask
+tcpdump "net 192.168.12.4 mask 255.255.255.252"
+
+# Dumps all packets with source port 22/tcp
+tcpdump tcp src port 53
+
+# Show only IP traffic to or from thisIP
+tcpdump host {thisIP}
+
+# Show only IP traffic between thisIP and thatIP
+tcpdump host {thisIP} && host {thatIP}
+
+# Ignore traffic from myIP (necessary if you're running TCPDUMP on a remote machine to stop it from capturing the terminal session with your machine)
+tcpdump !(host {myIP}) && {remainder of expression}
+
 # Intercepts all packets on eth0
 tcpdump -i eth0
 
