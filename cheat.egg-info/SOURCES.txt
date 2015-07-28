@@ -25,6 +25,7 @@ cheat/cheatsheets/bash
 cheat/cheatsheets/bower
 cheat/cheatsheets/chmod
 cheat/cheatsheets/chown
+cheat/cheatsheets/cman_tool
 cheat/cheatsheets/convert
 cheat/cheatsheets/crontab
 cheat/cheatsheets/curl
