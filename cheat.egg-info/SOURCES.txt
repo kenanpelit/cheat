@@ -28,6 +28,7 @@ cheat/cheatsheets/chown
 cheat/cheatsheets/cman_tool
 cheat/cheatsheets/convert
 cheat/cheatsheets/crontab
+cheat/cheatsheets/csplit
 cheat/cheatsheets/curl
 cheat/cheatsheets/cut
 cheat/cheatsheets/date
@@ -77,6 +78,7 @@ cheat/cheatsheets/ls
 cheat/cheatsheets/lsof
 cheat/cheatsheets/lvdisplay
 cheat/cheatsheets/lvm
+cheat/cheatsheets/man
 cheat/cheatsheets/markdown
 cheat/cheatsheets/memcached
 cheat/cheatsheets/mkdir
@@ -94,6 +96,7 @@ cheat/cheatsheets/nmap
 cheat/cheatsheets/nohup
 cheat/cheatsheets/notify-send
 cheat/cheatsheets/nova
+cheat/cheatsheets/numfmt
 cheat/cheatsheets/od
 cheat/cheatsheets/openssl
 cheat/cheatsheets/ovs-vsctl
@@ -140,6 +143,7 @@ cheat/cheatsheets/ssh-copy-id
 cheat/cheatsheets/ssh-keygen
 cheat/cheatsheets/stdout
 cheat/cheatsheets/strace
+cheat/cheatsheets/sys
 cheat/cheatsheets/sysctl
 cheat/cheatsheets/systemctl
 cheat/cheatsheets/tail
