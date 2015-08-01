@@ -16,6 +16,9 @@ systemctl stop foo.service
 # Reload a service's configuration
 systemctl reload foo.service
 
+# activate service during bootup
+systemctl is-active httpd.service
+
 # Enable a service to startup on boot
 systemctl enable foo.service
 
@@ -32,5 +35,101 @@ systemctl list-units --type=target
 # Change current target
 systemctl isolate foo.target
 
-# Change default target
-systemctl enable foo.target
+# Analyze startup process
+systemd-analyze
+
+# Show startup time for each process
+systemd-analyze blame
+
+# Show the critical chain
+systemd-analyze critical-chain
+
+# List usable unit
+systemctl list-unit-files
+
+# List all failed unit
+systemctl --failed
+
+# Check is unit enabled
+systemctl is-enabled crond.service
+
+# Check is a service is running or not
+systemctl status firewalld.service
+
+# List all services
+systemctl list-unit-files --type=service
+
+# Mask/Unmask service, make it not startup
+systemctl mask dnsmasq.service
+systemctl unmask httpd.service
+
+# Kill services
+systemctl kill httpd
+
+# List all mounted
+systemctl list-unit-files --type=mount
+
+# mount/umount/re-mount mount points
+systemctl start tmp.mount
+systemctl stop tmp.mount
+systemctl restart tmp.mount
+systemctl reload tmp.mount
+systemctl status tmp.mount
+
+# List all usable socket
+systemctl list-unit-files --type=socket
+
+# Control sockets
+systemctl start cups.socket
+systemctl restart cups.socket
+systemctl stop cups.socket
+systemctl reload cups.socket
+systemctl status cups.socket
+
+# Enable/Disable during bootup
+systemctl is-active cups.socket
+systemctl enable cups.socket
+systemctl disable cups.socket
+
+# mask/unmask socket
+systemctl mask cups.socket
+systemctl unmask cups.socket
+
+# Change CPU shares
+systemctl set-property httpd.service CPUShares=2000
+
+# List CPU shares
+systemctl show -p CPUShares dbus.socket
+
+# Show service configurations
+systemctl show cron
+
+# Analyze service chain
+systemd-analyze critical-chain cron.service
+
+# List control group
+systemd-cgls
+
+# List cg by CPU/RAM...
+systemd-cgtop
+
+# Enter to rescue mode
+systemctl rescue
+
+# Enter emergency mode
+systemctl emergency
+
+# List run level
+systemctl get-default
+
+# Change Run level
+systemctl isolate runlevel5.target
+#OR
+systemctl isolate graphical.target
+
+# Set default Run level
+systemctl set-default runlevel3.target
+
+
+
+
