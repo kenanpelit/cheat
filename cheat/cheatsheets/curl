@@ -33,3 +33,6 @@ curl http://ifconfig.me/all/json
 
 # Limit the rate of a download
 curl --limit-rate 1000B -O http://path.to.the/file
+
+# Adding HTTP headers and specify meother with -G(GET)
+curl -H "Accept: text/xml" -H "Accept-Version: 0.0.0" -G "http://server/api/view?filter=$FILTER" |grep -E '<er e="|Location State'|grep -B1 Offline|grep -v Offline|awk '{print $2}'|cut -d= -f2|sed 's/"//g'|sed '/^$/d' |grep -vE 'enclosure|rack'
