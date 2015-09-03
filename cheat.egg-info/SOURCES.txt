@@ -44,6 +44,7 @@ cheat/cheatsheets/docker
 cheat/cheatsheets/dpkg
 cheat/cheatsheets/du
 cheat/cheatsheets/emacs
+cheat/cheatsheets/ffmpeg
 cheat/cheatsheets/find
 cheat/cheatsheets/gcc
 cheat/cheatsheets/gdb
@@ -159,6 +160,7 @@ cheat/cheatsheets/uname
 cheat/cheatsheets/uniq
 cheat/cheatsheets/unzip
 cheat/cheatsheets/uuid
+cheat/cheatsheets/vagrant
 cheat/cheatsheets/vi
 cheat/cheatsheets/vim
 cheat/cheatsheets/weechat
