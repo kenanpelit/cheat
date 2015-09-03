@@ -4,14 +4,12 @@ ssh -i /path/to/file.pem user@example.com
 # To connect on an non-standard port:
 ssh -p 2222 user@example.com
 
-<<<<<<< HEAD
-# To execute a command on a remote server, Force pseudo-tty allocation.  This can be used # to execute arbitrary screen-based programs on a remote machine, which can be very # useful, e.g. when implementing menu services. Multiple -t options force tty allocation, even if ssh has no local tty.
-=======
 # To connect and forward the authentication agent
 ssh -A user@example.com
 
-# To execute a command on a remote server:
->>>>>>> 03bb651bf0c2a507799d0662d237f6b11c3cc053
+# To execute a command on a remote server, Force pseudo-tty allocation.  This can be used 
+# to execute arbitrary screen-based programs on a remote machine, which can be very 
+# useful, e.g. when implementing menu services. Multiple -t options force tty allocation, even if ssh has no local tty.
 ssh -t user@example.com 'the-remote-command'
 
 # Disable pseudo-tty allocation.
