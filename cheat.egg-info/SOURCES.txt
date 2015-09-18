@@ -29,6 +29,7 @@ cheat/cheatsheets/cman_tool
 cheat/cheatsheets/convert
 cheat/cheatsheets/crontab
 cheat/cheatsheets/csplit
+cheat/cheatsheets/cups
 cheat/cheatsheets/curl
 cheat/cheatsheets/cut
 cheat/cheatsheets/date
@@ -55,6 +56,7 @@ cheat/cheatsheets/gpg
 cheat/cheatsheets/grep
 cheat/cheatsheets/gs
 cheat/cheatsheets/gzip
+cheat/cheatsheets/hardware-info
 cheat/cheatsheets/head
 cheat/cheatsheets/history
 cheat/cheatsheets/hpbladecenter
@@ -74,6 +76,7 @@ cheat/cheatsheets/keystone
 cheat/cheatsheets/ldapsearch
 cheat/cheatsheets/ldapvi
 cheat/cheatsheets/less
+cheat/cheatsheets/lib
 cheat/cheatsheets/ln
 cheat/cheatsheets/ls
 cheat/cheatsheets/lsof
@@ -97,6 +100,7 @@ cheat/cheatsheets/nmap
 cheat/cheatsheets/nohup
 cheat/cheatsheets/notify-send
 cheat/cheatsheets/nova
+cheat/cheatsheets/ntp
 cheat/cheatsheets/numfmt
 cheat/cheatsheets/od
 cheat/cheatsheets/openssl
@@ -107,6 +111,7 @@ cheat/cheatsheets/paste
 cheat/cheatsheets/pdftk
 cheat/cheatsheets/perl
 cheat/cheatsheets/php
+cheat/cheatsheets/ping
 cheat/cheatsheets/ping6
 cheat/cheatsheets/pip
 cheat/cheatsheets/proc
@@ -121,6 +126,7 @@ cheat/cheatsheets/rhcs
 cheat/cheatsheets/rm
 cheat/cheatsheets/route
 cheat/cheatsheets/rpm
+cheat/cheatsheets/rss2email
 cheat/cheatsheets/rsync
 cheat/cheatsheets/sam2p
 cheat/cheatsheets/samba
@@ -147,6 +153,7 @@ cheat/cheatsheets/strace
 cheat/cheatsheets/sys
 cheat/cheatsheets/sysctl
 cheat/cheatsheets/systemctl
+cheat/cheatsheets/systemd
 cheat/cheatsheets/tail
 cheat/cheatsheets/tar
 cheat/cheatsheets/tcpdump
