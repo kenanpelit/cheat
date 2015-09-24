@@ -90,41 +90,38 @@ tcpdump -X
 # A deeper look at the traffic adds -X for payload but doesn't grab any more of the packet
 tcpdump -nnvvXS
 
-# Heavy packet viewing the final “s” increases the snaplength, grabbing the whole packet
+# Heavy packet viewing the final "s" increases the snaplength, grabbing the whole packet
 tcpdump -nnvvXSs 1514
-
 
 # Show me all URGENT (URG) packets
 tcpdump 'tcp[13] & 32!=0'
 
-
-# Show me all ACKNOWLEDGE (ACK) packets…
+# Show me all ACKNOWLEDGE (ACK) packets
 tcpdump 'tcp[13] & 16!=0'
 
-# Show me all PUSH (PSH) packets…
+# Show me all PUSH (PSH) packets
 tcpdump 'tcp[13] & 8!=0'
 
-# Show me all RESET (RST) packets…
+# Show me all RESET (RST) packets
 tcpdump 'tcp[13] & 4!=0'
 
-# Show me all SYNCHRONIZE (SYN) packets…
+# Show me all SYNCHRONIZE (SYN) packets
 tcpdump 'tcp[13] & 2!=0'
 
-# Show me all FINISH (FIN) packets…
+# Show me all FINISH (FIN) packets
 tcpdump 'tcp[13] & 1!=0'
 
-# Show me all SYNCHRONIZE/ACKNOWLEDGE (SYNACK) packets…
+# Show me all SYNCHRONIZE/ACKNOWLEDGE (SYNACK) packets
 tcpdump 'tcp[13]=18'
 
-# Capture TCP Flags Using the tcpflags Option…
+# Capture TCP Flags Using the tcpflags Option
 tcpdump 'tcp[tcpflags] & & tcp-syn != 0'
 
 # IPv6 traffic
 tcpdump ip6
 
-# Packets with both the RST and SYN flags set (why?)
+# Packets with both the RST and SYN flags set (why)
 tcpdump 'tcp[13] = 6'
 
 # Traffic with the 'Evil Bit' Set
 tcpdump 'ip[6] & 128 != 0'
-
