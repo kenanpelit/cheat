@@ -30,3 +30,6 @@ dmesg
 
 # Ouput kernel messages
 dmesg --kernel
+
+# show hp server information, need to install hp-health
+hpasmcli -s 'show iml'
