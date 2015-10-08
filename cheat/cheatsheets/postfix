@@ -1,0 +1,10 @@
+# Flush the mail queue
+postfix flush
+|or|
+postfix -f
+
+# To remove all mail from the queue, enter:
+postsuper -d ALL
+
+# To remove all mails in the deferred queue, enter:
+postsuper -d ALL deferred
