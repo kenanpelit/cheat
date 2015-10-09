@@ -1,0 +1,2 @@
+# Show Controller information
+hpacucli controller all show config detail
