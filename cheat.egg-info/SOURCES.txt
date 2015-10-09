@@ -59,6 +59,7 @@ cheat/cheatsheets/gzip
 cheat/cheatsheets/hardware-info
 cheat/cheatsheets/head
 cheat/cheatsheets/history
+cheat/cheatsheets/hpacucli
 cheat/cheatsheets/hpbladecenter
 cheat/cheatsheets/hpux
 cheat/cheatsheets/hub
