@@ -24,3 +24,6 @@ libkf5wallet-dev: /usr/include/KF5/KWallet/kwallet.h
 
 # Show some details of package
 dpkg -s coreutils
+
+# List files installed by package
+dpkg -L coreutils
