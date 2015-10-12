@@ -26,3 +26,6 @@ grep 'install ' /var/log/dpkg.log
 
 # Silently keep old configuration during batch updates
 apt-get update -o DPkg::Options::='--force-confold' ...
+
+# Remove a Package: Removal of a package (or packages) is also straightforward
+sudo apt-get remove nmap

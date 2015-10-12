@@ -1,6 +1,9 @@
 # Install the package or upgrade it
 dpkg -i test.deb
 
+# Uninstalling a package can be accomplished by:
+sudo dpkg -r zip
+
 # Remove a package including configuration files
 dpkg -P test.deb
 
@@ -30,3 +33,12 @@ dpkg -L coreutils
 
 # List individual installed packages, along with package version and short description
 dpkg -l apache-perl
+
+# List files provided(owned) by package
+dpkg -c /var/cache/apt/archives/bsdutils_1%3a2.20.1-5.1ubuntu20.7_amd64.deb
+
+# Find details of package
+dpkg -p vim
+
+# Check if package is installed
+dpkg -s lsof|grep -i status
