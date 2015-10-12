@@ -9,3 +9,15 @@ dpkg -I
 
 # Find out if a Debian package is installed or not
 dpkg -s test.deb | grep Status
+
+# Use dpkg command to find out which package owns a file
+dpkg -S /bin/ls
+||
+#To install apt-file, do:
+sudo apt-get install apt-file
+#Then, you need to update it's database:
+apt-file update
+#And, finally, search the file:
+apt-file find kwallet.h
+kdelibs5-dev: /usr/include/kwallet.h
+libkf5wallet-dev: /usr/include/KF5/KWallet/kwallet.h
