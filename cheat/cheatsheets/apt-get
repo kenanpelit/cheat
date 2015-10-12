@@ -29,3 +29,20 @@ apt-get update -o DPkg::Options::='--force-confold' ...
 
 # Remove a Package: Removal of a package (or packages) is also straightforward
 sudo apt-get remove nmap
+
+# Download Package from the Repos
+apt-get download package
+
+# Download Package Source from Repository
+sudo apt-get source package
+
+# Uninstall a Package and All Associated Configuration Files
+sudo apt-get purge package
+
+# Remove Any Automatic Dependencies that are No Longer Needed
+sudo apt-get autoremove
+sudo apt-get --purge autoremove
+
+# Clean Obsolete Downloaded Package Files
+sudo apt-get autoclean
+

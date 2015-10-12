@@ -7,6 +7,13 @@ apt-cache show pkg(s)
 # To display reverse dependencies of a package
 apt-cache rdepends package_name
 
-# To display package versions, reverse dependencies and forward dependencies 
-# of a package
+# To display package versions, reverse dependencies and forward dependencies of a package
 apt-cache showpkg package_name
+
+# Show Dependencies and Reverse Dependencies
+apt-cache depends package
+pt-cache rdepends package
+
+# Show Installed and Available Package Versions
+apt-cache policy package
+

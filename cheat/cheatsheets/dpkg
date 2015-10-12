@@ -1,3 +1,6 @@
+[Links]
+https://www.digitalocean.com/community/tutorials/ubuntu-and-debian-package-management-essentials
+
 # Install the package or upgrade it
 dpkg -i test.deb
 
@@ -42,3 +45,33 @@ dpkg -p vim
 
 # Check if package is installed
 dpkg -s lsof|grep -i status
+
+# It is important to note that the dpkg tool does not implement any dependency handling. This means that if there are any unmet dependencies, the installation will fail. Luckily, it marks the dependencies needed, so if all of the dependencies are available within the repositories, you can satisfy them easily by typing this afterwards, This will install any unmet dependencies, including those marked by dpkg
+sudo apt-get install -f
+
+# Show Info about a .deb Package
+dpkg --info debfile.deb
+
+# Show Install States of Filtered Packages
+dpkg -l libyaml*
+
+# This provides a list of all of the packages installed or removed but not purged
+dpkg --get-selections
+
+# Search Installed Packages
+dpkg --get-selections libz*
+
+# You can export the list of installed packages to a file in the format required to later import them by piping the output of dpkg --get-selections
+dpkg --get-selections > ~/packagelist.txt
+
+# You also may wish to backup your sources lists and your trusted key list. You can back up your sources by creating a directory with the necessary files and copying them over
+mkdir ~/sources
+cp -R /etc/apt/sources.list* ~/sources
+
+# The trusted keys can be backed up by typing
+apt-key exportall > ~/trusted_keys.txt
+
+# First, you need to add the trusted keys and implement the sources lists you copied from the first computer. Assuming that all of the data you backed up has been copied to the home directory of the new computer, you could type
+sudo apt-key add ~/trusted_keys.txt
+sudo cp -R ~sources/* /etc/apt/
+
