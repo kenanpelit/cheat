@@ -27,3 +27,6 @@ dpkg -s coreutils
 
 # List files installed by package
 dpkg -L coreutils
+
+# List individual installed packages, along with package version and short description
+dpkg -l apache-perl
