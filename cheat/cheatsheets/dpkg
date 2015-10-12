@@ -21,3 +21,6 @@ apt-file update
 apt-file find kwallet.h
 kdelibs5-dev: /usr/include/kwallet.h
 libkf5wallet-dev: /usr/include/KF5/KWallet/kwallet.h
+
+# Show some details of package
+dpkg -s coreutils
