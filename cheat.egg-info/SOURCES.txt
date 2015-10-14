@@ -61,6 +61,7 @@ cheat/cheatsheets/head
 cheat/cheatsheets/history
 cheat/cheatsheets/hpacucli
 cheat/cheatsheets/hpbladecenter
+cheat/cheatsheets/hpssacli
 cheat/cheatsheets/hpux
 cheat/cheatsheets/hub
 cheat/cheatsheets/ifconfig
