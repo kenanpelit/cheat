@@ -14,11 +14,8 @@ ls -lh
 # Display files, sorted by size
 ls -S
 
-<<<<<<< HEAD
-=======
 # Display directories only
 ls -d */
 
 # Display directories only, include hidden
 ls -d .*/ */
->>>>>>> 6a2eda80d4f877ec555370ae61a487f43563d38d
