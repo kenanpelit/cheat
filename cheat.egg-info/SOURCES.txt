@@ -164,6 +164,7 @@ cheat/cheatsheets/tee
 cheat/cheatsheets/tmpfs
 cheat/cheatsheets/tmux
 cheat/cheatsheets/top
+cheat/cheatsheets/tr
 cheat/cheatsheets/truncate
 cheat/cheatsheets/udisksctl
 cheat/cheatsheets/uname
