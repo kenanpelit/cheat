@@ -29,3 +29,6 @@ rpm -K <package>
 
 # Verify a package
 rpm -V <package>
+
+# Find dependencies of a rpm package
+rpm -qpR mediawiki-1.4rc1-4.i586.rpm
