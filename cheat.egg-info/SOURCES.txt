@@ -45,6 +45,7 @@ cheat/cheatsheets/docker
 cheat/cheatsheets/dpkg
 cheat/cheatsheets/du
 cheat/cheatsheets/emacs
+cheat/cheatsheets/fab
 cheat/cheatsheets/ffmpeg
 cheat/cheatsheets/find
 cheat/cheatsheets/gcc

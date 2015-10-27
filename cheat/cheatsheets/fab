@@ -1,0 +1,8 @@
+# Running command on multiple hosts
+fab --password=$PW -P -H host1,host2 -- hostname 
+
+# With large host lists, a user’s local machine can get overwhelmed by running too many
+# concurrent Fabric processes. Because of this, you may opt to use a moving bubble
+# approach that limits Fabric to a specific number of concurrently active processes.
+# This is useful for large amount of hosts
+fab --password=$PW -P -z 10 -H host1,host2 -- hostname 
