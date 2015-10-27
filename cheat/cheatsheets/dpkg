@@ -75,3 +75,9 @@ apt-key exportall > ~/trusted_keys.txt
 sudo apt-key add ~/trusted_keys.txt
 sudo cp -R ~sources/* /etc/apt/
 
+# Extracting the files from a debian package using dpkg -x
+dpkg -x ovpc_1.06.94-3_i386.deb /tmp/ov
+
+# Or Extracting with following commands
+ar -vx ovpc_1.06.94-3_i386.debian
+tar -xvzf data.tar.gz 
