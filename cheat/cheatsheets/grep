@@ -27,3 +27,8 @@ ps aux | grep '[h]ttpd'
 
 # Colour in red {bash} and keep all other lines
 ps aux | grep -E --color 'bash|$'
+
+# Matching whole word, below only match lines with word 'hub' in them
+grep -w hub /usr/dict/words
+||
+grep "\<hub\>" /usr/dict/words
