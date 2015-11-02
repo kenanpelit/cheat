@@ -58,3 +58,10 @@ echo "s i q" | /new_netbackup/openv/volmgr/bin/tldtest -r /dev/sg16
 
 # Issue: Image: XXXX_1435795973 Rejected - No fragment in Robot
 https://support.symantec.com/en_US/article.TECH35510.html
+
+# Move a tape to a different volume pool: https://support.symantec.com/en_US/article.TECH16643.html
+/usr/openv/volmgr/bin/vmpool -listall
+/usr/openv/volmgr/bin/vmquery -m RAY001
+/usr/openv/volmgr/bin/vmchange -M russia -p 0 -m RAY001
+/usr/openv/volmgr/bin/vmquery -m RAY001
+
