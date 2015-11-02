@@ -3,6 +3,7 @@
 https://nixguru.wordpress.com/2012/11/21/netbackup-important-commands-and-explanations/
 http://blog.dbi-services.com/netbackup-command-lines-tips/
 http://solarisveritasinterview.blogspot.com/2009/04/veritas-netbackup-tricks-and-commands.html
+http://www.datadisk.co.uk/html_docs/veritas/veritas_netbackup_cs.htm
 
 # This command is used to configure or display global configuration attributes for NetBackup. There are lots of option which can be used to list or change configuration attributes.
 /usr/openv/netbackup/bin/admincmd/bpconfig -U
