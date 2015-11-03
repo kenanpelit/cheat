@@ -91,6 +91,7 @@ cheat/cheatsheets/memcached
 cheat/cheatsheets/mkdir
 cheat/cheatsheets/more
 cheat/cheatsheets/mount
+cheat/cheatsheets/mstsc
 cheat/cheatsheets/mysql
 cheat/cheatsheets/mysqldump
 cheat/cheatsheets/naviseccli
