@@ -1,0 +1,7 @@
+[Notes]
+# This is a windows command for RDP
+
+# RDP to remote windows with admin privilege, can be used to kick someone out if the maximum connections exceeded!
+mstsc /admin /v:HOSTNAME
+Or
+mstsc /console /v:HOSTNAME
