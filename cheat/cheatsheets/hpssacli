@@ -84,3 +84,6 @@ hpssacli ctrl slot=0 array a modify ssdsmartpath=enable
 
 # Disable SSD Smart Path
 hpssacli ctrl slot=0 array a modify ssdsmartpath=disable
+
+# This is the TIME BASED slotlog. 
+ctrl all diag logs=on file=servername-ADUslot-Date.zip
