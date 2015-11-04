@@ -19,3 +19,8 @@ pip freeze --local | grep -v '^\-e' | cut -d = -f 1 | xargs -n1 pip install -U
 
 # Install specific version of a package
 pip install -I SomePackage1==1.1.0 'SomePackage2>=1.0.4'
+
+
+[ISSUEs]
+1) **** AttributeError: 'module' object has no attribute 'HAVE_DECL_MPZ_POWM_SEC'
+pip install pycrypto-on-pypi
