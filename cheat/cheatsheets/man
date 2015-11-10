@@ -6,3 +6,6 @@ man 7 ascii
 
 # View manual using vi
 man ls|vi -
+
+# Adding a function alias for viewing manual by vi
+vman() { vim <(man $1); }
