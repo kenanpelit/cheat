@@ -15,3 +15,13 @@ sed '/^$/d' file.txt
 
 # To replace newlines in multiple lines
 sed ':a;N;$!ba;s/\n//g'  file.txt
+
+# Switch the line match XXXXXXXXXXXX and YYYYYYYYYYYY, then print out to the stdout
+sed -n '
+/^XXXXXXXXXXXX/{
+h};
+/^YYYYYYYYYYYY/{
+G;
+p;
+}
+'
