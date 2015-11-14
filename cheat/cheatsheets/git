@@ -1,3 +1,11 @@
+[NOTES]
+This is a cheat list for git cli usage
+
+[Useful Links]
+https://www.atlassian.com/git/tutorials/resetting-checking-out-and-reverting/commit-level-operations
+http://sethrobertson.github.io/GitFixUm/fixup.html
+
+
 # To set your identity:
 git config --global user.name "John Doe"
 git config --global user.email johndoe@example.com
