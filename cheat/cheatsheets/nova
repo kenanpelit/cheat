@@ -43,3 +43,6 @@ nova list --all-tenants --host openstack-compute20
 # Finding VM Instances by Compute Node
 1. source the openrc file
 2. nova host-list | grep compute | awk '{print $2}' | xargs -L1 -I% sh -c 'echo %; nova list --all-tenants --host %;'
+
+# List VMs on a specified compute node
+OS_PROJECT_NAME=openstack nova list --all-tenants --host jzhu-os-compute0003.domain.net
