@@ -1,3 +1,6 @@
+[NOTES]
+Need environment variables setup before using the clis
+
 # To list VMs on current tenant:
 nova list
 
@@ -46,3 +49,9 @@ nova list --all-tenants --host openstack-compute20
 
 # List VMs on a specified compute node
 OS_PROJECT_NAME=openstack nova list --all-tenants --host jzhu-os-compute0003.domain.net
+
+# Show details about VM 
+nova show 5a298d9c-0da3-46d3-957b-acac0b894e91
+
+# Show flavor details
+nova flavor-show c4.8xlarge
