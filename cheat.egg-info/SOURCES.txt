@@ -108,6 +108,7 @@ cheat/cheatsheets/ntp
 cheat/cheatsheets/numfmt
 cheat/cheatsheets/od
 cheat/cheatsheets/openssl
+cheat/cheatsheets/openstack
 cheat/cheatsheets/ovs-vsctl
 cheat/cheatsheets/p4
 cheat/cheatsheets/pacman
