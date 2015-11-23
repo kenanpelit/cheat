@@ -56,3 +56,53 @@ d{motion}       delete text that {motion} moves over
 2dw         deletes 2 words
 5yy         copies 5 lines
 42G         go to line 42
+
+
+# Toggle case
+Toggle case "HellO" to "hELLo" with g~ then a movement. 
+
+# Toggle Uppercase
+Uppercase "HellO" to "HELLO" with gU then a movement. 
+
+# Toggle Lowercase
+Lowercase "HellO" to "hello" with gu then a movement. 
+
+# Toggle case of the character under the cursor, or all visually-selected characters. 
+~
+
+# Toggle case of the next three characters. 
+3~
+
+# Toggle case of the next three words. 
+g~3w
+
+# Toggle case of the current word (inner word – cursor anywhere in word). 
+g~iw
+
+# Toggle case of all characters to end of line. 
+g~$
+
+# Toggle case of the current line (same as V~). 
+g~~
+
+# The above uses ~ to toggle case. In each example, you can replace ~ with u to convert to
+# lowercase, or with U to convert to uppercase. For example:
+
+# Uppercase the visually-selected text. 
+# First press v or V then move to select text. 
+# If you don't select text, pressing U will undo all changes to the current line. 
+U
+
+# Change the current line to uppercase (same as VU). 
+gUU
+
+# Change current word to uppercase. 
+gUiw
+
+# Lowercase the visually-selected text. 
+# If you don't select text, pressing u will undo the last change. 
+u
+
+# Change the current line to lowercase (same as Vu)
+guu
+
