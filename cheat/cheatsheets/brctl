@@ -1,0 +1,48 @@
+[NOTES]
+http://os.51cto.com/art/201310/414335.htm
+
+# Create Bridge
+brctl addbr [BRIDGENAME]
+
+# Delete Bridge
+brctl delbr [BRIDGENAME]
+
+# attach device to Bridge
+brctladdif[BRIDGENAME][DEVICENAME]
+
+# From Bridge detach device
+brctl delif [BRIDGENAME][DEVICENAME]
+
+# Query Bridge
+brctlshow
+
+# Create VLAN device
+vconfig add [PARENTDEVICENAME] [VLANID]
+
+# Delete VLAN Device 
+vconfig rem [VLANDEVICENAME]
+
+# Config VLAN Device flag
+vconfig set_flag [VLANDEVICENAME] [FLAG] [VALUE]
+
+# Config VLAN Device qos
+vconfig set_egress_map [VLANDEVICENAME] [SKB_PRIORITY] [VLAN_QOS]
+vconfig set_ingress_map [VLANDEVICENAME] [SKB_PRIORITY] [VLAN_QOS]
+
+# Query VLAN Device status 
+cat /proc/net/vlan/[VLANDEVICENAME]
+
+# Create VETH Device 
+ip link add link [DEVICENAME] type veth
+
+# Create TAP Device 
+tunctl -p [TAPDEVICENAME]
+
+# Delete TAP Device 
+tunctl -d [TAPDEVICENAME]
+
+# Query all Layer 2 devices, including VETH/TAP devices
+ip link show
+
+# Delete Layer 2 general devices
+ip link delete [DEVICENAME] type [TYPE]
