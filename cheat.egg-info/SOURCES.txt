@@ -23,6 +23,7 @@ cheat/cheatsheets/at
 cheat/cheatsheets/awk
 cheat/cheatsheets/bash
 cheat/cheatsheets/bower
+cheat/cheatsheets/brctl
 cheat/cheatsheets/chmod
 cheat/cheatsheets/chown
 cheat/cheatsheets/cman_tool
