@@ -1,0 +1,5 @@
+[NOTES]
+Control and Monitor Utility for SMART Disks
+
+# Check: Ask the device to report its SMART health status or pending TapeAlert messages.
+smartctl -H /dev/sda
