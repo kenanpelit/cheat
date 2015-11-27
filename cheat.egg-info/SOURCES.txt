@@ -143,6 +143,7 @@ cheat/cheatsheets/sed
 cheat/cheatsheets/selinux
 cheat/cheatsheets/sendmail
 cheat/cheatsheets/shred
+cheat/cheatsheets/smartctl
 cheat/cheatsheets/smbclient
 cheat/cheatsheets/snmpget
 cheat/cheatsheets/snmpset
