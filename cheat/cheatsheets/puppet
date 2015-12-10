@@ -12,3 +12,12 @@ puppet apply -e '$foo = hiera("firewall::rules") notify { $foo: }'
 
 # Hiera Lookups Using Variables
 hiera -d servername environment=prod
+
+# Testing puppet code, adding following code to ss.pp
+service { 'snmpd':
+    ensure => 'running',
+    hasstatus => true,
+    status => 'touch /tmp/abc',
+}
+# Then run following command against the pp file
+puppet apply -vd ss.pp
