@@ -1,0 +1,8 @@
+[NOTEs]
+#iperf is a tool for performing network throughput tests
+
+# Set up hostA as a Iperf server listening on multicast address 224.0.55.55.
+iperf -s -u -B 224.0.55.55 -i 1
+
+# Generate multicast traffic from hostB, and on hostA to see if you see traffic
+iperf -c 224.0.55.55 -u -T 32 -t 3 -i 1
