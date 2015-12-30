@@ -14,6 +14,7 @@ cheat/cheatsheets/__init__.py
 cheat/cheatsheets/ab
 cheat/cheatsheets/apk
 cheat/cheatsheets/apparmor
+cheat/cheatsheets/apt
 cheat/cheatsheets/apt-cache
 cheat/cheatsheets/apt-get
 cheat/cheatsheets/aptitude
