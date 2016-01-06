@@ -8,3 +8,6 @@ show service-profile circuit server 1/1
 
 # Connect to NXOS CLI
 connect nxos
+
+# Show ucs interface status
+show interface brief
