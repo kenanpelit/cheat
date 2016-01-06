@@ -1,0 +1,18 @@
+[NOTEs]
+This is for cisco related commands
+
+# Show ip routers
+show ip route
+
+# Show arp info on cisco routers
+debug arp
+
+# Change ARP retaining time
+interface ethernet 0
+arp timeout 1800
+
+# manually bind MAC with ip
+arp IP-addr MAC-addr snap
+
+# Clean arp cache
+clear arp-cache
