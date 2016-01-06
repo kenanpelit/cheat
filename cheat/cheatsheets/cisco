@@ -16,3 +16,6 @@ arp IP-addr MAC-addr snap
 
 # Clean arp cache
 clear arp-cache
+
+# Disable arp proxy
+no ip proxy-arp
