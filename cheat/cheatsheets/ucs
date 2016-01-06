@@ -1,6 +1,8 @@
 [NOTEs]
 http://ucsguru.com/2012/05/18/understanding-ucs-vif-paths/
 
+# Use Tab, tab, tab.....
+
 # Show Network Circuit information
 show service-profile circuit server 1/1
 
