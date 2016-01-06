@@ -173,6 +173,7 @@ cheat/cheatsheets/tmux
 cheat/cheatsheets/top
 cheat/cheatsheets/tr
 cheat/cheatsheets/truncate
+cheat/cheatsheets/ucs
 cheat/cheatsheets/udisksctl
 cheat/cheatsheets/uname
 cheat/cheatsheets/uniq
