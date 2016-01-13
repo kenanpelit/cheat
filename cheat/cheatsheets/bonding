@@ -1,0 +1,5 @@
+[NOTEs]
+This is for things about linux bonding
+
+# Check the bonding devices status
+cat /sys/class/net/bond*
