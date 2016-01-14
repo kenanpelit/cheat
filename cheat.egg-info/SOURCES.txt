@@ -23,10 +23,12 @@ cheat/cheatsheets/asterisk
 cheat/cheatsheets/at
 cheat/cheatsheets/awk
 cheat/cheatsheets/bash
+cheat/cheatsheets/bonding
 cheat/cheatsheets/bower
 cheat/cheatsheets/brctl
 cheat/cheatsheets/chmod
 cheat/cheatsheets/chown
+cheat/cheatsheets/cisco
 cheat/cheatsheets/cman_tool
 cheat/cheatsheets/convert
 cheat/cheatsheets/crontab
