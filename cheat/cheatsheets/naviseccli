@@ -1,6 +1,7 @@
 [NOTEs]
 http://wintelguy.com/2011/20110528_navicmd.html
 http://www.datadisk.co.uk/html_docs/emc/emc_navisphere_cs.html
+http://www.thegeekstuff.com/2014/08/emc-naviseccli-navisphere-cli/
 
 Storage Pool:                                         Storage Group(Associate Hosts with LUNs from Raid Group):
   -- Raid Groups:                                       -- Hosts
