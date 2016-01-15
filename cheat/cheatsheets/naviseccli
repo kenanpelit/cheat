@@ -2,6 +2,15 @@
 http://wintelguy.com/2011/20110528_navicmd.html
 http://www.datadisk.co.uk/html_docs/emc/emc_navisphere_cs.html
 
+Storage Pool:                                         Storage Group(Associate Hosts with LUNs from Raid Group):
+  -- Raid Groups:                                       -- Hosts
+    -- Raid Group 1:                                    |
+       -- LUN1  ---------------------------------------> LUN
+       -- LUN2  ---------------------------------------> LUN
+    -- Raid Group 2:                                       
+       -- LUN1  ---------------------------------------> LUN
+       -- LUN2  ---------------------------------------> LUN
+
 # Setup navicli security
 /opt/Navisphere/bin/naviseccli -addusersecurity -scope 0 -user admin -password password 
 
