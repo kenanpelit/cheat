@@ -20,6 +20,9 @@ Storage Pool:                                         Storage Group(Associate Ho
 # display All storage group information
 /opt/Navisphere/bin/naviseccli -h cx01spa storagegroup -list
 
+# display All storage group information with host
+/opt/Navisphere/bin/naviseccli -h cx01spa storagegroup -list -host
+
 # display status of all raid group
 /opt/Navisphere/bin/naviseccli -h fc4700 getrg
 
