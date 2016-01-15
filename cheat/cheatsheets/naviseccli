@@ -1,2 +1,21 @@
 # Setup navicli security
 /opt/Navisphere/bin/naviseccli -addusersecurity -scope 0 -user admin -password password 
+
+# display storage group information
+/opt/Navisphere/bin/naviseccli -h cx01spa storagegroup -list -gname group_name
+
+# display All storage group information
+/opt/Navisphere/bin/naviseccli -h cx01spa storagegroup -list
+
+# display status of all raid group
+/opt/Navisphere/bin/naviseccli -h fc4700 getrg
+
+# display status of a raid group
+/opt/Navisphere/bin/naviseccli -h fc4700 getrg 16 -lunlist
+
+# display LUN properties
+/opt/Navisphere/bin/naviseccli -h fc4700 getlun
+
+# displaying meta LUN status
+/opt/Navisphere/bin/naviseccli -h fc4700 metalun -info <options> (general information) 
+/opt/Navisphere/bin/naviseccli -h fc4700 metalun -list metalun <number> (specific info on a meta LUN)
