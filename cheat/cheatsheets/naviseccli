@@ -1,3 +1,7 @@
+[NOTEs]
+http://wintelguy.com/2011/20110528_navicmd.html
+http://www.datadisk.co.uk/html_docs/emc/emc_navisphere_cs.html
+
 # Setup navicli security
 /opt/Navisphere/bin/naviseccli -addusersecurity -scope 0 -user admin -password password 
 
