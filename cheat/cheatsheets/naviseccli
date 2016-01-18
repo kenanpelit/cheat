@@ -42,3 +42,7 @@ Storage Pool:                                         Storage Group(Associate Ho
 
 # Get detailed info for SPs
 /opt/Navisphere/bin/naviseccli -h cx01spa networkadmin -get -all
+
+# Get all information about the Storage, from the output, you can find the Hosts/IPs of
+# the clients
+/opt/Navisphere/bin/naviseccli -h cx01spa getall
