@@ -26,6 +26,7 @@ cheat/cheatsheets/bash
 cheat/cheatsheets/bonding
 cheat/cheatsheets/bower
 cheat/cheatsheets/brctl
+cheat/cheatsheets/brocade
 cheat/cheatsheets/chmod
 cheat/cheatsheets/chown
 cheat/cheatsheets/cisco
