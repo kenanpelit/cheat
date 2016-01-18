@@ -1,4 +1,4 @@
-[NOTEs]
+#[NOTEs]
 http://wintelguy.com/2011/20110528_navicmd.html
 http://www.datadisk.co.uk/html_docs/emc/emc_navisphere_cs.html
 http://www.thegeekstuff.com/2014/08/emc-naviseccli-navisphere-cli/
@@ -39,3 +39,6 @@ Storage Pool:                                         Storage Group(Associate Ho
 # displaying meta LUN status
 /opt/Navisphere/bin/naviseccli -h fc4700 metalun -info <options> (general information) 
 /opt/Navisphere/bin/naviseccli -h fc4700 metalun -list metalun <number> (specific info on a meta LUN)
+
+# Get detailed info for SPs
+/opt/Navisphere/bin/naviseccli -h cx01spa networkadmin -get -all
