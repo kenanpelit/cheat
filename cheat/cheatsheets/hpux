@@ -2,3 +2,7 @@
 vsdisk list disk
 vxdisk list disk_0s2
 diskinfo /dev/rdsk/c0t6d0s2
+
+# Display the HBA addresses for HPUX
+ioscan -funCfc          #find the devices
+fcmsutil /dev/fcd0      #Show details of devices
