@@ -12,6 +12,9 @@ Storage Pool:                                         Storage Group(Associate Ho
        -- LUN1  ---------------------------------------> LUN
        -- LUN2  ---------------------------------------> LUN
 
+# Get the faults list
+/opt/Navisphere/bin/naviseccli -h su9-sonda-cx01spa faults -list
+
 # Setup navicli security
 /opt/Navisphere/bin/naviseccli -addusersecurity -scope 0 -user admin -password password 
 
