@@ -17,3 +17,6 @@ ps aux | grep '[h]ttpd'
 # To get info about threads
 ps -eLf | wc -l
 ps axms
+
+# Print out the SID as well
+ps -efj
