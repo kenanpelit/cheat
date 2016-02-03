@@ -33,3 +33,6 @@ ip neighbor show
 
 # Get a single route, this command gets a single route to a destination and prints its contents exactly as the kernel sees it.
 ip route get 8.8.8.8
+
+# Usually tap interface is given by command 
+ip netns exec qdhcp-45577666-657d-4f75-a3ab-9bc232f15203 ip addr show
