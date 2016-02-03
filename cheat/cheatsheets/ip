@@ -36,3 +36,6 @@ ip route get 8.8.8.8
 
 # Usually tap interface is given by command 
 ip netns exec qdhcp-45577666-657d-4f75-a3ab-9bc232f15203 ip addr show
+
+# See tcpdump on tap devices
+ip netns exec qdhcp-45577666-657d-4f75-a3ab-9bc232f15203 tcpdump -ln -i tap7a12f9b0-a4
