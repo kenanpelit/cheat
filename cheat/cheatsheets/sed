@@ -25,3 +25,14 @@ G;
 p;
 }
 '
+
+# Just like above command but prechange the line, and post change the line
+sed -n 's/ *: */: /;
+/^interface/{
+h}
+/^location/{
+G;
+s/\n/ /g;
+p;
+}
+'
