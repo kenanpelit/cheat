@@ -70,6 +70,7 @@ cheat/cheatsheets/hpacucli
 cheat/cheatsheets/hpbladecenter
 cheat/cheatsheets/hpssacli
 cheat/cheatsheets/hpux
+cheat/cheatsheets/http
 cheat/cheatsheets/hub
 cheat/cheatsheets/ifconfig
 cheat/cheatsheets/indent
@@ -94,6 +95,7 @@ cheat/cheatsheets/lvdisplay
 cheat/cheatsheets/lvm
 cheat/cheatsheets/man
 cheat/cheatsheets/markdown
+cheat/cheatsheets/mdadm
 cheat/cheatsheets/memcached
 cheat/cheatsheets/mkdir
 cheat/cheatsheets/more
@@ -107,6 +109,7 @@ cheat/cheatsheets/nc
 cheat/cheatsheets/ncat
 cheat/cheatsheets/netstat
 cheat/cheatsheets/neutron
+cheat/cheatsheets/nkf
 cheat/cheatsheets/nmap
 cheat/cheatsheets/nohup
 cheat/cheatsheets/notify-send
