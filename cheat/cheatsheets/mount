@@ -12,3 +12,6 @@ mount -t nfs example.com:/remote/example/dir /local/example/dir
 
 # Mount a CIFS share directory
 sudo mount -t cifs //file-host/directory -o username='jzhu', pssword='$r5t6y7u' /mnt
+
+# To mount an ISO
+mount -o loop disk1.iso /mnt/disk
