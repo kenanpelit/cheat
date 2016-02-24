@@ -45,3 +45,7 @@ Ctrl-b %
 
 # Split windows vertically:
 Ctrl-b "
+
+# Sync input to all panes
+Ctrl-b :setw synchronize-panes
+
