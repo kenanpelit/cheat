@@ -55,3 +55,6 @@ OR
 
 # Using backtracking in vim CMD mode
 :%s/\(^STRING.*\)/\1\rAdding a line here/
+
+# Using Multiple repeats for adding line(s) after matching lines
+%g/^$/ s/^$/Adding a line here\r/
