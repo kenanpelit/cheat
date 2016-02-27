@@ -52,3 +52,6 @@ http://www.rayninfo.co.uk/vimtips.html
 :foo\C
 OR
 :\Cfoo
+
+# Using backtracking in vim CMD mode
+:%s/\(^STRING.*\)/\1\rAdding a line here/
