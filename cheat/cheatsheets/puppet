@@ -21,3 +21,6 @@ service { 'snmpd':
 }
 # Then run following command against the pp file
 puppet apply -vd ss.pp
+
+# Run puppet even when it's disabled
+puppet agent -t --agent_disabled_lockfile=/tmp/test
