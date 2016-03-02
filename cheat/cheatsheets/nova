@@ -55,3 +55,7 @@ nova show 5a298d9c-0da3-46d3-957b-acac0b894e91
 
 # Show flavor details
 nova flavor-show c4.8xlarge
+
+# Delete VMs which are in bad state
+nova reset-state vm_ID --active
+nova delete vm_ID
