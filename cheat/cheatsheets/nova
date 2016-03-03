@@ -12,6 +12,7 @@ nova boot --nic net-id=<net_id> \
           --image <image_id> \
           --flavor <flavor> \
           --availability-zone nova:<host_name> <vm_name>
+openstack server create --flavor ${FLAVOR} --image ${IMAGE} --min $COUNT --nic net-id=${NETWORK_ID} --availability-zone nova ${NAME_PREFIX}${VM}
 
 # To stop a server
 nova stop <server>

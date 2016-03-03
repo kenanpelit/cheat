@@ -22,3 +22,7 @@ nova list --all-tenants --host openstack-compute20
    grep tap /etc/libvirt/qemu/instance-0000c932.xml
 2. Get the details of the TAP interface
    neutron port-list|grep 635f652e-9c
+
+# Build a VM
+openstack server create --flavor ${FLAVOR} --image ${IMAGE} --min $COUNT --nic net-id=${NETWORK_ID} --availability-zone nova ${NAME_PREFIX}${VM}
+
