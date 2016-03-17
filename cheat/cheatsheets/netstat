@@ -26,3 +26,6 @@ ip -s link
 
 # For netstat-g
 ip maddr
+
+# Display multicast group membership information for IPv4 and IPv6
+netstat -g
