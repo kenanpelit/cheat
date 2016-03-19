@@ -27,3 +27,6 @@ puppet agent -t --agent_disabled_lockfile=/tmp/test
 
 # Run puppet against your environment
 CACHE=no puppet agent --test --noop --no-use_srv_records --environment jzhu
+
+# locate the default templatedir by running
+puppet config print templatedir --section master
