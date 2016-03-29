@@ -149,10 +149,11 @@ git pull --unshallow
 # https://help.github.com/articles/merging-an-upstream-repository-into-your-fork/
 # Change the current working directory to your local project.
 # Check out the branch you wish to merge to. Usually, you will merge into master.
-git checkout master
+git remote add upstream git@XXXXXXX
+git checkout -b 1.6.x origin/1.6.x
 # Pull the desired branch from the upstream repository. This method will retain the commit history without modification.
 git pull https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git BRANCH_NAME
 # Resolve conflicts if any
 # Commit the merge and review changes
 # Push the merge to your GitHub repository.
-git push origin master
+git push origin master | git push
