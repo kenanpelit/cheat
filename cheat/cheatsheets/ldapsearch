@@ -1,3 +1,6 @@
+[NOTEs]
+ldapsearch is using wildcards in filter, which is different to ldapvi that using regex
+
 # Search LDAP directory in a default LDAP server, which is the one serve as your account identification server
 ldapsearch -Z -x -LLL -W -h ldapmaster -D user=jzhu,ou=users,dc=sample,dc=net -b ou=locations,dc=sample,dc=net "location=hostname"
 
