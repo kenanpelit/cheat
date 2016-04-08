@@ -130,6 +130,19 @@ systemctl isolate graphical.target
 # Set default Run level
 systemctl set-default runlevel3.target
 
+# If service is running, restart it
+systemctl condrestart foo.service
 
+# Reboot system
+systemctl reboot
+
+# Poweroff System
+systemctl poweroff
+
+# Suspend System
+systemctl suspend
+
+# Hibernate System
+systemctl Hibernate
 
 
