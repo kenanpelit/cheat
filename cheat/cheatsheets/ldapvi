@@ -1,5 +1,6 @@
 [NOTEs]
 ldapvi is using regex in filter, which is different to ldapsearch that using wildcard
+**** AND case sensitive ****
 
 # Use ldapvi to edit something in LDAP server
 ldapvi -h ldapserver -D "user=jzhu,ou=users,dc=sample,dc=net" -b "ou=something,dc=sample,dc=net" -x "(location=abc-http.*)" 
