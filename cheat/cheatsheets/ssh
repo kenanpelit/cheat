@@ -22,6 +22,9 @@ ssh -X user@example.com
 # host (remote.example.com:5000) through a proxy (personal.server.com):
 ssh -f -L 8080:remote.example.com:5000 user@personal.server.com -N
 
+# For example, connecto 10.24.6.49 through 10.129.248.36, with this, you just do "rdesktop localhost"
+ssh -L 3389:10.24.6.49:3389 10.129.248.36
+
 # To launch a specific x application over SSH:
 ssh -X -t user@example.com 'chromium-browser'
 
