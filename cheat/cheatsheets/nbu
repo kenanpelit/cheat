@@ -73,3 +73,5 @@ https://support.symantec.com/en_US/article.TECH35510.html
 /usr/openv/volmgr/bin/vmchange -M russia -p 0 -m RAY001
 /usr/openv/volmgr/bin/vmquery -m RAY001
 
+# Check tape information
+/netbackup/openv/netbackup/bin/admincmd/bpmedialist -m CN1001
