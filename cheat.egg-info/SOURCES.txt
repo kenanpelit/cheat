@@ -138,6 +138,7 @@ cheat/cheatsheets/puppet
 cheat/cheatsheets/python
 cheat/cheatsheets/rabbitmq
 cheat/cheatsheets/rabbitmqadmin
+cheat/cheatsheets/racadm
 cheat/cheatsheets/readline
 cheat/cheatsheets/redis
 cheat/cheatsheets/rename
