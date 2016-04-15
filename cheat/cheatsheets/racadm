@@ -1,0 +1,14 @@
+# Adding iDRAC administrator account for iDRAC
+racadm config -g cfgUserAdmin -i 3 -o cfgUserAdminUserName username
+racadm config -g cfgUserAdmin -i 3 -o cfgUserAdminPassword D0nXXXXX
+racadm config -g cfgUserAdmin -i 3 -o cfgUserAdminPrivilege 0x1ff
+racadm config -g cfgUserAdmin -i 3 -o cfgUserAdminEnable 1
+racadm config -g cfgUserAdmin -i 3 -o cfgUserAdminIpmiLanPrivilege 4
+racadm config -g cfgUserAdmin -i 3 -o cfgUserAdminIpmiSerialPrivilege 4
+racadm config -g cfgUserAdmin -i 3 -o cfgUserAdminSolEnable 1
+
+# Change iDRAC account's password
+racadm config -g cfgUserAdmin -i 2 -o cfgUserAdminPassword 1StXXXXX
+
+# Delete iDRAC account who's index is 4
+racadm config -g cfgUserAdmin -o cfgUserAdminUserName -i 4 ""
