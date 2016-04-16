@@ -1,5 +1,15 @@
-[NOTEs]
-http://www.gnali.org/?p=435
+*******************************[NOTEs]**********************************
+************************************************************************
+**  http://www.gnali.org/?p=435
+************************************************************************
+
+# The way to get 
+*1* racadm Help
+*2* racadm help subcommand
+
+# To get help for Groups, groups only have get/set, so: 
+*1* racadm get [BIOS|iRRAC]
+*2* racadm set [BIOS|iRRAC]
 
 # Adding iDRAC administrator account for iDRAC
 racadm config -g cfgUserAdmin -i 3 -o cfgUserAdminUserName username
