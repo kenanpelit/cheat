@@ -1,0 +1,2 @@
+# Forward all traffic through remote hosts
+sshuttle -r 10.129.248.36 0.0.0.0/0
