@@ -169,6 +169,7 @@ cheat/cheatsheets/ss
 cheat/cheatsheets/ssh
 cheat/cheatsheets/ssh-copy-id
 cheat/cheatsheets/ssh-keygen
+cheat/cheatsheets/sshuttle
 cheat/cheatsheets/stdout
 cheat/cheatsheets/strace
 cheat/cheatsheets/sys
