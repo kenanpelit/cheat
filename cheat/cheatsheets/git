@@ -156,4 +156,4 @@ git pull https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git BRANCH_NAME
 # Resolve conflicts if any
 # Commit the merge and review changes
 # Push the merge to your GitHub repository.
-git push origin master | git push
+git push origin master |or| git push
