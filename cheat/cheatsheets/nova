@@ -63,3 +63,6 @@ nova delete vm_ID
 
 # Create VM with specific IP and specific compute node
 nova boot --flavor c4.large --image centos7-latest --min-count 1 --nic net-id=network-id1 --nic net-id=network-id2,v4-fixed-ip=XXX.XXX.XXX.XXX --availability-zone nova:compute-node-name testing-host01
+
+# Disable a nova agent service
+nova service-disable [--reason <reason>] <hostname> <binary>
