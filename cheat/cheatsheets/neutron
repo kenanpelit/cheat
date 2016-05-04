@@ -17,7 +17,6 @@ neutron router-gateway-clear 7de71033-f737-4741-bcca-4ad24cde711d
 neutron subnet-list
 neutron router-interface-delete routerID subnetID
 
-
 # After remove gateway/router-interface from router, you can remove router
 neutron router-delete 7de71033-f737-4741-bcca-4ad24cde711d
 
