@@ -1,0 +1,8 @@
+[NOTEs]
+These are notes for DNS related
+
+# Use dnstop to see query stats
+dnstop eth0
+
+# Use rndc to write debug log in /var/log/messages
+rndc querylog
