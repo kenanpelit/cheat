@@ -46,6 +46,7 @@ cheat/cheatsheets/dhcpd
 cheat/cheatsheets/diff
 cheat/cheatsheets/distcc
 cheat/cheatsheets/dnf
+cheat/cheatsheets/dns
 cheat/cheatsheets/docker
 cheat/cheatsheets/dpkg
 cheat/cheatsheets/du
