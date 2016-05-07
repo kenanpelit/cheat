@@ -14,6 +14,9 @@ nova boot --nic net-id=<net_id> \
           --availability-zone nova:<host_name> <vm_name>
 openstack server create --flavor ${FLAVOR} --image ${IMAGE} --min $COUNT --nic net-id=${NETWORK_ID} --availability-zone nova ${NAME_PREFIX}${VM}
 
+# Create VM with specific IP and specific compute node
+nova boot --flavor c4.large --image centos7-latest --min-count 1 --nic net-id=network-id1 --nic net-id=network-id2,v4-fixed-ip=XXX.XXX.XXX.XXX --availability-zone nova:compute-node-name testing-host01
+
 # To stop a server
 nova stop <server>
 
@@ -60,9 +63,6 @@ nova flavor-show c4.8xlarge
 # Delete VMs which are in bad state
 nova reset-state vm_ID --active
 nova delete vm_ID
-
-# Create VM with specific IP and specific compute node
-nova boot --flavor c4.large --image centos7-latest --min-count 1 --nic net-id=network-id1 --nic net-id=network-id2,v4-fixed-ip=XXX.XXX.XXX.XXX --availability-zone nova:compute-node-name testing-host01
 
 # List all compute services
 nova service-list
