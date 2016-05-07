@@ -14,5 +14,6 @@ designate record-create ae59d62b-d655-49a0-ab4b-ea536d845a32 --name www.designat
 
 # List and Show Records
 designate record-list ae59d62b-d655-49a0-ab4b-ea536d845a32
+
 # Then get details for a record
 designate record-get ae59d62b-d655-49a0-ab4b-ea536d845a32 10b31f72-2358-466c-90d2-79aa015fbea4
