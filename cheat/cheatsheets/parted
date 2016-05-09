@@ -1,0 +1,16 @@
+************************************** NOTE **********************************************
+# https://www.atlantic.net/community/howto/configure-2tb-partitioning-parted-mdadm/
+******************************************************************************************
+
+# Create Raid and partition as well as filesystem on Disks
+hpssacli controller all show config detail
+hpssacli ctrl slot=1 create type=ld drives=1I:1:3,1I:1:4 raid=1
+parted -a optimal /dev/sdb
+mklabel gpt
+mkpart primary xfs 0% 100%
+print
+quit
+mkfs.xfs /dev/sdb1
+mkdir /data0
+#Adding entry in /etc/fstab and mount it
+mount -a
