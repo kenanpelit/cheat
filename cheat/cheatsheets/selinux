@@ -24,6 +24,10 @@ cat /var/log/audit/audit.log
 
 # To make the httpd process run unconfined, run the following command as root to change the type of the /usr/sbin/httpd file, to a type that does not transition to a confined domain
 chcon -t unconfined_exec_t /usr/sbin/httpd
+chcon system_u:object_r:etc_tswitch0 slapd.pem
+
+# Change files context by referencing other files
+chcon --reference=/path/to/existingfile /path/to/a/newfile
 
 # The restorecon utility restores the default SELinux context for files. As root, run the following command to restore the default SELinux context for /usr/sbin/httpd
 restorecon -v /usr/sbin/httpd
@@ -146,7 +150,6 @@ semanage login -m -S targeted -s "user_u" -r s0 __default__
 
 # To change back to the default behavior, run the following command as root to map the __default__ login to the SELinux unconfined_u user 
 semanage login -m -S targeted -s "unconfined_u" -r s0-s0:c0.c1023 __default__
-
 
 # Example 01: mysqld
 ----------------------------------------------------
