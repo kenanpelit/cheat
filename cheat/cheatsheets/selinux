@@ -1,6 +1,6 @@
-# ####################################################################################
-####### For More refer to the decent <<SElinux User and Administrator's Guide>>#######
-# ####################################################################################
+************************************** NOTE **********************************************
+*******   For More refer to the decent <<SElinux User and Administrator's Guide>> ********
+******************************************************************************************
 # Use the following command to view the SELinux context of files and directories, it shows user:role:type:level
 ls -Z file1
 
