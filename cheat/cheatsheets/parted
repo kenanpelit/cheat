@@ -1,7 +1,7 @@
-************************************** NOTE **********************************************
-** # https://www.atlantic.net/community/howto/configure-2tb-partitioning-parted-mdadm/
-** # https://www.pantz.org/software/parted/parted_and_disk_alignment.html
-******************************************************************************************
+###################################### NOTE ##############################################
+## # https://www.atlantic.net/community/howto/configure-2tb-partitioning-parted-mdadm/
+## # https://www.pantz.org/software/parted/parted_and_disk_alignment.html
+##########################################################################################
 
 # Create Raid and partition as well as filesystem on Disks
 hpssacli controller all show config detail
