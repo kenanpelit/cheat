@@ -1,5 +1,5 @@
 ###################################### NOTE ##############################################
-#######   For More refer to the decent <<SElinux User and Administrators Guide>> #########
+# https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/SELinux_Users_and_Administrators_Guide/chap-Security-Enhanced_Linux-Troubleshooting.html
 ##########################################################################################
 # Use the following command to view the SELinux context of files and directories, it shows user:role:type:level
 ls -Z file1
