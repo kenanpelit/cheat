@@ -1,5 +1,5 @@
 ##################################################################################################
-# This is for LVM
+# https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/Logical_Volume_Manager_Administration/VG_admin.html
 ##################################################################################################
 # Exclusive Activation of a Volume Group in a Cluster 
 # Link --> https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/High_Availability_Add-On_Administration/s1-exclusiveactive-HAAA.html 
