@@ -6,3 +6,8 @@ dnstop eth0
 
 # Use rndc to write debug log in /var/log/messages
 rndc querylog
+
+# The nscd caches are saved to disk, On my Fedora system, they are located in
+# /var/db/nscd, When you stop nscd, these files will just stay there, so restarting really
+# doesn't flush your nscd caches. need to run the following command
+nscd --invalidate=hosts
