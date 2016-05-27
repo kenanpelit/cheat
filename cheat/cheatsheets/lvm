@@ -8,3 +8,7 @@
     3) dracut -H -f /boot/initramfs-$(uname -r).img $(uname -r)
     4) Reboot the node
     5) uname -r to verify the correct initrd image
+
+
+# Adding tag to VG, especially in cluster environment
+vgchange --addtag @tag-name my_vg
