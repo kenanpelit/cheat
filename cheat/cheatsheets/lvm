@@ -10,5 +10,5 @@
     5) uname -r to verify the correct initrd image
 
 
-# Adding tag to VG, especially in cluster environment
+# Adding tag to VG, so you can eximport and use it. Especially in cluster environment.
 vgchange --addtag @tag-name my_vg
