@@ -10,5 +10,6 @@ pcs cluster disable [--all] [node] [...]
 
 # Prevent Resources from Moving after Recovery
 pcs resource defaults resource-stickiness=100
+
 # Check resource defaults
 pcs resource defaults
