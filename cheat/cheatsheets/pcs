@@ -1,6 +1,14 @@
+#################################### NOTEs ####################################
+# http://clusterlabs.org/doc/
+###############################################################################
+
 # Use the following command to configure the cluster services to run on startup on the specified node or nodes
 pcs cluster enable [--all] [node] [...]
 
-
 # Use the following command to configure the cluster services not to run on startup on the specified node or nodes.
 pcs cluster disable [--all] [node] [...]
+
+# Prevent Resources from Moving after Recovery
+pcs resource defaults resource-stickiness=100
+# Check resource defaults
+pcs resource defaults
