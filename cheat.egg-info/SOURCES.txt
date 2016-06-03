@@ -127,6 +127,7 @@ cheat/cheatsheets/p4
 cheat/cheatsheets/pacman
 cheat/cheatsheets/parted
 cheat/cheatsheets/paste
+cheat/cheatsheets/pcs
 cheat/cheatsheets/pdftk
 cheat/cheatsheets/perl
 cheat/cheatsheets/php
