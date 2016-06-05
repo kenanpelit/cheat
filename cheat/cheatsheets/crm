@@ -1,0 +1,6 @@
+############################ NOTEs ###############################
+## Here are the notes for Cluster Resource Manager
+##################################################################
+
+# To see the current placement scores, you can use a tool called crm_simulate.
+crm_simulate -sL
