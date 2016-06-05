@@ -1,4 +1,4 @@
 # Update the cluster.conf and reload live
-1. update the config_version on a node
-2. run "cman_tool version -r" with ricci configured
+1. Update the config_version on a node
+2. Run "cman_tool version -r" with ricci configured
 3. Or "cman_tool -S version -r" for single node
