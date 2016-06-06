@@ -32,6 +32,7 @@ cheat/cheatsheets/chown
 cheat/cheatsheets/cisco
 cheat/cheatsheets/cman_tool
 cheat/cheatsheets/convert
+cheat/cheatsheets/crm
 cheat/cheatsheets/crontab
 cheat/cheatsheets/csplit
 cheat/cheatsheets/cups
