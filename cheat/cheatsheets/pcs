@@ -1,5 +1,6 @@
 #################################### NOTEs ####################################
 # http://clusterlabs.org/doc/
+# http://www.unixarena.com/2016/01/rhel-7-pacemaker-cluster-node-management.html
 ###############################################################################
 
 # Use the following command to configure the cluster services to run on startup on the specified node or nodes
@@ -13,3 +14,11 @@ pcs resource defaults resource-stickiness=100
 
 # Check resource defaults
 pcs resource defaults
+
+# To move the cluster in to maintenance mode, use the following command, all Resources
+# will be in 'unmanaged' state, you cannot use 'pcs resource manage MyResource' to change
+# them to managed state
+pcs property set maintenance-mode=true
+
+# Check the Cluster Property
+pcs property list
