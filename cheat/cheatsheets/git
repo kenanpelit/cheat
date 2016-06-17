@@ -1,10 +1,12 @@
-[NOTES]
-This is a cheat list for git cli usage
-
+########################################## [NOTES] ################################################
+# This is a cheat list for git cli usage
+###################################################################################################
+#
 [Useful Links]
 https://www.atlassian.com/git/tutorials/resetting-checking-out-and-reverting/commit-level-operations
 http://sethrobertson.github.io/GitFixUm/fixup.html
-
+# manage branches
+https://github.com/Kunena/Kunena-Forum/wiki/Create-a-new-branch-with-git-and-manage-branches
 
 # To set your identity:
 git config --global user.name "John Doe"
@@ -157,3 +159,4 @@ git pull https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git BRANCH_NAME
 # Commit the merge and review changes
 # Push the merge to your GitHub repository.
 git push origin master |or| git push
+
