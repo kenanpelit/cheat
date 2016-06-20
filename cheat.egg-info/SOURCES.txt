@@ -99,6 +99,7 @@ cheat/cheatsheets/lvm
 cheat/cheatsheets/man
 cheat/cheatsheets/markdown
 cheat/cheatsheets/mdadm
+cheat/cheatsheets/mds
 cheat/cheatsheets/memcached
 cheat/cheatsheets/mkdir
 cheat/cheatsheets/more
