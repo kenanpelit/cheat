@@ -1,2 +1,6 @@
 # You can check that federation links for each exchange have come up
 rabbitmqctl eval 'rabbit_federation_status:status().'
+
+# Force to close connection on clients
+rabbitmqctl list_connections pid user name | grep 10.26| awk '{print "rabbitmqctl close_connection \"" $1 "\" \"abc\"" | "/bin/bash" }'
+
