@@ -1,0 +1,172 @@
+###################################################[NOTEs]###################################################
+# http://storageteknologi.blogspot.com/2015/03/cisco-mds-fabric-switch-command-line.html
+#############################################################################################################
+#Show tech-support  is one of the common command that we use in Cisco switches to collect almost all information about the switch.It is very useful for troubleshooting purpose.The output of this command can be provided to technical support representatives when reporting a problem.
+
+# To Collect Information from Cisco Switch Use the below mentioned commands
+term len 0
+show tech-support details
+
+#Show tech-support will provide a combined output of several other show commands output.
+#The default output of the show tech-support command includes the output of the following commands:
+show version
+show environment
+show module
+show hardware
+show running-config
+show interface
+show accounting log
+show processes
+
+#Useful cisco SAN Switch CLIs commands:
+#Below are some useful Cisco CLI commands and also the procedure to do zoning using Cisco CLI commands:
+#Show Commands
+#Command	Description
+show clock	        #To display the system date and time and verify the time zone configuration, use the show clock command.
+show environment	#To display all environment-related switch information (status of chassis clock,fan modules, power supply modules etc
+show fcalias	    #To display the member name information in a Fibre Channel alias (fcalias),
+show interface brief	#shows the status of the ports on the switch
+show interface counters	#port errors and details of transmission
+show interface counters brief	#port transmission details in brief
+show interface transceiver	    #shows details of the sfps used on the ports of the switch
+show running-config	            #show the details of the switch, ports , firmware , etc
+show interface mgmt0	        #To display the details of the management console
+show vsan xX	                #To display details of a VSAN
+show module	                    #To display details of the switching module
+show interface fcx/x capabilities	#To details of the matrix support for that port
+show port-resources module x	    #To check port resources like bb credits , rate mode , bandwidth for ports on a 24/48 bit module
+show interface trunk vsan x-x	    #To checkper vsan information on trunk ports
+show vsan membership interface fcx/x – x	#To check the vsan membership on port level for an interface
+show vsan x membership	                    #To check the ports that are part of a vsan
+show version	                            #To display the version of system software that is currently running on the switch, use the show version command.
+show vsan	                                #To display information about configured VSAN
+show vsan usage	                            #To check the vsans created and available vsan ids to be created
+show wwn	#To display the status of the WWN configuration
+show zone	#To display zone information
+show zoneset	#To display the configured zone sets
+show zoneset active vsan xx	#To display the active zoneset for a particular vsan
+show flogi	#To list all the FLOGI sessions through all interfaces across all VSANs
+show hardware	#To display switch hardware inventory details,
+show port-channel	#Use the show port-channel command to view information about existing PortChannel configurations.
+show running-config	#To display the running configuration file
+show startup-config	#To display the startup configuration file
+show switchname	#To display the switch network name, use the show switchname command.
+show tech-support	#To display information useful to technical support when reporting a problem
+show user-account	#To display configured information about user accounts
+show fc-tunnel	#To display configured Fibre Channel tunnel information
+
+
+#Configuration Commands:
+#Command	Description
+# This CLI sequence will disable/enable a port on the switch and saves the configuration
+config t
+interface fcx/x
+shutdown / no shutdown
+copy running-config startup-config
+
+# This command sequence put a decription for a switch port(here putting description as emcsaninfo) and saves the configuration
+config t
+interface fcx/x
+switchport description emcsaninfo
+copy running-config startup-config
+
+# This will Assign a bbcredits to a switch port and saves the configuration
+config t
+interface fcx/x
+switchport fcrxbbcredit xx/default
+copy running-config startup-config”
+
+# This will Set ip address for the management interface,set default gateway and save the configuration
+config t
+interface mgmt0
+ipaddress xx.xx.xx.xx 255.255.255.255
+no shutdown
+ip default-gateway 1.1.2.3
+copy running-config startup- config”
+
+# To delete a Vsan , cannot delete default vsan
+config t
+vsan database
+no vsan XX
+
+# This step will disable or enable a vsan XX
+config t
+interface vsan xx
+shutdown / no shutdown
+
+# This will used to set port speed
+config t
+interface fcx/x
+switchport speed 1000/2000/4000/auto/auto max xxxx
+
+# This will used for configuring rate mode of a switch port
+config t
+interface fc x/x
+switchport rate-mode dedicated/shared
+
+# Steps to add a port to a port channel
+config t
+interface fc x/x
+channel-group x/auto
+
+# Steps to manually set the port type on a switch
+config t
+interface fc x/x
+switchport mode e/f/fl/n
+
+# Steps to enable trunk protocol on a swith (default)
+config t
+trunk protocol enable
+
+# Steps to enable/disable trunk on a port level
+config t
+interface fc x/x
+switchport trunk mode on/off/auto
+
+# Steps to configure an allowed list of vsans to communicate through that port (TE PORT) and allows to add a specific vsan to the allowed list of vsans
+config t
+interface fc x/x
+switchport trunk allowed vsan x-x/x
+switchport trunk allowed vsan add x
+
+# Steps to forcefully reconfigure without affecting traffic and force vsan to configure with data traffic affected
+config t
+fcdomain restart vsan x
+fcdomain restart disruptive vsan x
+
+# Steps to create a new vsan (default)
+config t
+vsan database
+vsan x
+
+# Steps to delete a vsan
+config t
+vsan database
+no vsan x
+
+# Steps to create a vsan ,then assign a name. Steps to suspend a vsan and unsuspend it
+config t
+vsan database
+vsan x
+vsan x name abc
+vsan x suspend
+no vsan x suspend
+end
+
+# Steps to create a vsan and add a port on interface into a vsan
+config t
+vsan database
+vsan x
+vsan x interface fcx/x
+
+# Steps to remove a port on an interface from a vsan
+config t
+vsan database
+vsan x
+no vsan x interface fcx/x
+
+# Steps to remove a port on an interface from a vsan
+config t
+vsan database
+vsan x
+no vsan x interface fcx/x
