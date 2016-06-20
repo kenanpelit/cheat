@@ -1,6 +1,8 @@
 from __future__ import print_function
 import os
 import sys
+reload(sys)  
+sys.setdefaultencoding('utf8')   
 
 
 def colorize(sheet_content):
