@@ -111,6 +111,7 @@ cheat/cheatsheets/naviseccli
 cheat/cheatsheets/nbu
 cheat/cheatsheets/nc
 cheat/cheatsheets/ncat
+cheat/cheatsheets/ncdu
 cheat/cheatsheets/netstat
 cheat/cheatsheets/neutron
 cheat/cheatsheets/nkf
@@ -177,6 +178,7 @@ cheat/cheatsheets/ssh-keygen
 cheat/cheatsheets/sshuttle
 cheat/cheatsheets/stdout
 cheat/cheatsheets/strace
+cheat/cheatsheets/svn
 cheat/cheatsheets/sys
 cheat/cheatsheets/sysctl
 cheat/cheatsheets/systemctl
