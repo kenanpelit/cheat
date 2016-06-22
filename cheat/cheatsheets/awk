@@ -12,3 +12,6 @@ printf '1 2 3' | awk 'BEGIN {OFS=":"}; {print $1,$2,$3}'
 
 # Use awk to execute command, for example, print the 'abc' as STDOUT to the pipe, as STDIN for cat
 echo 'abc'|awk '{ print $1 | "cat" }'
+
+# Sends data to a co-process or socket
+echo testingit|awk '{ print $1|& "cat > /tmp/1" }'
