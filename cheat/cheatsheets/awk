@@ -15,3 +15,6 @@ echo 'abc'|awk '{ print $1 | "cat" }'
 
 # Sends data to a co-process or socket
 echo testingit|awk '{ print $1|& "cat > /tmp/1" }'
+
+# Loop over a file with getline
+awk '{ while(getline){ print } }' /etc/passwd
