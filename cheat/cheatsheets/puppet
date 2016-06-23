@@ -31,5 +31,8 @@ CACHE=no puppet agent --test --noop --no-use_srv_records --environment jzhu
 # Run puppet against your environment
 CACHE=no puppet agent --test --no-use_srv_records --environment jzhu
 
+# Run puppet against your environment when puppet is disabled
+CACHE=no puppet agent --test --no-use_srv_records --environment jzhu --agent_disabled_lockfile=/tmp/test
+
 # locate the default templatedir by running
 puppet config print templatedir --section master
