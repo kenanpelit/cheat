@@ -18,3 +18,9 @@ vgimport vg_name
 
 # After adding tag then you can vgimport the VGs
 vgchange -aey my_vg
+
+# Create LV with 50% free space on VG
+lvcreate -l 50%FREE -n lv_nfs_data vg_nfs_data
+
+# Create LV with 100% free space on VG
+lvcreate -l 100%FREE -n lv_nfs_home vg_nfs_data
