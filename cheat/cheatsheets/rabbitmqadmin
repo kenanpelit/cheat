@@ -36,3 +36,6 @@ rabbitmqadmin -q import rabbit.config
 
 # Close all connections
 rabbitmqadmin -f tsv -q list connections name | while read conn ; do rabbitmqadmin -q close connection name=${conn} ; done
+
+# Close specific connections
+rabbitmqctl list_connections pid user name | grep $WOW_SUBNET | awk '{print "rabbitmqctl close_connection \"" $1 "\" \"wow\"" | "/bin/bash" }'
