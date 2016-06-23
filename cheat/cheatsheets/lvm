@@ -12,3 +12,6 @@
 
 # Adding tag to VG, so you can eximport and use it. Especially in cluster environment.
 vgchange --addtag @tag-name my_vg
+
+# After adding tag then you can vgimport the VGs
+vgchange -aey my_vg
