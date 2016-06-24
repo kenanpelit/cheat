@@ -142,8 +142,8 @@ cheat/cheatsheets/proc
 cheat/cheatsheets/ps
 cheat/cheatsheets/puppet
 cheat/cheatsheets/python
-cheat/cheatsheets/rabbitmq
 cheat/cheatsheets/rabbitmqadmin
+cheat/cheatsheets/rabbitmqctl
 cheat/cheatsheets/racadm
 cheat/cheatsheets/readline
 cheat/cheatsheets/redis
