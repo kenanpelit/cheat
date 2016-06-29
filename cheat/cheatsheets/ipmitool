@@ -1,6 +1,7 @@
 ###################################################[NOTEs]##################################################
 # Notes for setup IPMI with ipmitool
 # http://www.openfusion.net/linux/ipmi_on_centos
+# https://www.ibm.com/support/knowledgecenter/linuxonibm/liabp/liabpcommonipmi.htm
 ############################################################################################################
 
 ipmitool lan set 1 ipsrc static
