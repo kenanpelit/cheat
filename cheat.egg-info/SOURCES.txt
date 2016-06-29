@@ -79,6 +79,7 @@ cheat/cheatsheets/indent
 cheat/cheatsheets/inq
 cheat/cheatsheets/ip
 cheat/cheatsheets/iperf
+cheat/cheatsheets/ipmitool
 cheat/cheatsheets/iptables
 cheat/cheatsheets/irssi
 cheat/cheatsheets/iwconfig
