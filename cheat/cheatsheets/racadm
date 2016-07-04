@@ -80,7 +80,7 @@ racadm jobqueue create BIOS.Setup.1-1 -r pwrcycle -s TIME_NOW -e TIME_NA
 racadm jobqueue create BIOS.Setup.1-1
 
 # Delete a jobqueue
-racadm jobqueue delete -i &lt;job_ID&gt;
+racadm jobqueue delete -i job_ID
 
 # List all Jobqueue
 racadm jobqueue view
