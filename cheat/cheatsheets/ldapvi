@@ -10,8 +10,8 @@ ldapvi -h ldapserver -D "user=jzhu,ou=users,dc=sample,dc=net" -b "ou=something,d
 ldapvi -h ldapserver -D "user=jzhu,ou=users,dc=sample,dc=net" -b "ou=something,dc=sample,dc=net" -x "(location=abc-http.*)" -ZZ
 
 # You can search all thing under the OU
-ldapvi -h ldapmaster.sample.net -D "user=jzhu,user=users,dc=sample,dc=net" -b "ou=domain,dc=sample,dc=net" -ZZ
+ldapvi -h ldapmaster.sample.net -D "user=jzhu,ou=users,dc=sample,dc=net" -b "ou=domain,dc=sample,dc=net" -ZZ
 
 # Search for the entire directory
-ldapvi -ZZ -s sub  -h ldapmaster.sample.net -D "user=jzhu,user=users,dc=sample,dc=net" -b "dc=sample,dc=net" "(attribute=value)"
+ldapvi -ZZ -s sub  -h ldapmaster.sample.net -D "user=jzhu,ou=users,dc=sample,dc=net" -b "dc=sample,dc=net" "(attribute=value)"
 

@@ -12,7 +12,7 @@ ldapsearch -h ldapmaster -x -Z -LLL -W -D user=jzhu,ou=users,dc=sample,dc=net -b
 ldapsearch -h ldapmaster -x -Z -LLL -W -D user=jzhu,ou=users,dc=sample,dc=net -b dc=sample,dc=net "(location=hostname)"
 
 # Search entier directory
-ldapsearch -h ldapmaster.sample.net -x -Z -LLL -W -D user=jzhu,dc=users,dc=sample,dc=net -b dc=sample,dc=net "(servername=*admin*servername*1)"
+ldapsearch -h ldapmaster.sample.net -x -Z -LLL -W -D user=jzhu,ou=users,dc=sample,dc=net -b dc=sample,dc=net "(servername=*admin*servername*1)"
 
 #perform a subtree search for entries with a surname (sn) of smith.
 ldapsearch -x -Z -LLL -W -D user=jzhu,ou=users,dc=sample,dc=net "(sn=smith)"
