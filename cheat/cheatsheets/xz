@@ -1,6 +1,9 @@
 ####################################[NOTEs]####################################
 # Edit the initrd file in new xz format
 # http://www.lhpup.org/help/faqs/initrd.html
+#
+# Guide:
+# https://sites.google.com/site/sridharlreddylinux/linux-t/initrd-img
 ###############################################################################
 
 # Extract initrd image to directory
