@@ -1,5 +1,8 @@
 ###################################[NOTEs]####################################
 # tool to show the contents of an initramfs image
+#
+# Guide
+# https://access.redhat.com/solutions/47028
 ##############################################################################
 
 # Show contents in the specified img file
