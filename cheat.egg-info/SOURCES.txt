@@ -86,6 +86,7 @@ cheat/cheatsheets/iwconfig
 cheat/cheatsheets/journalctl
 cheat/cheatsheets/jq
 cheat/cheatsheets/jrnl
+cheat/cheatsheets/kafka
 cheat/cheatsheets/keystone
 cheat/cheatsheets/kill
 cheat/cheatsheets/ldapsearch
