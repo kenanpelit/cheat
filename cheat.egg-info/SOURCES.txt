@@ -94,6 +94,7 @@ cheat/cheatsheets/less
 cheat/cheatsheets/lib
 cheat/cheatsheets/ln
 cheat/cheatsheets/ls
+cheat/cheatsheets/lsinitrd
 cheat/cheatsheets/lsof
 cheat/cheatsheets/lvdisplay
 cheat/cheatsheets/lvm
