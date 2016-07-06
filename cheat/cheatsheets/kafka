@@ -8,3 +8,6 @@ kafka-topics --list --zookeeper localhost:2181/kafka
 
 # Show details for a topic
 kafka-topics --describe --zookeeper 192.168.172.111:2181/kafka --topic test_topic
+
+# Consume message in CLI
+kafka-console-consumer --zookeeper localhost:2181/kafka --from-beginning --topic test_topic
