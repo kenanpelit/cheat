@@ -1,0 +1,6 @@
+###################################[NOTEs]####################################
+# tool to show the contents of an initramfs image
+##############################################################################
+
+# Show contents in the specified img file
+lsinitrd /boot/initramfs-3.10.0-78.el7.x86_64.img
