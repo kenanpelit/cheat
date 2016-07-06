@@ -7,6 +7,9 @@
 #
 # Updating kernel modules in initrd image
 # http://www.sohailriaz.com/howto-edit-initrd-img-in-rhelcentos-6-x/
+# 
+# How do I add a driver to the initrd.img
+# https://access.redhat.com/articles/15453
 ###############################################################################
 
 # Extract initrd image to directory
