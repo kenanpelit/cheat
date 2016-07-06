@@ -1,0 +1,10 @@
+#####################################[NOTEs]#######################################
+# This is a notes
+# http://www.lujinhong.com/kafka%E9%9B%86%E7%BE%A4%E6%93%8D%E4%BD%9C%E6%8C%87%E5%8D%97.html
+###################################################################################
+
+# List all topics
+kafka-topics --list --zookeeper localhost:2181/kafka
+
+# Show details for a topic
+kafka-topics --describe --zookeeper 192.168.172.111:2181/kafka --topic test_topic
