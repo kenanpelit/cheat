@@ -1,0 +1,12 @@
+####################################[NOTEs]####################################
+# Edit the initrd file in new xz format
+# http://www.lhpup.org/help/faqs/initrd.html
+###############################################################################
+
+# Extract initrd image to directory
+mkdir initrd-tree; cd initrd-tree/; xzcat ../initrd.xz | cpio -d -i -m
+
+# To put it back together, run these from inside that initrd-tree/ directory, (expect to wait a while for the operation to complete)
+# to save prior version
+mv ../initrd.xz ../initrd.xz.`date +"%Y.%m.%d_%T"` # to save prior version
+find . | cpio -o -H newc | xz --check=crc32 --x86 --lzma2=dict=512KiB > ../initrd.xz
