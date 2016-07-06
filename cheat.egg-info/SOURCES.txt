@@ -97,6 +97,7 @@ cheat/cheatsheets/ls
 cheat/cheatsheets/lsof
 cheat/cheatsheets/lvdisplay
 cheat/cheatsheets/lvm
+cheat/cheatsheets/lzma
 cheat/cheatsheets/man
 cheat/cheatsheets/markdown
 cheat/cheatsheets/mdadm
@@ -208,6 +209,7 @@ cheat/cheatsheets/weechat
 cheat/cheatsheets/wget
 cheat/cheatsheets/xargs
 cheat/cheatsheets/xrandr
+cheat/cheatsheets/xz
 cheat/cheatsheets/yaourt
 cheat/cheatsheets/youtube-dl
 cheat/cheatsheets/yum
