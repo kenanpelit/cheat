@@ -4,6 +4,9 @@
 #
 # Guide:
 # https://sites.google.com/site/sridharlreddylinux/linux-t/initrd-img
+#
+# Updating kernel modules in initrd image
+# http://www.sohailriaz.com/howto-edit-initrd-img-in-rhelcentos-6-x/
 ###############################################################################
 
 # Extract initrd image to directory
