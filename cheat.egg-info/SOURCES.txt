@@ -142,6 +142,7 @@ cheat/cheatsheets/ping
 cheat/cheatsheets/ping6
 cheat/cheatsheets/pip
 cheat/cheatsheets/postfix
+cheat/cheatsheets/postgresql
 cheat/cheatsheets/proc
 cheat/cheatsheets/ps
 cheat/cheatsheets/puppet
