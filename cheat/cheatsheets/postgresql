@@ -1,0 +1,15 @@
+#################[NOTEs]#################
+# This is a note for postgresql
+#########################################
+
+# Login to the DB on localhost:7432 and User scm
+psql -h localhost -p 7432 -U scm
+
+# List all Database
+\l
+
+# Select a Database
+\c
+
+# List all Tables in a Database
+\d
