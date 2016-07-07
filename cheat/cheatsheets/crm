@@ -4,3 +4,6 @@
 
 # To see the current placement scores, you can use a tool called crm_simulate.
 crm_simulate -sL
+
+# Display fail-counts for all resource including inactive ones
+crm_mon -1 -r -f
