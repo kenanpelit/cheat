@@ -1,5 +1,8 @@
 #################[NOTEs]#################
 # This is a note for postgresql
+#
+# Quick Guide
+# http://www.tutorialspoint.com/postgresql/postgresql_quick_guide.htm
 #########################################
 
 # Login to the DB on localhost:7432 and User scm
