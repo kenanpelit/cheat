@@ -1,6 +1,10 @@
 ########################################[NOTES]########################################
 # Some notes for 3par commands
+# http://etactiks.blogspot.com/2013/02/hp-3par-cli-command-list.html
+# http://h10032.www1.hp.com/ctg/Manual/c03618134
 #######################################################################################
+#
+#
 showalert        - show status of system alerts
 showauthparam    - show authentication parameters
 showbattery      - show battery status information
