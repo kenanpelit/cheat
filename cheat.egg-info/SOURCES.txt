@@ -9,6 +9,7 @@ cheat.egg-info/SOURCES.txt
 cheat.egg-info/dependency_links.txt
 cheat.egg-info/requires.txt
 cheat.egg-info/top_level.txt
+cheat/cheatsheets/3par
 cheat/cheatsheets/7z
 cheat/cheatsheets/__init__.py
 cheat/cheatsheets/ab
