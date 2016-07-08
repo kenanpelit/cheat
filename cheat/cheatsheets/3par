@@ -4,7 +4,7 @@
 # http://h10032.www1.hp.com/ctg/Manual/c03618134
 #######################################################################################
 #
-#
+# Show Commands
 showalert        - show status of system alerts
 showauthparam    - show authentication parameters
 showbattery      - show battery status information
