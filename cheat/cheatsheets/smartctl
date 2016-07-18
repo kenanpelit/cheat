@@ -3,3 +3,7 @@ Control and Monitor Utility for SMART Disks
 
 # Check: Ask the device to report its SMART health status or pending TapeAlert messages.
 smartctl -H /dev/sda
+
+# Prints only the vendor specific SMART Attributes.  The Attributes are numbered from 1 to 253 and have specific names and ID numbers.
+# For example Attribute 12 is "power cycle count": how many times has the disk been powered up.
+smartctl -A /dev/sda
