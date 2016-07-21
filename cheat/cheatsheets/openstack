@@ -26,3 +26,8 @@ nova list --all-tenants --host openstack-compute20
 # Build a VM
 openstack server create --flavor ${FLAVOR} --image ${IMAGE} --min $COUNT --nic net-id=${NETWORK_ID} --availability-zone nova ${NAME_PREFIX}${VM}
 
+# List all servers with additional info
+openstack server list --all-projects --long
+
+# Show details for a server
+openstack server show instance-name
