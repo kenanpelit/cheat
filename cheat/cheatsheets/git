@@ -160,3 +160,20 @@ git pull https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git BRANCH_NAME
 # Push the merge to your GitHub repository.
 git push origin master |or| git push
 
+# *************** This is about manipulate branches ************************
+# http://www.gitguys.com/topics/adding-and-removing-remote-branches/
+# **************************************************************************
+
+# Create Remote Branches with the following commands
+git branch
+git branch v0
+git push origin v0
+
+
+
+
+
+
+
+
+
