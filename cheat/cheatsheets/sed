@@ -36,3 +36,6 @@ s/\n/ /g;
 p;
 }
 '
+
+# Exchange 2 lines, and replace newlines to tabs 
+sed -n 'h;n;x;G;s/\n/\t/;p'
