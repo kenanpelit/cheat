@@ -1,0 +1,8 @@
+##################################################################################################
+# http://linux.die.net/man/8/omping
+##################################################################################################
+
+# The following commands and output is a typical way how to find-out and solve network
+# problems using omping. In this situation, we have 3 computers named node-01, node-02 and
+# node-03 with IP addresses 192.168.1.101 - 192.168.1.103. Let’s run the following command on all of them.
+omping node-01 node-02 node-03

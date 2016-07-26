@@ -1,3 +1,6 @@
+##################################################################################################
+# http://www.tcpipguide.com/free/t_DHCPLeaseRenewalandRebindingProcesses-2.htm
+##################################################################################################
 # Issue 1
 # If there are multiple subnets in dhcpd.conf file and all the subnets have option routers set,
 # So on the client side, if one of the interface renew it's IP address, its default router
