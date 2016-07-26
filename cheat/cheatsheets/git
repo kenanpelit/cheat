@@ -78,6 +78,9 @@ git config --global core.pager 'less -r'
 # To retreive a historical version of file ****************
 git checkout [commit_id] -- <path_to_file>
 
+# To merge a branch, you currently in master branch and you are merging patch01 into master
+git merge patch01
+
 # Manageing submodules
 https://chrisjean.com/git-submodules-adding-using-removing-and-updating/
 
