@@ -128,6 +128,7 @@ cheat/cheatsheets/nova
 cheat/cheatsheets/ntp
 cheat/cheatsheets/numfmt
 cheat/cheatsheets/od
+cheat/cheatsheets/omping
 cheat/cheatsheets/openssl
 cheat/cheatsheets/openstack
 cheat/cheatsheets/ovs-vsctl
