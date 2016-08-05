@@ -132,3 +132,6 @@ racadm raid get pdisks -o -p state,size (specific information)
 # Get RAID Virtual Disk Information
 racadm raid get vdisks
 # Configuration Web Virtual console to use JAVA
+
+# Perform system power management operations
+racadm help serveraction
