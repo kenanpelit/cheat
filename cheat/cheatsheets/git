@@ -216,10 +216,10 @@ git push origin :[name_of_your_new_branch]
 #	'Note about fast-forwards' section of 'git push --help' for details.
 
 # You can fix this by fetching and merging the changes made on the remote branch with the changes that you have made locally:
-git fetch origin
 # Fetches updates made to an online repository
-git merge origin YOUR_BRANCH_NAME
+git fetch origin
 # Merges updates made online with your local work
-# Or, you can simply use git pull to perform both commands at once:
-git pull origin YOUR_BRANCH_NAME
+git merge origin YOUR_BRANCH_NAME
+## Or, you can simply use git pull to perform both commands at once:
 # Grabs online updates and merges them with your local work
+git pull origin YOUR_BRANCH_NAME
