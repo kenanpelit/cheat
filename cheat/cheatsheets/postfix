@@ -8,3 +8,25 @@ postsuper -d ALL
 
 # To remove all mails in the deferred queue, enter:
 postsuper -d ALL deferred
+
+# Put all deferred mail "on hold" so that no attempt is made to deliver it
+postsuper -h ALL deferred
+
+# Release mail that was put "on hold"
+postsuper -H ALL deferred
+
+# Purge all deferred emails from the queue without delivering
+postsuper -d ALL deferred $ find /var/spool/postfix/deferred -type f -exec rm -vf {} \;
+
+# Purge specific email from the queue by specifying its message ID
+postsuper -d 0C0FF240F2
+
+# Delete mails not sent in 3 days
+find /var/spool/postfix/deferred -type f -mtime +3 -exec rm -f {} \;
+
+# List all problematic mails
+find /var/spool/postfix/deferred -type f \ -exec ls -l --time-style=+%Y-%m-%d_%H:%M:%S {} \;
+
+# Delete bounced mails longer than 5 days
+find /var/spool/postfix/defer -type f -mtime +5 -exec rm -f {} \; 
+
