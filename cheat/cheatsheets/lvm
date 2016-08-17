@@ -16,7 +16,7 @@ vgchange --addtag @tag-name my_vg
 # Then vgimport the VGs
 vgimport vg_name
 
-# After adding tag then you can vgimport the VGs
+# After adding tag then you can activate the VG/LVs
 vgchange -aey my_vg
 
 # Create LV with 50% free space on VG
