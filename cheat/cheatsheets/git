@@ -150,7 +150,6 @@ git clone --depth 1 <remote-url>
 # To unshallow a clone
 git pull --unshallow
 
-<<<<<<< HEAD
 # ********  Merging an upstream repository into your fork ********
 # https://help.github.com/articles/merging-an-upstream-repository-into-your-fork/
 # Change the current working directory to your local project.
@@ -224,7 +223,7 @@ git merge origin YOUR_BRANCH_NAME
 ## Or, you can simply use git pull to perform both commands at once:
 # Grabs online updates and merges them with your local work
 git pull origin YOUR_BRANCH_NAME
-=======
+
 # Create a bare branch (one that has no commits on it)
 git checkout --orphan branch_name
 
@@ -244,4 +243,3 @@ git show :/cool
 
 # Undo parts of last commit in a specific file
 git checkout -p HEAD^ -- /path/to/file
->>>>>>> eff042d50b390bd59ac9b0bf79d313699624473a
