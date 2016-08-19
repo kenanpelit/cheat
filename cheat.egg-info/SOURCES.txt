@@ -35,6 +35,7 @@ cheat/cheatsheets/cisco
 cheat/cheatsheets/cman_tool
 cheat/cheatsheets/convert
 cheat/cheatsheets/cpdf
+cheat/cheatsheets/cpio
 cheat/cheatsheets/crm
 cheat/cheatsheets/crontab
 cheat/cheatsheets/csplit
