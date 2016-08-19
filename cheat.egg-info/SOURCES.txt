@@ -13,6 +13,7 @@ cheat/cheatsheets/3par
 cheat/cheatsheets/7z
 cheat/cheatsheets/__init__.py
 cheat/cheatsheets/ab
+cheat/cheatsheets/ansi
 cheat/cheatsheets/apk
 cheat/cheatsheets/apparmor
 cheat/cheatsheets/apt
@@ -33,6 +34,7 @@ cheat/cheatsheets/chown
 cheat/cheatsheets/cisco
 cheat/cheatsheets/cman_tool
 cheat/cheatsheets/convert
+cheat/cheatsheets/cpdf
 cheat/cheatsheets/crm
 cheat/cheatsheets/crontab
 cheat/cheatsheets/csplit
@@ -214,6 +216,7 @@ cheat/cheatsheets/weechat
 cheat/cheatsheets/wget
 cheat/cheatsheets/xargs
 cheat/cheatsheets/xrandr
+cheat/cheatsheets/xxd
 cheat/cheatsheets/xz
 cheat/cheatsheets/yaourt
 cheat/cheatsheets/youtube-dl
