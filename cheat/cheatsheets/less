@@ -1,6 +1,15 @@
 # To disable the terminal refresh when exiting
 less -X
 
+<<<<<<< HEAD
 # Causes "raw" control characters to be displayed. The default is to display control characters using the caret notation; for example, a control-A (octal 001) is displayed as "^A".
 less -R
 less -r
+=======
+# To save the contents to a file
+# Method 1 - Only works when the input is a pipe
+s <filename>
+
+# Method 2 - This should work whether input is a pipe or an ordinary file.
+Type g or < (g or less-than) | $ (pipe then dollar) then cat > <filename> and Enter.
+>>>>>>> eff042d50b390bd59ac9b0bf79d313699624473a

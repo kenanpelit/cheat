@@ -40,27 +40,12 @@ def editor():
 
     elif os.environ['EDITOR'] == "":
         die(
-          'Your EDITOR environment variable is set to an empty string. It must '
-          'be set to your editor\'s path.'
+            'Your EDITOR environment variable is set to an empty string. It must '
+            'be set to your editor\'s path.'
         )
 
     else:
         return os.environ['EDITOR']
-
-
-def prompt_yes_or_no(question):
-    """ Prompts the user with a yes-or-no question """
-    # Support Python 2 and 3 input
-    # Default to Python 2's input()
-    get_input = raw_input
- 
-    # If this is Python 3, use input()
-    if sys.version_info[:2] >= (3, 0):
-        get_input = input
-
-    print(question)
-    return get_input('[y/n] ') == 'y'
-
 
 def warn(message):
     """ Prints a message to stderr """

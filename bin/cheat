@@ -31,14 +31,14 @@ Options:
 """
 
 # require the dependencies
-from cheat import *
-from cheat.utils import *
+from cheat import sheets, sheet
+from cheat.utils import colorize
 from docopt import docopt
 
 
 if __name__ == '__main__':
     # parse the command-line options
-    options = docopt(__doc__, version='cheat 2.1.25')
+    options = docopt(__doc__, version='cheat 2.1.26')
 
     # list directories
     if options['--directories']:
