@@ -1,0 +1,39 @@
+############################ NOTEs ###############################
+## Here are the notes for cpio command
+##################################################################
+
+# Create *.cpio Archive File
+ls | cpio -ov > /tmp/object.cpio
+
+# Extract *.cpio Archive File
+cpio -idv < /tmp/object.cpio
+
+# Create *.cpio Archive with Selected Files
+find . -iname *.c -print | cpio -ov >/tmp/c_files.cpio
+
+# Create *.tar Archive File using cpio -F
+ls | cpio -ov -H tar -F sample.tar
+
+# Extract *.tar Archive File using cpio command
+cpio -idv -F sample.tar
+
+# View the content of *.tar Archive File
+cpio -it -F sample.tar
+
+# Create a *.cpio Archive with the Original files that a Symbolic Link Points
+ls | cpio -oLv >/tmp/test.cpio
+
+# Preserve the File Modification Time while restoring *.cpio
+ls | cpio -omv >/tmp/test.cpio
+
+# Copy Directory Tree from One to Another
+find . -depth | cpio -pmdv /mnt/out
+
+# Using the find command would list all files and directories and using the cpio command copy those files listed to the floppy drive.
+find . -print | cpio -ocv > /dev/fd0
+
+# The find command would list all files and subdirectories of the current directory, and pipe them to the cpio command, which copies those files to the hope user account.
+find . -print | cpio -dumpv /home/users/hope
+
+# The above command would restore the files back from the floppy.
+cpio -icuvd < /dev/fd0
