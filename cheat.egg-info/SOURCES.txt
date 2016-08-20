@@ -102,6 +102,7 @@ cheat/cheatsheets/ls
 cheat/cheatsheets/lsinitrd
 cheat/cheatsheets/lsof
 cheat/cheatsheets/lvdisplay
+cheat/cheatsheets/lvextend
 cheat/cheatsheets/lvm
 cheat/cheatsheets/lzma
 cheat/cheatsheets/man
