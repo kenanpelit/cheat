@@ -1,0 +1,19 @@
+##################################################################################################
+# This is notes for lvm command lvextend
+##################################################################################################
+#
+# Extend LV with all free space in VG
+lvextend -l +100%FREE -n dev_path_of_lv
+
+# Extends a logical volume "vg01/lvol01" by 16MiB using physical extents /dev/sda:8-9 and
+# /dev/sdb:8-9 for allocation of extents
+lvextend -L+16M vg01/lvol01 /dev/sda:8-9 /dev/sdb:8-9
+
+# Extends the size of logical volume "vg01/lvol01" by the amount of free space on physical
+# volume /dev/sdk3. This is equivalent to specifying "-l +100%PVS" on the command line
+lvextend /dev/vg01/lvol01 /dev/sdk3
+
+# Extends the size of the logical volume "vg01/lvol10" by 54MiB on physical volume
+# /dev/sdk3. This is only possible if /dev/sdk3 is a member of volume group vg01 and there
+# are enough free physical extents in it
+lvextend -L +54 /dev/vg01/lvol10 /dev/sdk3
