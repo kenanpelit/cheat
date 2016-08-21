@@ -59,6 +59,7 @@ cheat/cheatsheets/emacs
 cheat/cheatsheets/fab
 cheat/cheatsheets/ffmpeg
 cheat/cheatsheets/find
+cheat/cheatsheets/flock
 cheat/cheatsheets/for
 cheat/cheatsheets/gcc
 cheat/cheatsheets/gdb
