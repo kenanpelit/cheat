@@ -11,6 +11,9 @@
 *1* racadm get [BIOS|iRRAC]
 *2* racadm set [BIOS|iRRAC]
 
+# List all iDRAC users
+racadm get iDRAC.Users
+
 # Adding iDRAC administrator account for iDRAC
 racadm config -g cfgUserAdmin -i 3 -o cfgUserAdminUserName username
 racadm config -g cfgUserAdmin -i 3 -o cfgUserAdminPassword D0nXXXXX
