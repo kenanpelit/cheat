@@ -15,3 +15,6 @@ kafka-console-consumer --zookeeper localhost:2181/kafka --from-beginning --topic
 # Check whether a mirror is keeping up
 # https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=27846330
 kafka-run-class kafka.tools.ConsumerOffsetChecker --group KafkaMirror --zkconnect kafka01:2181 --topic telemetry-v1-server-pro-event
+
+# Check the retention time for topic
+bin/kafka-topics.sh --zookeeper zk.yoursite.com --alter --topic as-access --config retention.ms=86400000
