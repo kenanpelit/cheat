@@ -1,3 +1,6 @@
+# rabbitmqadmin supports tab completion in bash. To print a bash completion script, invoke rabbitmqadmin --bash-completion. This should be redirected to a file and sourced.
+sudo sh -c 'rabbitmqadmin --bash-completion > /etc/bash_completion.d/rabbitmqadmin'
+
 # Show overview
 rabbitmqadmin show overview
 
