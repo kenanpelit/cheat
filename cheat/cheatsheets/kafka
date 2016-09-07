@@ -18,3 +18,6 @@ kafka-run-class kafka.tools.ConsumerOffsetChecker --group KafkaMirror --zkconnec
 
 # Check the retention time for topic
 bin/kafka-topics.sh --zookeeper zk.yoursite.com --alter --topic as-access --config retention.ms=86400000
+
+# Create a topic, notice the /kafka after ZK URL
+kafka-topics --create --zookeeper localhost:2181/kafka --replication-factor 2 --partitions 6 --topic test_topic
