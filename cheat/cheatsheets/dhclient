@@ -8,3 +8,7 @@ sudo dhclient
 
 # To obtain a new IP address for a specific interface:
 sudo dhclient eth0
+
+# In this example, I am renewing an IP address for my wireless interface
+dhclient -v -r eth0
+dhclient -v eth0
