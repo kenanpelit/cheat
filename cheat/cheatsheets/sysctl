@@ -1,2 +1,5 @@
 # Set a kernel parameter 
 sysctl -w kernel.pid_max=4194303
+
+# Check the kernel core dump location
+sysctl kernel.core_pattern
