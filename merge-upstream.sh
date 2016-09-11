@@ -23,6 +23,7 @@ set -o nounset                              # Treat unset variables as an error
 #git remote add ngqa https://github.com/howe/ngqa.git #添加一个别名，指向ngqa项目的位置
 #git pull ngqa master #pull ngqa下面的master分支
 cd ~/cheat
+#git remote add git@github.com:chrisallenlane/cheat.git
 git checkout master
 git pull git@github.com:chrisallenlane/cheat.git
 git commit -m 'merging upstream'
