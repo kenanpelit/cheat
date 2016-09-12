@@ -46,3 +46,11 @@ UPDATE tbl_name SET col1 = "example";
 
 # Basic DELETE Statement
 DELETE FROM tbl_name WHERE user = 'jcole';
+
+# Forgot password and resetting
+https://help.ubuntu.com/community/MysqlPasswordReset
+
+
+
+
+
