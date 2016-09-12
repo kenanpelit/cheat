@@ -19,3 +19,6 @@ omping remote_ip local_ip
 
 # A UTILITY FOR THE DLM AND DLM_CONTROLD DAEMON
 dlm_tool -h
+
+# Check the corosync totem token timeout
+corosync-objctl |grep totem.token
