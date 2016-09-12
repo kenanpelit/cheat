@@ -24,3 +24,11 @@ top -h
 
 # Order the display by sorting on <key> in descending order
 top -o <key>
+
+# To display the top 15 processes sorted by memory use in descending order, do:
+top -b -o +%MEM | head -n 22
+
+# To display the top 15 processes sorted by CPU use in descending order, do:
+top -b -o +%CPU | head -n 22
+
+
