@@ -21,4 +21,5 @@ omping remote_ip local_ip
 dlm_tool -h
 
 # Check the corosync totem token timeout
+# https://access.redhat.com/solutions/221263
 corosync-objctl |grep totem.token
