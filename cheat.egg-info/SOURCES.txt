@@ -49,6 +49,7 @@ cheat/cheatsheets/df
 cheat/cheatsheets/dhclient
 cheat/cheatsheets/dhcpd
 cheat/cheatsheets/diff
+cheat/cheatsheets/dig
 cheat/cheatsheets/distcc
 cheat/cheatsheets/dnf
 cheat/cheatsheets/dns
