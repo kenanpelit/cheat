@@ -1,0 +1,8 @@
+####################################[NOTEs]####################################
+# 
+###############################################################################
+
+# Dig, Query management server information of the domain 
+# http://linux.vbird.org/linux_server/0350dns.php#rr_soa
+dig -t soa ksu.edu.tw
+
