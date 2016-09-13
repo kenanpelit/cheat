@@ -54,7 +54,7 @@ nova list --all-tenants --host openstack-compute20
 # List VMs on a specified compute node
 OS_PROJECT_NAME=openstack nova list --all-tenants --host jzhu-os-compute0003.domain.net
 
-# Show details about VM 
+# Show details about VM
 nova show 5a298d9c-0da3-46d3-957b-acac0b894e91
 
 # Show flavor details
@@ -72,3 +72,30 @@ nova service-disable jzhu-HP-Z400-Workstation nova-compute
 
 # Enable service
 nova service-enable jzhu-HP-Z400-Workstation nova-compute
+
+# Print a list of all aggregates
+nova aggregate-list
+
+# Create a new aggregate with the specified details.
+nova aggregate-create         <name> <availability_zone>
+
+# Delete the aggregate by its id.
+nova aggregate-delete         <id>
+
+# Show details of the specified aggregate.
+nova aggregate-details        <id>
+
+# Add the host to the specified aggregate.
+nova aggregate-add-host       <id> <host>
+
+# Remove the specified host from the specified aggregate.
+nova aggregate-remove-host    <id> <host>
+
+# Update the metadata associated with the aggregate.
+nova aggregate-set-metadata   <id> <key=value> [<key=value> ...]
+
+# Update the aggregate's name and optionally availability zone.
+nova aggregate-update         <id> <name> [<availability_zone>]
+
+# Put/resume host into/from maintenance.
+nova host-update              --maintenance [enable | disable]
