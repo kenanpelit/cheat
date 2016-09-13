@@ -39,3 +39,18 @@ ip netns exec qdhcp-45577666-657d-4f75-a3ab-9bc232f15203 ip addr show
 
 # See tcpdump on tap devices
 ip netns exec qdhcp-45577666-657d-4f75-a3ab-9bc232f15203 tcpdump -ln -i tap7a12f9b0-a4
+
+# List all namespaces in the system
+ip netns list
+
+# Look for a namespace for dhcp agent that serves for subnet that has first three octects "10.60.200"
+ps -ef |grep dnsm | grep 10.60.200| fold -s -w 90
+
+# Find namespace by id of dhcp agent
+ip netns list |grep 33924736-77b3-420d-b0e8-aaa4c8476d54
+
+# Check what ports are listening in a given namespace
+ip netns exec qdhcp-33924736-77b3-420d-b0e8-aaa4c8476d54 netstat -tuan
+
+# Check a routing table in a given namespace
+ip netns exec qdhcp-33924736-77b3-420d-b0e8-aaa4c8476d54 ip route
