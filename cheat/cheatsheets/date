@@ -6,3 +6,13 @@ date -d @1440359821
 
 # Convert Unix timestamp to Date(Mac)
 date -r 1440359821
+
+# change your CentOS server timezone
+# Example 1: set time zone to Melbourne, Australia
+cp /usr/share/zoneinfo/Australia/Melbourne /etc/localtime
+
+# Example 2: set time zone to UTC
+cp /usr/share/zoneinfo/UTC /etc/localtime
+
+# Sync this time to your hardware (BIOS) clock
+hwclock --systohc
