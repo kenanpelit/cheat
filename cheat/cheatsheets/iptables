@@ -63,6 +63,7 @@ iptables -t nat -I PREROUTING --src $SRC_IP_MASK --dst $DST_IP -p tcp --dport $p
 # The OUTPUT chain example
 iptables -t nat -I OUTPUT --src 0/0 --dst 192.168.1.5 -p tcp --dport 80 -j REDIRECT --to-ports 8123
 
-
-
-
+# Adding a rule for rabbitmq
+iptables -I INPUT -p tcp --dport 5672 -j ACCEPT
+/etc/init.d/iptables save
+/etc/init.d/iptables restart
