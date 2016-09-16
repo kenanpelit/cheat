@@ -137,6 +137,7 @@ cheat/cheatsheets/od
 cheat/cheatsheets/omping
 cheat/cheatsheets/openssl
 cheat/cheatsheets/openstack
+cheat/cheatsheets/openstack-config
 cheat/cheatsheets/ovs-vsctl
 cheat/cheatsheets/p4
 cheat/cheatsheets/pacman
