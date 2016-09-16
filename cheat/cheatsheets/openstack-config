@@ -1,0 +1,3 @@
+# Set configuration for openstack configuration file
+openstack-config --set /etc/nova/nova.conf DEFAULT compute_driver libvirt.LibvirtDriver
+openstack-config --set /etc/nova/nova.conf libvirt virt_type qemu
