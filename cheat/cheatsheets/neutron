@@ -14,7 +14,9 @@ neutron agent-list
 neutron router-gateway-clear 7de71033-f737-4741-bcca-4ad24cde711d
 
 # Need to remove all interfaces from router before removing the router
+neutron router-list
 neutron subnet-list
+neutron router-port-list d3687db0-f023-4c5f-903e-9f1f8653197d
 neutron router-interface-delete routerID subnetID
 
 # After remove gateway/router-interface from router, you can remove router
