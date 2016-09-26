@@ -1,5 +1,6 @@
 ###################################### NOTE ##############################################
 # https://help.ubuntu.com/community/IptablesHowTo
+# http://www.cyberciti.biz/tips/linux-iptables-examples.html
 ##########################################################################################
 
 # Show hit for rules with auto refresh
@@ -11,16 +12,6 @@ watch -d -n 2 iptables -nvL
 # Block the port 902 and we hide this port from nmap.
 iptables -A INPUT -i eth0 -p tcp --dport 902 -j REJECT --reject-with icmp-port-unreachable
 
-# Note, --reject-with accept:
-#	icmp-net-unreachable
-#	icmp-host-unreachable
-#	icmp-port-unreachable <- Hide a port to nmap
-#	icmp-proto-unreachable
-#	icmp-net-prohibited
-#	icmp-host-prohibited or
-#	icmp-admin-prohibited
-#	tcp-reset
-
 # Add a comment to a rule:
 iptables ... -m comment --comment "This rule is here for this reason"
 
@@ -28,13 +19,6 @@ iptables ... -m comment --comment "This rule is here for this reason"
 # 1) Show all rules
 iptables -L INPUT --line-numbers
 # OR iptables -nL --line-numbers
-
-# Chain INPUT (policy ACCEPT)
-#     num  target prot opt source destination
-#     1    ACCEPT     udp  --  anywhere  anywhere             udp dpt:domain
-#     2    ACCEPT     tcp  --  anywhere  anywhere             tcp dpt:domain
-#     3    ACCEPT     udp  --  anywhere  anywhere             udp dpt:bootps
-#     4    ACCEPT     tcp  --  anywhere  anywhere             tcp dpt:bootps
 
 # 2.a) REMOVE (-D) a rule. (here an INPUT rule)
 iptables -D INPUT 2
@@ -70,3 +54,24 @@ iptables -I INPUT -p tcp --dport 5672 -j ACCEPT
 
 # Accept tcp packets on destination ports range 6881-6890
 iptables -A INPUT -p tcp --dport 6881:6890 -j ACCEPT
+
+# Save Firewall Rules
+service iptables save
+iptables-save > /root/my.active.firewall.rules
+
+# Restore Firewall Rules
+iptables-restore < /root/my.active.firewall.rules
+
+# To restore firewall rules under CentOS / RHEL / Fedora Linux, enter:
+service iptables restart
+
+# Set the Default Firewall Policies, To drop all traffic by default
+iptables -P INPUT DROP
+iptables -P OUTPUT DROP
+iptables -P FORWARD DROP
+
+# Log and Drop Packets
+iptables -A INPUT -i eth1 -s 10.0.0.0/8 -j LOG --log-prefix "IP_SPOOF A: "
+
+
+
