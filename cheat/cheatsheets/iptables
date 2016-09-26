@@ -1,6 +1,7 @@
 ###################################### NOTE ##############################################
 # https://help.ubuntu.com/community/IptablesHowTo
 # http://www.cyberciti.biz/tips/linux-iptables-examples.html
+# http://www.cnblogs.com/wangkangluo1/archive/2012/04/19/2457072.html
 ##########################################################################################
 
 # Show hit for rules with auto refresh
