@@ -1,5 +1,6 @@
 ###############################[NOTEs]#################################
 # http://cloudinit.readthedocs.io/en/latest/
+# https://coreos.com/os/docs/latest/cloud-config.html#writefiles
 #######################################################################
 
 # List tenant
@@ -40,5 +41,4 @@ openstack server show instance-name
 openstack catalog list
 
 # Create a instance with user-data, check below link for how to use cloud config
-# https://coreos.com/os/docs/latest/cloud-config.html#writefiles
 openstack server create --flavor c4.2xlarge --nic net-id=web-internal-net --image centos6.8-latest host-name --user-data user-data.txt
