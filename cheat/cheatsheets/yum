@@ -1,3 +1,7 @@
+###############################################[NOTEs]#############################################
+# https://wiki.centos.org/TipsAndTricks/YumAndRPM#head-61731905d2e34ac343baeef06e5dd296aeed67b9
+###################################################################################################
+
 # To install the latest version of a package:
 yum install <package name>
 
