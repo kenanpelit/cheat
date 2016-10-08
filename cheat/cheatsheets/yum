@@ -22,6 +22,9 @@ yum info <package name>
 # List currently enabled repositories:
 yum repolist
 
+# Disable all repositories and then enable just selected repo.
+yum --disablerepo="*" --enablerepo="google" list available
+
 # List packages containing a certain keyword:
 yum list <package_name_or_word_to_search>
  
