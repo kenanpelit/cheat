@@ -1,0 +1,9 @@
+#############################[NOTEs]################################################################################
+# http://clusterlabs.org/doc/en-US/Pacemaker/1.1-pcs/html-single/Pacemaker_Explained/index.html#idm140521771441536
+####################################################################################################################
+
+# Query all cib xml contents
+cibadmin --query
+
+# Query cluster properties, specific scope
+cibadmin --query --scope crm_config
