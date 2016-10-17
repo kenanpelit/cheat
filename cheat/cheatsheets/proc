@@ -1,2 +1,11 @@
 # Find what process is using a particular FD
 for x in $(echo /proc/*/fd/14); do echo $x $(readlink $x); done
+
+# Free pagecache, dentries and inodes in cache memory 
+sync; echo 3 > /proc/sys/vm/drop_caches
+
+# Free dentries and inodes use following command
+sync; echo 2 > /proc/sys/vm/drop_caches
+
+# Free pagecache only use following command 
+sync; echo 1 > /proc/sys/vm/drop_caches
