@@ -22,3 +22,7 @@ pcs property set maintenance-mode=true
 
 # Check the Cluster Property
 pcs property list
+
+# Show the cib file
+pcs cluster cib|less
+cibadmin --query|less
