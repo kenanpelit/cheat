@@ -1,3 +1,7 @@
+## {NOTES}
+# A way to remove shared memory
+# http://appcrawler.com/wordpress/2011/08/07/ipcrm-not-removing-sga-shared-memory-segment/
+
 # Write information about active shared memory segments
 ipcs -m
 
