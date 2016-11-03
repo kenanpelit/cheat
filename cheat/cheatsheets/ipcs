@@ -1,0 +1,8 @@
+# Write information about active shared memory segments
+ipcs -m
+
+# Show PIDs of creator and last operator of the shared memory segments, kill the Process and the shared memory will go away
+ipcs -p
+
+# Remove certain IPC resources
+ipcrm {shm|msg|sem} id
