@@ -2,11 +2,14 @@
 # This is a cheat list for git cli usage
 ###################################################################################################
 #
-[Useful Links]
-https://www.atlassian.com/git/tutorials/resetting-checking-out-and-reverting/commit-level-operations
-http://sethrobertson.github.io/GitFixUm/fixup.html
+#[Useful Links]
+# https://www.atlassian.com/git/tutorials/resetting-checking-out-and-reverting/commit-level-operations
+# http://sethrobertson.github.io/GitFixUm/fixup.html
 # manage branches
-https://github.com/Kunena/Kunena-Forum/wiki/Create-a-new-branch-with-git-and-manage-branches
+# https://github.com/Kunena/Kunena-Forum/wiki/Create-a-new-branch-with-git-and-manage-branches
+#
+# Fork A Repo and Syncing a fork
+# https://help.github.com/articles/fork-a-repo/
 
 # To set your identity:
 git config --global user.name "John Doe"
