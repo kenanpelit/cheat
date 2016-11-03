@@ -1,6 +1,9 @@
-## {NOTES}
-# A way to remove shared memory
+## [NOTES]
+# ipcrm unable to remove shared memory
 # http://appcrawler.com/wordpress/2011/08/07/ipcrm-not-removing-sga-shared-memory-segment/
+#
+# Identifying shared memory segment users using lsof
+# http://blog.tanelpoder.com/2009/01/22/identifying-shared-memory-segment-users-using-lsof/
 
 # Write information about active shared memory segments
 ipcs -m
@@ -10,3 +13,4 @@ ipcs -p
 
 # Remove certain IPC resources
 ipcrm {shm|msg|sem} id
+
