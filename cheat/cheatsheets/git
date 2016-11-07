@@ -61,6 +61,12 @@ git commit -m "Your commit message"
 git commit --amend
 git commit --amend -m "Fixes bug #42"
 
+# Interactive rebase for the last 7 commits
+git rebase -i @~7
+
+# Interactively modify the last 3 commits
+git rebase -i HEAD~3
+
 # Git commit in the past
 git commit --date="`date --date='2 day ago'`"
 git commit --date="Jun 13 18:30:25 IST 2015"
@@ -113,6 +119,12 @@ git merge patch01
 # Manageing submodules
 https://chrisjean.com/git-submodules-adding-using-removing-and-updating/
 
+# Adding a submodule
+git submodule add repo-url path
+
+# Update all your submodules
+git submodule update --init --recursive
+
 # To sync a fork with the master repo:
 git remote add upstream git@github.com:name/repo.git    # Set a new repo
 git remote -v                                           # Confirm new remote repo
@@ -155,9 +167,6 @@ git log @{u}..
 git log -p feature --not master
 git diff master...feature
 
-# Interactive rebase for the last 7 commits
-git rebase -i @~7
-
 # Diff files WITHOUT considering them a part of git
 # This can be used to diff files that are not in a git repo!
 git diff --no-index path/to/file/A path/to/file/B
@@ -169,8 +178,6 @@ git reset --hard origin/master
 # How to view conflicts? find the conflicts and fix it
 Between conflict marker "<<<<<<< HEAD" and "=======" is changed by Me
 Between conflict marker "=======" and ">>>>>>> 74dfd51601bd368e03b9651641e0cfe173c6d232" is changed by others
-# Update all your submodules
-git submodule update --init --recursive
 
 # Perform a shallow clone to only get latest commits
 # (helps save data when cloning large repos)
