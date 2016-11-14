@@ -54,6 +54,12 @@ git stash pop
 # from the stash list
 git stash apply stash@{6}
 
+# Unstash a specific file
+git checkout stash@{0} -- <filename>
+
+# Unstash a file by saving to
+git show stash@{0}:<full filename>  >  <newfile>
+
 # To commit staged changes
 git commit -m "Your commit message"
 
