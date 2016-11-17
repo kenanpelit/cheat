@@ -39,3 +39,8 @@ p;
 
 # Exchange 2 lines, and replace newlines to tabs 
 sed -n 'h;n;x;G;s/\n/\t/;p'
+
+# Replace the square bracket
+echo '[123]' | sed 's/[][]//g'
+echo '[123]' | sed 's/\(\[\|\]\)//g'
+echo '[123]' | sed -r 's/(\[|\])//g'
