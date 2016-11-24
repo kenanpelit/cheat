@@ -1,0 +1,2 @@
+# Read pcap and display details
+tcptrace -l eth0.pcap

@@ -1,0 +1,2 @@
+# Display tcp traffic 
+sudo tshark -V -i eth0 -f 'host 8.8.8.8'
