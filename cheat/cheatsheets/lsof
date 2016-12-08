@@ -1,3 +1,6 @@
+# Files are deleted but still occupy space
+# https://access.redhat.com/solutions/2316
+#
 # List all IPv4 network files
 sudo lsof -i4
 
