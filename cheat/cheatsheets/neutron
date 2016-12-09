@@ -28,5 +28,5 @@ neutron agent-update --admin-state-down acfc0298-3461-40a0-8d15-14742b35c641
 # Enable an agent
 neutron agent-update --admin-state-up acfc0298-3461-40a0-8d15-14742b35c641
 
-# Find the relationship between security group and tenant/projects
+# Find the relationship between security group and tenant/projects, below command list details for all security group and to a file
 neutron security-group-list |grep -vE '\+|name'|awk '{print $2}'|xargs -I{} neutron security-group-show '{}' > sec.log
