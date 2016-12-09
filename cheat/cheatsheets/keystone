@@ -4,6 +4,9 @@
 # Understanding OpenStack Authentication: Keystone PKI
 # https://www.mirantis.com/blog/understanding-openstack-authentication-keystone-pki/
 #
+# Request Flow for Provisioning Instance in Openstack
+# https://ilearnstack.wordpress.com/2013/04/26/request-flow-for-provisioning-instance-in-openstack/?preview=true&preview_id=410&preview_nonce=3618fe51b7
+#
 # Show Help
 keystone -h
 
