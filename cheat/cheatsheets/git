@@ -13,6 +13,9 @@
 # 
 # Create a pull request
 # https://www.digitalocean.com/community/tutorials/how-to-create-a-pull-request-on-github
+#
+# Git HowTo: revert a commit already pushed to a remote repository
+# http://christoph.ruegg.name/blog/git-howto-revert-a-commit-already-pushed-to-a-remote-reposit.html
 
 # Print out the commit graph on the command line
 git log --oneline --graph --decorate --all
