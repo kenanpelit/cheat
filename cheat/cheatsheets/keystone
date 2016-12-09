@@ -1,6 +1,9 @@
 # Openstack Authentication
 # https://wiki.openstack.org/wiki/OpenStackClient/Authentication
 #
+# Understanding OpenStack Authentication: Keystone PKI
+# https://www.mirantis.com/blog/understanding-openstack-authentication-keystone-pki/
+#
 # Show Help
 keystone -h
 
