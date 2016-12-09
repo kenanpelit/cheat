@@ -1,3 +1,6 @@
+# Openstack Authentication
+# https://wiki.openstack.org/wiki/OpenStackClient/Authentication
+#
 # Show Help
 keystone -h
 
