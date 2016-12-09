@@ -1,3 +1,8 @@
+CHANGELOG
+CONTRIBUTING.md
+LICENSE
+MANIFEST.in
+README.md
 setup.py
 bin/cheat
 cheat/__init__.py
@@ -20,6 +25,7 @@ cheat/cheatsheets/apt
 cheat/cheatsheets/apt-cache
 cheat/cheatsheets/apt-get
 cheat/cheatsheets/aptitude
+cheat/cheatsheets/aria2c
 cheat/cheatsheets/asciiart
 cheat/cheatsheets/asterisk
 cheat/cheatsheets/at
@@ -29,6 +35,7 @@ cheat/cheatsheets/bonding
 cheat/cheatsheets/bower
 cheat/cheatsheets/brctl
 cheat/cheatsheets/brocade
+cheat/cheatsheets/bzip2
 cheat/cheatsheets/chmod
 cheat/cheatsheets/chown
 cheat/cheatsheets/cibadmin
@@ -45,6 +52,7 @@ cheat/cheatsheets/curl
 cheat/cheatsheets/cut
 cheat/cheatsheets/date
 cheat/cheatsheets/dd
+cheat/cheatsheets/deb
 cheat/cheatsheets/designate
 cheat/cheatsheets/df
 cheat/cheatsheets/dhclient
@@ -143,11 +151,13 @@ cheat/cheatsheets/omping
 cheat/cheatsheets/openssl
 cheat/cheatsheets/openstack
 cheat/cheatsheets/openstack-config
+cheat/cheatsheets/org-mode
 cheat/cheatsheets/ovs-vsctl
 cheat/cheatsheets/p4
 cheat/cheatsheets/pacman
 cheat/cheatsheets/parted
 cheat/cheatsheets/paste
+cheat/cheatsheets/patch
 cheat/cheatsheets/pcs
 cheat/cheatsheets/pdftk
 cheat/cheatsheets/perl
@@ -155,6 +165,7 @@ cheat/cheatsheets/php
 cheat/cheatsheets/ping
 cheat/cheatsheets/ping6
 cheat/cheatsheets/pip
+cheat/cheatsheets/pkgtools
 cheat/cheatsheets/postfix
 cheat/cheatsheets/postgresql
 cheat/cheatsheets/proc
@@ -171,6 +182,7 @@ cheat/cheatsheets/rhcs
 cheat/cheatsheets/rm
 cheat/cheatsheets/route
 cheat/cheatsheets/rpm
+cheat/cheatsheets/rpm2cpio
 cheat/cheatsheets/rss2email
 cheat/cheatsheets/rsync
 cheat/cheatsheets/sam2p
@@ -189,6 +201,8 @@ cheat/cheatsheets/snmpwalk
 cheat/cheatsheets/sockstat
 cheat/cheatsheets/sort
 cheat/cheatsheets/split
+cheat/cheatsheets/sport
+cheat/cheatsheets/sqlite3
 cheat/cheatsheets/sqlmap
 cheat/cheatsheets/ss
 cheat/cheatsheets/ssh
@@ -211,6 +225,7 @@ cheat/cheatsheets/tmpfs
 cheat/cheatsheets/tmux
 cheat/cheatsheets/top
 cheat/cheatsheets/tr
+cheat/cheatsheets/trashy
 cheat/cheatsheets/tree
 cheat/cheatsheets/truncate
 cheat/cheatsheets/tshark
@@ -219,6 +234,7 @@ cheat/cheatsheets/udisksctl
 cheat/cheatsheets/uname
 cheat/cheatsheets/uniq
 cheat/cheatsheets/unzip
+cheat/cheatsheets/urpm
 cheat/cheatsheets/uuid
 cheat/cheatsheets/vagrant
 cheat/cheatsheets/vi
@@ -227,6 +243,7 @@ cheat/cheatsheets/virtualenv
 cheat/cheatsheets/weechat
 cheat/cheatsheets/wget
 cheat/cheatsheets/xargs
+cheat/cheatsheets/xmlto
 cheat/cheatsheets/xrandr
 cheat/cheatsheets/xxd
 cheat/cheatsheets/xz
@@ -236,3 +253,5 @@ cheat/cheatsheets/yum
 cheat/cheatsheets/zip
 cheat/cheatsheets/zoneadm
 cheat/test/__init__.py
+licenses/gpl-3.txt
+licenses/mit.txt
