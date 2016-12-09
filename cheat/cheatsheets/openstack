@@ -1,6 +1,7 @@
 ###############################[NOTEs]#################################
 # http://cloudinit.readthedocs.io/en/latest/
 # https://coreos.com/os/docs/latest/cloud-config.html#writefiles
+# https://thornelabs.net/2014/03/13/openstack-commands-cheat-sheet.html
 #######################################################################
 
 # List tenant
