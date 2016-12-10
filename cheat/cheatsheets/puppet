@@ -47,3 +47,7 @@ puppet config print masterport
 
 # You may force a master to compile a catalog for a node, as follows (Puppet will print out the catalog, in JSON format, to the terminal)
 puppet master --compile client.example.com
+
+# From the command line, you can pass the --evaltrace --summarize option to puppet agent to tell the agent to keep a track of how long
+# the operations took to complete and display a summary at the end of compilation
+puppet agent -t --evaltrace --summarize
