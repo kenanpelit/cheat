@@ -43,4 +43,7 @@ puppet config print templatedir --section master
 puppet resource user luke
 
 # Verify port number for puppetmaster
-# puppet config print masterport
+puppet config print masterport
+
+# You may force a master to compile a catalog for a node, as follows (Puppet will print out the catalog, in JSON format, to the terminal)
+puppet master --compile client.example.com
