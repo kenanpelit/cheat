@@ -41,3 +41,6 @@ puppet config print templatedir --section master
 # Syntax:
 # puppet resource resource_type 
 puppet resource user luke
+
+# Verify port number for puppetmaster
+# puppet config print masterport
