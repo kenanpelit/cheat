@@ -11,3 +11,11 @@ jq '.[0]'
 jq '.[2:4]'
 jq '.[:3]'
 jq '.[-2:]'
+
+# For PUPPET
+# Using jq, we can examine the JSON file and find the problem definitions.
+jq .resources[].title <client.example.com.json
+
+# To look at our problem definition, we'll select the resource whose title is "one", as shown here
+jq '.resources[] | select(.title=="one")' <client.example.com.json
+
