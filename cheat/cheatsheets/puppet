@@ -36,3 +36,6 @@ CACHE=no puppet agent --test --no-use_srv_records --environment jzhu --agent_dis
 
 # locate the default templatedir by running
 puppet config print templatedir --section master
+
+# This example uses `puppet resource` to return a Puppet configuration for the user `luke`:
+puppet resource user luke
