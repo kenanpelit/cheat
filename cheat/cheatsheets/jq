@@ -19,3 +19,6 @@ jq .resources[].title <client.example.com.json
 # To look at our problem definition, we'll select the resource whose title is "one", as shown here
 jq '.resources[] | select(.title=="one")' <client.example.com.json
 
+# Use jq again to query the JSON of the current catalog, as shown in the following command
+jq .classes[] </opt/puppetlabs/puppet/cache/client_data/catalog/client.example.com.json
+
