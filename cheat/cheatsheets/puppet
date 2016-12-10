@@ -38,4 +38,6 @@ CACHE=no puppet agent --test --no-use_srv_records --environment jzhu --agent_dis
 puppet config print templatedir --section master
 
 # This example uses `puppet resource` to return a Puppet configuration for the user `luke`:
+# Syntax:
+# puppet resource resource_type 
 puppet resource user luke
