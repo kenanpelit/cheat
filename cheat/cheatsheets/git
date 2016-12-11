@@ -163,7 +163,8 @@ git reset <last good SHA>
 git reset --hard <last good SHA>
 
 # Committed few, then git reset --hard, but want theose commits back
-git reflog & git reset
+git reflog              ##>># get the Reference log ID, a <SHA>
+git reset --hard <SHA>  ##>># Undo the action in <SHA>
 
 ## revert to an explict version: git reset --hard <SHA>
 git checkout
