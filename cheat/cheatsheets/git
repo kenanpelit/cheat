@@ -164,10 +164,15 @@ git reset --hard <last good SHA>
 
 # Committed few, then git reset --hard, but want theose commits back
 git reflog & git reset
->>># revert to an explict version: git reset --hard <SHA>
+
+## revert to an explict version: git reset --hard <SHA>
 git checkout
->>># revert some files to an explict version: git checkout <SHA> -- <filename>
->>># you want to re-commit those "Commits" to repo: git cherry-pick <SHA>
+
+## revert some files to an explict version: 
+git checkout <SHA> -- <filename>
+
+## you want to re-commit those "Commits" to repo: 
+git cherry-pick <SHA>
 
 # View commits that will be pushed
 git log @{u}..
