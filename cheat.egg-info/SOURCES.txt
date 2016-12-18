@@ -210,10 +210,12 @@ cheat/cheatsheets/ssh-copy-id
 cheat/cheatsheets/ssh-keygen
 cheat/cheatsheets/sshuttle
 cheat/cheatsheets/stdout
+cheat/cheatsheets/storcli
 cheat/cheatsheets/strace
 cheat/cheatsheets/svn
 cheat/cheatsheets/sys
 cheat/cheatsheets/sysctl
+cheat/cheatsheets/sysdig
 cheat/cheatsheets/systemctl
 cheat/cheatsheets/systemd
 cheat/cheatsheets/tail
