@@ -5,6 +5,7 @@
 # FOR MORE DETAILS AND EXAMPLES:
 # http://www.thomas-krenn.com/en/wiki/StorCLI
 # http://blog.irq1.com/
+# http://tate.cx/monitoring-raid-drive-health-using-storcli-and-other-useful-commands/
 
 # Information on the Controller and Configuration
 storcli /c0 show all
