@@ -6,7 +6,7 @@
 # http://www.thomas-krenn.com/en/wiki/StorCLI
 # http://blog.irq1.com/
 
-# Show all information about the adapterstaticuch as cluster state,BIOSpackagelarmfinalirmware,versionpackagend so on.
+# Information on the Controller and Configuration
 storcli /c0 show all
 
 # Show the number of controllers connected.
@@ -14,3 +14,43 @@ storcli show ctrlcount
 
 # Show the freespace available in the controller.
 storcli /c0 show freespace
+
+# Information on the existing hard drives and their status (IDs,…)
+storcli /c0 /eall /sall show all
+
+# Information on the existing virtual drives and their status
+storcli /c0 /vall show
+
+# View current status of all rebuilds
+storcli /c0 /eall /sall show rebuild
+
+# Firmware Update
+storcli /c0 download file=/path/to/firmware.rom
+
+# Activation of Features (e.g. CacheCade, FastPath,…)
+storcli /c0 set aso key=AAAAAAAABBBBBBBBCCCCCCCC
+
+# Creating a Virtual Drive
+# storcli /c0 add vd type=[RAID0(r0)|RAID1(r1)|...] drives=[EnclosureID:SlotID|:SlotID-SlotID|:SlotID,SlotID]
+storcli /c0 add vd type=r1 drives=252:0-2
+
+# Initializing a VD
+storcli /c0/v0 start init (force)
+
+# Progress can be monitored using the following command:
+storcli /c0/v0 show init
+
+# Removing a VD
+storcli /c0/v0 del (force)
+
+# Creating a CacheCade device
+# storcli /c0 add vd cc type=r[0,1,10] drives=[EnclosureID:SlotID|:SlotID-SlotID|:SlotID,SlotID]  WT|WB (assignvds=0,1,2)
+storcli /c0 add vd cc type=r1 drives=252:2-3 WB
+
+# CacheCade activation/deactivation
+# storcli /c0/[v0|vall] set ssdCaching=[on|off]
+storcli /c0/v1 set ssdCaching=on
+
+# Removing a CacheCade device
+storcli /c0/v0 del cc
+
