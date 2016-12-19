@@ -1,6 +1,16 @@
 # The LSI StorCLI is the successor of the MegaCLI and allows Command Line Tools to manage
 # and control LSI MegaRAID controllers. In this article you will find a collection of
 # useful commands to administer your LSI RAID controller.
-# For more details:
+#
+# FOR MORE DETAILS AND EXAMPLES:
 # http://www.thomas-krenn.com/en/wiki/StorCLI
 # http://blog.irq1.com/
+
+# Show all information about the adapterstaticuch as cluster state,BIOSpackagelarmfinalirmware,versionpackagend so on.
+storcli /c0 show all
+
+# Show the number of controllers connected.
+storcli show ctrlcount
+
+# Show the freespace available in the controller.
+storcli /c0 show freespace
