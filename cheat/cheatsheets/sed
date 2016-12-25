@@ -44,3 +44,6 @@ sed -n 'h;n;x;G;s/\n/\t/;p'
 echo '[123]' | sed 's/[][]//g'
 echo '[123]' | sed 's/\(\[\|\]\)//g'
 echo '[123]' | sed -r 's/(\[|\])//g'
+
+# Alternation
+echo -e 'XXX\nabc\nefg\nYYY'|sed -n '/XXX\|YYY/p'
