@@ -160,6 +160,7 @@ cheat/cheatsheets/paste
 cheat/cheatsheets/patch
 cheat/cheatsheets/pcs
 cheat/cheatsheets/pdftk
+cheat/cheatsheets/perf
 cheat/cheatsheets/perl
 cheat/cheatsheets/php
 cheat/cheatsheets/ping
