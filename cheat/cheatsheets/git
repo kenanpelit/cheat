@@ -301,3 +301,13 @@ git revert <commit SHA>
 # Pich a commit from a branch to current branch. This is different than merge as
 # this just applies a single commit from a branch to current branch
 git cherry-pick <commit SHA1>
+
+# Delete the last commit already pushed
+git push mathnet +dd61ab32^:master
+OR|
+git reset HEAD^ --hard
+git push mathnet -f
+
+# Delete the second last commit already pushed
+git rebase -i dd61ab32^
+git push mathnet -f
