@@ -1,5 +1,6 @@
 # NOTES
 # http://dockone.io/article/111
+# http://www.runoob.com/docker/docker-tutorial.html
 
 # Start docker daemon
 docker -d
