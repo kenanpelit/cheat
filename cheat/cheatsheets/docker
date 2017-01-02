@@ -1,3 +1,6 @@
+# NOTES
+# http://dockone.io/article/111
+
 # Start docker daemon
 docker -d
 
