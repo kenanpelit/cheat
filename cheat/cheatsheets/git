@@ -311,3 +311,12 @@ git push mathnet -f
 # Delete the second last commit already pushed
 git rebase -i dd61ab32^
 git push mathnet -f
+
+# How do i get git to show me which branches are tracking what
+git branch -vv   # doubly verbose
+
+# How do I change the remote a git branch is tracking?
+# http://www.drdobbs.com/architecture-and-design/git-tracking-relationships-use-the-full/240168881
+git branch branch_name --set-upstream-to your_new_remote/branch_name  # Without deleting anything, using git v1.8.0 or later
+OR...
+git branch --set-upstream branch_name your_new_remote/branch_name     # Using git up to v1.7.12
