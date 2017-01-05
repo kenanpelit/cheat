@@ -162,7 +162,7 @@ git reset <last good SHA>
 |
 git reset --hard <last good SHA>
 
-# Committed few, then git reset --hard, but want theose commits back
+# Committed few, then git reset --hard, but want theose commits back, --hard options sets the HEAD of the current branch back to the commit that you specify
 git reflog              ##>># get the Reference log ID, a <SHA>, of last good state
 git reset --hard <SHA>  ##>># return to the state of SHA
 
