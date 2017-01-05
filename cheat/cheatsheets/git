@@ -285,6 +285,9 @@ git checkout -b master upstream/master
 # So if you have a lot of useless branches, delete them on Github and then run this
 git remote prune origin
 
+# Used to find all branches which can be safely deleted, since those branches are fully contained by HEAD
+git branch --merged
+
 # The following can be used to prune all remotes at once
 git remote prune $(git remote | tr '\n' ' ')
 
