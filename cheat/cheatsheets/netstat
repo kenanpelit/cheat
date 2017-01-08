@@ -29,3 +29,6 @@ ip maddr
 
 # Display multicast group membership information for IPv4 and IPv6
 netstat -g
+
+# Display summary statistics for each protocol
+netstat -s
