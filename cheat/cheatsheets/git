@@ -47,6 +47,13 @@ git stash
 # To stash changes with a message
 git stash save "message"
 
+# To stash untracked files
+# Add (git add) the file and start tracking it. Then stash. Since the entire contents of the file are new, they will be stashed, and you can manipulate it as necessary.
+git add filename
+git stash
+OR|
+git stash save -u       # As of version 1.7.7
+
 # To list all the stashed changes
 git stash list
 
