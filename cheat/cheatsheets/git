@@ -5,6 +5,7 @@
 # [Useful Links]
 # https://www.atlassian.com/git/tutorials/resetting-checking-out-and-reverting/commit-level-operations
 # http://sethrobertson.github.io/GitFixUm/fixup.html
+#
 # manage branches
 # https://github.com/Kunena/Kunena-Forum/wiki/Create-a-new-branch-with-git-and-manage-branches
 #
@@ -16,6 +17,10 @@
 #
 # Git HowTo: revert a commit already pushed to a remote repository
 # http://christoph.ruegg.name/blog/git-howto-revert-a-commit-already-pushed-to-a-remote-reposit.html
+#
+# Rewriting history using rebase Interactive
+# https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History
+# https://robots.thoughtbot.com/git-interactive-rebase-squash-amend-rewriting-history
 
 # Print out the commit graph on the command line
 git log --oneline --graph --decorate --all
