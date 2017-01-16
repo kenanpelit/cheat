@@ -50,6 +50,10 @@ DELETE FROM tbl_name WHERE user = 'jcole';
 # Forgot password and resetting
 https://help.ubuntu.com/community/MysqlPasswordReset
 
+# Backup and restore database
+mysql> create database mydb;
+mysql> use mydb;
+mysql> source db_backup.dump;
 
 
 
