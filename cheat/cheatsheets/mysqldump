@@ -1,3 +1,8 @@
+# NOTES
+#
+# 1> Copying Tables or Databases to Another Host
+# https://www.tutorialspoint.com/mysql/mysql-database-export.htm
+#
 # To dump a database to a file (Note that your password will appear in your command history!):
 mysqldump -uusername -ppassword the-database > db.sql
 
@@ -28,3 +33,9 @@ mysqldump --routines --no-create-info --no-data guardian > guardian.sql
 # restore mysql procedures
 mysql> use guardian;
 mysql> source guardian.sql
+
+# Run the following command at source host. This will dump complete database into dump.txt file
+mysqldump -u root -p database_name table_name > dump.txt
+
+# Now, ftp dump.txt file on another host and use the following command. Before running this command, make sure you have created database_name on destination server.
+mysql -u root -p database_name < dump.txt
