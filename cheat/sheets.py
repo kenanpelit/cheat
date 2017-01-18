@@ -1,14 +1,12 @@
-import os
-
 from cheat import cheatsheets
-from cheat.utils import die
+from cheat.utils import *
+import os
 
 def default_path():
     """ Returns the default cheatsheet path """
 
     # determine the default cheatsheet dir
-    default_sheets_dir = os.environ.get('DEFAULT_CHEAT_DIR') or os.path.join('~', '.cheat')
-    default_sheets_dir = os.path.expanduser(os.path.expandvars(default_sheets_dir))
+    default_sheets_dir = os.environ.get('DEFAULT_CHEAT_DIR') or os.path.join(os.path.expanduser('~'), '.cheat')
 
     # create the DEFAULT_CHEAT_DIR if it does not exist
     if not os.path.isdir(default_sheets_dir):
@@ -24,27 +22,24 @@ def default_path():
     if not os.access(default_sheets_dir, os.R_OK):
         die('The DEFAULT_CHEAT_DIR (' + default_sheets_dir +') is not readable.')
     if not os.access(default_sheets_dir, os.W_OK):
-        die('The DEFAULT_CHEAT_DIR (' + default_sheets_dir +') is not writable.')
+        die('The DEFAULT_CHEAT_DIR (' + default_sheets_dir +') is not writeable.')
 
     # return the default dir
     return default_sheets_dir
 
 
 def get():
-    """ Assembles a dictionary of cheatsheets as name => file-path """
+    """ Assembles a dictionary of cheatsheets as reldir/name => file-path """
     cheats = {}
 
-    # otherwise, scan the filesystem
+    # Scan cheat paths and assemble a dictionary.
+    # Cheats can be organized in subdirectories in cheat dirs.
     for cheat_dir in reversed(paths()):
-        cheats.update(
-            dict([
-                (cheat, os.path.join(cheat_dir, cheat))
-                for cheat in os.listdir(cheat_dir)
-                if not cheat.startswith('.')
-                and not cheat.startswith('__')
-            ])
-        )
-
+        for root, subdirs, cheat_files in os.walk(cheat_dir):
+            for cheat in cheat_files:
+                cheat_path = os.path.join(root, cheat)
+                cheat_name = os.path.relpath(os.path.join(root, cheat), cheat_dir)
+                cheats[cheat_name] = cheat_path
     return cheats
 
 
@@ -83,10 +78,10 @@ def search(term):
     for cheatsheet in sorted(get().items()):
         match = ''
         for line in open(cheatsheet[1]):
-            if term in line:
-                match += '  ' + line
+             if term in line:
+                  match += '  ' + line
 
-        if match != '':
+        if not match == '':
             result += cheatsheet[0] + ":\n" + match + "\n"
 
     return result
